@@ -1,0 +1,8 @@
+Create BTT Swift Plugins
+https://github.com/folivoraAI/BetterTouchToolPlugins
+
+wonjoonseol's AQT contribution
+https://github.com/wonjoonSeol/BTT-Aqua-modification
+
+HydroTouch
+https://github.com/dnnsmnstrr/dotfiles/tree/master/bettertouchtool/HydroTouch
