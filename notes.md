@@ -3,21 +3,21 @@ BTT TODO:
 https://github.com/folivoraAI/BetterTouchToolPlugins
 swift widget
 
-Extra to add:
-
 AQT To Do Next:
 
-	⁃	Setup Instructions Window
-	⁃	Restyle setup window
-	⁃	offline images
-	⁃	istats install for gamemode widgets
+- Setup Instructions Window
+- Restyle setup window
+- offline images
+- istats install for gamemode widgets
 
-Usage Manual
-	⁃	Check Spellings
-	⁃	Add Videos
-	⁃	Offline Videos
+**Usage Manual**
+- Check Spellings
+- Add Videos
+- Offline Videos
 
-BUG———————————————————————————
+----
+BUG
+-
 
 • Quotation protection for widgets
 Fix “ “ “ breaking JSON -returning widgets
@@ -30,45 +30,47 @@ if you start controlling the connected device volume on Touch Bar it will direct
 if you use the Spotify app to change volume the Touch Bar doesn't update until you touch it again and it will set Touch Bar volume as app volume.
 idea: on touch(down) request the current level and set slider level accordingly, so it won't give huge volume changes due to failed / level update problems?
 
-ADD———————————————————————————
+----
+**ADD**
+-
 
-AIRPODS WIDGET
+**AIRPODS WIDGET**
 Make it more beautiful in the Conn Actions
 
-MISC
+**MISC**
 - Pomodoro, 
 - Airplay Device list,
 - https://community.folivora.ai/t/add-to-library-and-download-button-for-itunes/7628,
 - Timer Widget
 
 
-Now Playing:
+**Now Playing:**
 Move to correct tab on tap
 
-CHROME
+**CHROME**
 - web widgets
 
-NOTES
+**NOTES**
 - add “add photo from iphone” into Notes
 
-FINDER
+**FINDER**
 - Eject Disks
 - File Path Bookmark
 - BookMark Menu
 - New File menu ?
 
-ONENOTE
+**ONENOTE**
 Add icons to the tags in onennote
 
-QUICKSTRIP
+**QUICKSTRIP**
 - Countdown Widget
 - True Tone Widget..?
 
-PREVIEW
+**PREVIEW**
 - Preview Full Set (may not come based on experimentation)
 - Preview (Dynamic Preview based on document type)
 
-APP REQUESTS
+**APP REQUESTS**
 Omnifocus
 polymail
 tweetbot
@@ -79,17 +81,19 @@ Fusion 360
 
 Brave Browser
 
-AQT MAIN
+**AQT MAIN**
 - per-app settings
 
-MAYBE——————————————————————————
+----
+MAYBE
+-
 https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-native-touchbar/1704/491?u=yuuiko
 (play button app indicator.)
 
-—————————————————————————————
+----
 
 
-—————CHANGELOG b3.5.1
+**—————CHANGELOG b3.5.1**
 
 This update requires you to update to BTT v3.XXX.
 
@@ -101,7 +105,7 @@ The QuickStrip Hold actions have been repaired.
 - MacOS Control Strip Icon may get stuck displaying the previous app or website icon. quickly tap FN as a workaround.
 
 
-————————————————————————————
+----
 
 AQT Ad Song Candidates
 RUFUS DU SOL - You Were Right
