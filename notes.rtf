@@ -24,6 +24,12 @@ Fix “ “ “ breaking JSON -returning widgets
 Now Playing WIdgets ¬
 https://community.folivora.ai/t/aquatouch-btt-supports-40-apps-and-websites-and-the-native-touchbar/1704/306?u=yuuiko
 
+Mar 22
+the Spotify volume controle level isn't updating when controlling a connected (external) device.
+if you start controlling the connected device volume on Touch Bar it will directly update to the Touch Bar set level (which sometimes leads to extremely loud music).
+if you use the Spotify app to change volume the Touch Bar doesn't update until you touch it again and it will set Touch Bar volume as app volume.
+idea: on touch(down) request the current level and set slider level accordingly, so it won't give huge volume changes due to failed / level update problems?
+
 ADD———————————————————————————
 
 AIRPODS WIDGET
@@ -79,13 +85,6 @@ AQT MAIN
 MAYBE——————————————————————————
 https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-native-touchbar/1704/491?u=yuuiko
 (play button app indicator.)
-
-Mar 22
-
-the Spotify volume controle level isn't updating when controlling a connected (external) device.
-if you start controlling the connected device volume on Touch Bar it will directly update to the Touch Bar set level (which sometimes leads to extremely loud music).
-if you use the Spotify app to change volume the Touch Bar doesn't update until you touch it again and it will set Touch Bar volume as app volume.
-idea: on touch(down) request the current level and set slider level accordingly, so it won't give huge volume changes due to failed / level update problems?
 
 —————————————————————————————
 
