@@ -1,61 +1,66 @@
-yuuiko's Personal notes.
-
-FROM STICKIES:
+BTT TODO:
 
 https://github.com/folivoraAI/BetterTouchToolPlugins
 swift widget
 
-MOST IMPORTANT:
-Finished Manual
-
-
-Bugs:
-
-
 Extra to add:
-https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-native-touchbar/1704/491?u=yuuiko
-(play button icon)
-
-Add Timer Widget (Not Working)
-Chrome Widgets
-
-Notes Preset
 
 AQT To Do Next:
+
+	⁃	Setup Instructions Window
+	⁃	Restyle setup window
+	⁃	offline images
+	⁃	istats install for gamemode widgets
+
+Usage Manual
 	⁃	Check Spellings
 	⁃	Add Videos
 	⁃	Offline Videos
 
-	⁃	Refine Setup Instructions Window
-	⁃	Restyle setup window
-	⁃	offline images
-
-add “add photo from iphone” into Notes
+BUG———————————————————————————
 
 • Quotation protection for widgets
 Fix “ “ “ breaking JSON -returning widgets
-Now Playing WIdgets
-
+Now Playing WIdgets ¬
 https://community.folivora.ai/t/aquatouch-btt-supports-40-apps-and-websites-and-the-native-touchbar/1704/306?u=yuuiko
 
-Now Playing:
-Move to correct tab on tap
+ADD———————————————————————————
 
 AIRPODS WIDGET
 Make it more beautiful in the Conn Actions
 
-ADD:
-Caligauvara: Pomodoro, Airplay Devices,
+MISC
+- Pomodoro, 
+- Airplay Device list,
+- https://community.folivora.ai/t/add-to-library-and-download-button-for-itunes/7628,
+- Timer Widget
 
-Finder Eject Disks
 
-include https://community.folivora.ai/t/add-to-library-and-download-button-for-itunes/7628
+Now Playing:
+Move to correct tab on tap
 
+CHROME
+- web widgets
 
-In mind:
-Countdown Widget
+NOTES
+- add “add photo from iphone” into Notes
 
+FINDER
+- Eject Disks
+- File Path Bookmark
+- BookMark Menu
+- New File menu ?
+
+ONENOTE
 Add icons to the tags in onennote
+
+QUICKSTRIP
+- Countdown Widget
+- True Tone Widget..?
+
+PREVIEW
+- Preview Full Set (may not come based on experimentation)
+- Preview (Dynamic Preview based on document type)
 
 APP REQUESTS
 Omnifocus
@@ -68,6 +73,12 @@ Fusion 360
 
 Brave Browser
 
+AQT MAIN
+- per-app settings
+
+MAYBE——————————————————————————
+https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-native-touchbar/1704/491?u=yuuiko
+(play button app indicator.)
 
 Mar 22
 
@@ -76,31 +87,8 @@ if you start controlling the connected device volume on Touch Bar it will direct
 if you use the Spotify app to change volume the Touch Bar doesn't update until you touch it again and it will set Touch Bar volume as app volume.
 idea: on touch(down) request the current level and set slider level accordingly, so it won't give huge volume changes due to failed / level update problems?
 
-Behind Mind
-- Polsih Up window snapping visuals
-
-Fix Safari Widget Icon Updating / refined handling (not possible, BTT)
-
-FRANKLINS 
-- Preview Full Set (may not come based on experimentation)
-⚠️ Preview (Dynamic Preview based on document type)
-
-- Finder: 
-BookMark Menu | 
-🤔New File menu
-
-HELP POPUPS
-- add tip to install iStats
-
-SETTINGS:
-- Compatibility Mode
-
-CS FEATURES
-- !!!! TrueTone Discussion
-
 —————————————————————————————
 
-- Per-app settings
 
 —————CHANGELOG b3.5.1
 
