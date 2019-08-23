@@ -35,7 +35,7 @@ idea: on touch(down) request the current level and set slider level accordingly,
 -
 
 **AIRPODS WIDGET**
-Make it more beautiful in the Conn Actions
+- Make it more beautiful in the Conn Actions
 
 **MISC**
 - Pomodoro, 
@@ -45,7 +45,7 @@ Make it more beautiful in the Conn Actions
 
 
 **Now Playing:**
-Move to correct tab on tap
+- Move to correct tab on tap
 
 **CHROME**
 - web widgets
@@ -60,7 +60,7 @@ Move to correct tab on tap
 - New File menu ?
 
 **ONENOTE**
-Add icons to the tags in onennote
+- Add icons to the tags in onennote
 
 **QUICKSTRIP**
 - Countdown Widget
@@ -71,15 +71,15 @@ Add icons to the tags in onennote
 - Preview (Dynamic Preview based on document type)
 
 **APP REQUESTS**
-Omnifocus
-polymail
-tweetbot
+- Omnifocus
+- polymail
+- tweetbot
 
-anki flashcards
-Adobe Animate
-Fusion 360
+- anki flashcards
+- Adobe Animate
+- Fusion 360
 
-Brave Browser
+- Brave Browser
 
 **AQT MAIN**
 - per-app settings
@@ -93,25 +93,25 @@ https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-
 ----
 
 
-**—————CHANGELOG b3.5.1**
+**CHANGELOG b3.5.1**
 
 This update requires you to update to BTT v3.XXX.
 
-— BUG FIXES
-The QuickStrip Hold actions have been repaired.
+BUG FIXES
+- The QuickStrip Hold actions have been repaired.
 
 
-—Known Issues (Unfixable on my side so far)
+Known Issues (Unfixable on my side so far)
 - MacOS Control Strip Icon may get stuck displaying the previous app or website icon. quickly tap FN as a workaround.
 
 
 ----
 
-AQT Ad Song Candidates
-RUFUS DU SOL - You Were Right
-Big Wild - When I Get There
-Conro - On my way up
-Conro - Trippin? 
+- AQT Ad Song Candidates
+- RUFUS DU SOL - You Were Right
+- Big Wild - When I Get There
+- Conro - On my way up
+- Conro - Trippin? 
  
 Transcript: 
 
