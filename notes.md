@@ -94,15 +94,7 @@ https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-
 
 
 **CHANGELOG b3.5.1**
-
-This update requires you to update to BTT v3.XXX.
-
-BUG FIXES
-- The QuickStrip Hold actions have been repaired.
-
-
-Known Issues (Unfixable on my side so far)
-- MacOS Control Strip Icon may get stuck displaying the previous app or website icon. quickly tap FN as a workaround.
+See project board.
 
 
 ----
