@@ -1,0 +1,22 @@
+---
+name: Bug report
+about: Alert me of a problem that may need a fix
+title: 'Bug: '
+labels: ''
+assignees: ''
+
+---
+
+**Describe the bug**
+A clear and concise description of what the bug is.
+
+**Screenshots**
+Please, add screenshots to help explain your problem. You can screenshot the touchbar with ⌘⇧6.
+
+**Details:**
+ - MacOS Version: 
+ - Current App Version: [e.g. chrome, safari, OneNote]
+ - BTT Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
