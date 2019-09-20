@@ -13,6 +13,9 @@ I combined my own finder native touchbar and AQT's extra tools. I wanted to add 
 Featuring three tabs, "View", "Edit" and "Markup"....
 blablabla make this a fancy showoff thing for the post
 
+- Brave browser added.
+Literal copy-paste from safari. No web widgets yet. If I feel like it then I might add support, it seems to support scripting.
+
 ----
 **Quality Improvements**
 
