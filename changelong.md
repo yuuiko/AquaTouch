@@ -1,4 +1,4 @@
-**Changelog v3.5.3** (Last Edit: 25 AUG)
+**Changelog v3.5.3** (Last Edit: 20 SEP 2019)
 
 ----
 **New Features**
