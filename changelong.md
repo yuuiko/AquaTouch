@@ -16,6 +16,8 @@ blablabla make this a fancy showoff thing for the post
 - Brave browser added.
 Literal copy-paste from safari. No web widgets yet. If I feel like it then I might add support, it seems to support scripting.
 
+- Keyboard shortcuts for kahoot.it web widget. I kept loosing :( hopefully my new weapons will allow me to beat my class :⎤
+
 ----
 **Quality Improvements**
 
