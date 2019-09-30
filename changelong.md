@@ -4,7 +4,7 @@
 **New Features**
 
 - New External Disks widgets!
-supports up to 5 disks. Find them in the new finder set and in Quickctions.
+supports up to 5 disks. Find them in the new finder set and in Quickctions. EDIT: UNSTABLE, MAY NOT COME TO FINAL.
 
 - Finder is now a replacement set!
 I combined my own finder native touchbar and AQT's extra tools. I wanted to add tags because I use it often but that doesn't seem feasable yet.
