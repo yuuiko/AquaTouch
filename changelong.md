@@ -37,7 +37,7 @@ YouTube Widget
 
 ----
 **Performance Optimisation**
-Calendar icon in the CS is now more efficient when highlighting is turned off. More to come.
+- Calendar icon in the CS is now more efficient when highlighting is turned off. More to come.
 
 ----
 **Bug Fixes**
