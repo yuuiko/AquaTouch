@@ -36,6 +36,10 @@ YouTube Widget
 - Youtube Widget will now give prompts to enable scripting for websites. You can also tap the tip to let AQT set the stuff for you.
 
 ----
+**Performance Optimisation**
+Calendar icon in the CS is now more efficient when highlighting is turned off. More to come.
+
+----
 **Bug Fixes**
 - Youtube widget in Chrome now displays "YouTube" instead of "YouTube Chrome"
 
