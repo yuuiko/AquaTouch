@@ -19,6 +19,9 @@ Literal copy-paste from safari. No web widgets yet. If I feel like it then I mig
 
 - Keyboard shortcuts for kahoot.it web widget because I kept loosing :( hopefully my new weapons will allow me to beat my class :⎤
 
+- Notes
+Added continuity camera button to notes as an extension set. Useful for lectures - use your iPhone as a camera for your Mac to take pictures that instantly show up in notes.
+
 ----
 **Quality Improvements**
 
