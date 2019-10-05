@@ -3,27 +3,28 @@
 ----
 **New Features**
 
-- New External Disks widgets!
-supports up to 5 disks. Find them in the new finder set and in Quickctions. EDIT: UNSTABLE, MAY NOT COME TO FINAL.
+New External Disks widgets!
+- supports up to 5 disks. Find them in the new finder set and in Quickctions. EDIT: UNSTABLE, MAY NOT COME TO FINAL.
 
-- Finder is now a replacement set!
-I combined my own finder native touchbar and AQT's extra tools. I wanted to add tags because I use it often but that doesn't seem feasable yet.
+Finder is now a replacement set!
+- I combined my own finder native touchbar and AQT's extra tools. I wanted to add tags because I use it often but that doesn't seem feasable yet.
 
-- Preview is now a replacement set!
-I'm quite proud of this one!
+Preview is now a replacement set!
+- I'm quite proud of this one!
 Featuring three tabs, "View", "Edit" and "Markup", enabling you to streamline your editing and scribbling better. 
 Switches layouts based on the file type that is open; Document-related controls won't show up for an image and vice versa, while other controls specific to documents or images are added. Switching also doesn't switch the tabs! Seems normal but was interesting to implement.
 
-- Brave browser added.
-Literal copy-paste from safari. No web widgets yet. If I feel like it then I might add support, Brave seems to support scripting.
+Brave browser added.
+- Literal copy-paste from safari. No web widgets yet. If I feel like it then I might add support, Brave seems to support scripting.
 
+Kahoot.it Web Widget
 - Keyboard shortcuts for kahoot.it web widget because I kept loosing :( hopefully my new weapons will allow me to beat my class :⎤
 
-- Notes
-Added continuity camera button to notes as an extension set. Useful for lectures - use your iPhone as a camera for your Mac to take pictures that instantly show up in notes.
+Notes
+- Added continuity camera button to notes as an extension set. Useful for lectures - use your iPhone as a camera for your Mac to take pictures that instantly show up in notes.
 
-- New Github Desktop Client TouchBar
-Big push/pull button, and shortcuts to view repo in the Finder, Web or Terminal.
+New Github Desktop Client TouchBar
+- Big push/pull button, and shortcuts to view repo in the Finder, Web or Terminal.
 
 ----
 **Quality Improvements**
