@@ -22,8 +22,15 @@ Literal copy-paste from safari. No web widgets yet. If I feel like it then I mig
 - Notes
 Added continuity camera button to notes as an extension set. Useful for lectures - use your iPhone as a camera for your Mac to take pictures that instantly show up in notes.
 
+- New Github Desktop Client TouchBar
+Big push/pull button, and shortcuts to view repo in the Finder, Web or Terminal.
+
 ----
 **Quality Improvements**
+
+DRAMATICALLY OPTIMISE EFFICIENCY
+- Optimise the calender QuickStrip Code
+- _NOT YET: Optimise the Menubar-Status-looking "Highlighting Triggers"_
 
 QuickMedia
 - Main Media controls (grey, leftmost in the QuickMedia) now displays the icon of the app that they will control.
