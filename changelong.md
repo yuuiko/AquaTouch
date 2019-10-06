@@ -1,4 +1,4 @@
-**Changelog v3.5.3** (Last Edit: 20 SEP 2019)
+**Changelog v3.5.3**
 
 ----
 **BIG Performance Optimisations**
