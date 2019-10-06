@@ -1,6 +1,12 @@
 **Changelog v3.5.3** (Last Edit: 20 SEP 2019)
 
 ----
+**BIG Performance Optimisations**
+- Optimise the QuickShedules button (in the QuickStrip).
+- Calendar icon in the CS is now more efficient when highlighting is turned off.
+- Optimise the "No Apps Playing" message with the QuickPlay widgets
+
+----
 **New Features**
 
 New External Disks widgets!
@@ -29,10 +35,6 @@ New Github Desktop Client TouchBar
 ----
 **Quality Improvements**
 
-DRAMATICALLY OPTIMISE EFFICIENCY
-- Optimise the calender QuickStrip Code
-- _NOT YET: Optimise the Menubar-Status-looking "Highlighting Triggers"_
-
 QuickMedia
 - Main Media controls (grey, leftmost in the QuickMedia) now displays the icon of the app that they will control.
 - Added back the "No supported apps playing currently" message.
@@ -43,12 +45,14 @@ Spotify
 iTunes
 - Shuffle and Repeat buttons scroll away so more content can be seen while scrolled.
 
-YouTube Widget
+YouTube Web Widget (Safari)
 - Youtube Widget will now give prompts to enable scripting for websites. You can also tap the tip to let AQT set the stuff for you.
 
-----
-**Performance Optimisation**
-- Calendar icon in the CS is now more efficient when highlighting is turned off. More to come.
+Google Mail Web Widget
+- Should now show a setup tip noting that keyboard shortcuts need to be turned on in Gmail settings.
+
+QuickControls
+- TrueTone and NightShift buttons should now highlight if on.
 
 ----
 **Bug Fixes**
