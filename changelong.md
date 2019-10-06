@@ -2,6 +2,11 @@
 
 ----
 **BIG Performance Optimisations**
+
+AQT is now SIGNIFICANTLY more energy efficient for most apps.
+
+** insert comparison here **
+
 - Optimise the QuickShedules button (in the QuickStrip).
 - Calendar icon in the CS is now more efficient when highlighting is turned off.
 - Optimise the "No Apps Playing" message with the QuickPlay widgets
