@@ -61,4 +61,5 @@ QuickControls
 - QuickPlay button more robust - less chance of disappearing
 
 - Downloads button in safari's "window" group fixed
-- Some alignments fixed in safari.
+
+- Various small alignment and visual fixes.
