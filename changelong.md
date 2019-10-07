@@ -10,6 +10,7 @@ AQT is now SIGNIFICANTLY more energy efficient for most apps.
 - Optimise the QuickShedules button (in the QuickStrip).
 - Calendar icon in the CS is now more efficient when highlighting is turned off.
 - Optimise the "No Apps Playing" message with the QuickPlay widgets
+- Remove highlighting from "BUISH" buttons in onenote as they caused high CPU temperatures and never worked well anyway.
 
 ----
 **New Features**
@@ -50,11 +51,10 @@ Spotify
 iTunes
 - Shuffle and Repeat buttons scroll away so more content can be seen while scrolled.
 
-YouTube Web Widget (Safari)
-- Youtube Widget will now give prompts to enable scripting for websites. You can also tap the tip to let AQT set the stuff for you.
-
-Google Mail Web Widget
-- Should now show a setup tip noting that keyboard shortcuts need to be turned on in Gmail settings.
+Web Widgets
+- Youtube Widget (in Safari) will now give prompts to enable scripting for websites. You can also tap the tip to let AQT set the stuff for you.
+- Google Mail Widget Should now show a setup tip noting that keyboard shortcuts need to be turned on in Gmail settings.
+- Web Widgets now auto-close when switching away from the site to keep touchbar controls relevant.
 
 QuickControls
 - TrueTone and NightShift buttons should now highlight if on.
