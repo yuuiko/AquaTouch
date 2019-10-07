@@ -67,4 +67,4 @@ QuickControls
 
 - Downloads button in safari's "window" group fixed
 
-- Various small alignment and visual fixes.
+- Various small alignment and visual fixes and enhancements.
