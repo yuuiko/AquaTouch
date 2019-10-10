@@ -1,4 +1,4 @@
-**Changelog v3.5.3**
+**Changelog v3.5.4**
 
 ----
 **New Features**
