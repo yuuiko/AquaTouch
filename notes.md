@@ -27,11 +27,6 @@ AQT To Do Next:
 
 ## BUG
 
-• Quotation protection for widgets
-Fix “ “ “ breaking JSON -returning widgets
-Now Playing WIdgets ¬
-https://community.folivora.ai/t/aquatouch-btt-supports-40-apps-and-websites-and-the-native-touchbar/1704/306?u=yuuiko
-
 Mar 22
 the Spotify volume controle level isn't updating when controlling a connected (external) device.
 if you start controlling the connected device volume on Touch Bar it will directly update to the Touch Bar set level (which sometimes leads to extremely loud music).
@@ -61,13 +56,8 @@ idea: on touch(down) request the current level and set slider level accordingly,
 
 - web widgets
 
-**NOTES**
-
-- add “add photo from iphone” into Notes
-
 **FINDER**
 
-- Eject Disks
 - File Path Bookmark
 - BookMark Menu
 - New File menu ?
@@ -79,12 +69,6 @@ idea: on touch(down) request the current level and set slider level accordingly,
 **QUICKSTRIP**
 
 - Countdown Widget
-- True Tone Widget..?
-
-**PREVIEW**
-
-- Preview Full Set (may not come based on experimentation)
-- Preview (Dynamic Preview based on document type)
 
 **APP REQUESTS**
 
@@ -95,8 +79,6 @@ idea: on touch(down) request the current level and set slider level accordingly,
 - anki flashcards
 - Adobe Animate
 - Fusion 360
-
-- Brave Browser
 
 **AQT MAIN**
 
@@ -117,7 +99,6 @@ See project board.
 ---
 
 - AQT Ad Song Candidates
-- RUFUS DU SOL - You Were Right
 - Big Wild - When I Get There
 - Conro - On my way up
 - Conro - Trippin?

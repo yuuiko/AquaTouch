@@ -10,4 +10,4 @@
 ----
 **Bug Fixes**
 - ! Preview (Document) - Remove "Save and Go to next file" button in Edit tab
-- ! Add Catalina-compatible QuickPlay button into safari widgets
+- ! Add Catalina-compatible QuickPlay buttons into safari widgets
