@@ -18,9 +18,9 @@ AQT To Do Next:
 
 ---
 
-## BTT Setup
+## DEV TIPS
 
-- [Import duplicate presets](https://community.folivora.ai/t/cant-import-a-preset-without-replacing/10455/4)
+- [Enable Import duplicate presets](https://community.folivora.ai/t/cant-import-a-preset-without-replacing/10455/4)
   `defaults write com.hegenberg.BetterTouchTool BTTImportDuplicatePresets YES`
 
 ---
@@ -28,7 +28,7 @@ AQT To Do Next:
 ## BUG
 
 Mar 22
-the Spotify volume controle level isn't updating when controlling a connected (external) device.
+the Spotify volume control level isn't updating when controlling a connected (external) device.
 if you start controlling the connected device volume on Touch Bar it will directly update to the Touch Bar set level (which sometimes leads to extremely loud music).
 if you use the Spotify app to change volume the Touch Bar doesn't update until you touch it again and it will set Touch Bar volume as app volume.
 idea: on touch(down) request the current level and set slider level accordingly, so it won't give huge volume changes due to failed / level update problems?
@@ -43,8 +43,8 @@ idea: on touch(down) request the current level and set slider level accordingly,
 
 **MISC**
 
-- Pomodoro,
 - Airplay Device list,
+- Pomodoro,
 - https://community.folivora.ai/t/add-to-library-and-download-button-for-itunes/7628,
 - Timer Widget
 
@@ -82,14 +82,7 @@ idea: on touch(down) request the current level and set slider level accordingly,
 
 **AQT MAIN**
 
-- per-app settings
-
----
-
-## MAYBE
-
-https://community.folivora.ai/t/aquatouch-supports-40-apps-and-websites-and-the-native-touchbar/1704/491?u=yuuiko
-(play button app indicator.)
+- per-app settings?
 
 ---
 
