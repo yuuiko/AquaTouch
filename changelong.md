@@ -11,5 +11,5 @@ ALBUM ART NOT SUPPORTED YET.
 
 ----
 **Bug Fixes**
-- Preview (Document) - Remove "Save and Go to next file" button in Edit tab
-- Add Catalina-compatible QuickPlay buttons into safari widgets
+- Preview (Document) - Remove "Save and Go to next file" button in the "Edit" tab for documents. (Supposed to be used for batch image editing)
+- Add Catalina-compatible QuickPlay buttons into safari widgets and various other fixes.
