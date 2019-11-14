@@ -1,9 +1,10 @@
 **Changelog b3.5.4**
 
 ----
-**New Features**
+**Compatibility**
 - Add support for Catalina's "Music" app, both for the app itself and in QuickPlay Widget
 ALBUM ART NOT SUPPORTED YET.
+- Add option to hide escape key for 16" MacBook Pro
 
 ----
 **Quality Improvements**
