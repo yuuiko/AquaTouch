@@ -8,6 +8,7 @@ ALBUM ART NOT SUPPORTED YET.
 
 ----
 **Quality Improvements**
+- Added rotate image button for Preview's image touchbar. Hold shift or option to reverse the rotation direction
 
 ----
 **Bug Fixes**
