@@ -10,6 +10,15 @@
 Music
 - Added options to hide star or/and hearts. Hold option to access app-specific AQT settings.
 - New Red theme for now playing widget
+- Stability improvements to the now playing widget
+
+<br>
+Spotify
+- New Green theme for now playing widget
+- Stability improvements for now playing widget
+
+Youtube Now Playing Widget
+- Stability Improvements to the youtube widget in quickmedia
 
 ----
 **Bug Fixes**
