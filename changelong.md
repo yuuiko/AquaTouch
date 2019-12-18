@@ -9,18 +9,19 @@
 <br>
 Music
 - Added options to hide star or/and hearts. Hold option to access app-specific AQT settings.
-- New Red theme for now playing widget
-- Stability improvements to the now playing widget
 
+QuickMedia View
+- Quick Strip is now always visible even when a now playing widget is open.
 <br>
-Spotify
-- New Green theme for now playing widget
-- Stability improvements for now playing widget
+- (Apple Music) Stability improvements to the Apple Music now playing widget
+- (Apple Music) New Red theme
+- (Spotify) New Green Theme
+- (Spotify) Stability improvements
+- (YouTube) Stability Improvements
 
-Youtube Now Playing Widget
-- Stability Improvements to the youtube widget in quickmedia
+
 
 ----
 **Bug Fixes**
-- Stability Improvement to External Disks widgets (they now check and exclude boot disks, which \*should\* remove the occasional appearance of the internal disk - apparantly not for me...
+- Stability Improvement to External Disks widgets (they now check and exclude boot disks, and disks named "Macintosh HD" which \*should\* remove some cases of the internal disk appearing. My case isn't resolved but it seems to be unique to me so far.
 
