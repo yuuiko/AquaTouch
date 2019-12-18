@@ -13,11 +13,11 @@ Music
 QuickMedia View
 - Quick Strip is now always visible even when a now playing widget is open.
 <br>
-- (Apple Music) Stability improvements to the Apple Music now playing widget
-- (Apple Music) New Red theme
-- (Spotify) New Green Theme
-- (Spotify) Stability improvements
-- (YouTube) Stability Improvements
+- (Apple Music) Stability improvements to the Apple Music now playing widget<br>
+- (Apple Music) New Red theme<br>
+- (Spotify) New Green Theme<br>
+- (Spotify) Stability improvements<br>
+- (YouTube) Stability Improvements<br>
 
 
 
