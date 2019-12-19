@@ -19,6 +19,8 @@ QuickMedia View
 - (Spotify) Stability improvements<br>
 - (YouTube) Stability Improvements<br>
 
+QuickControls View
+- Added a "Disable Sleep" (Caffinate) button
 
 
 ----
