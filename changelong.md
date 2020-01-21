@@ -22,8 +22,8 @@ QuickMedia View
 QuickControls View
 - Added a "Disable Sleep" (Caffinate) button
 
-
 ----
 **Bug Fixes**
 - Stability Improvement to External Disks widgets (they now check and exclude boot disks, and disks named "Macintosh HD" which \*should\* remove some cases of the internal disk appearing. My case isn't resolved but it seems to be unique to me so far.
 
+- Notification Badges should now be centered again. 
