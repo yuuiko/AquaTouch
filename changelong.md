@@ -9,6 +9,7 @@
 <br>
 Music
 - Added options to hide star or/and hearts. Hold option to access app-specific AQT settings.
+- Album Art for Music is WORRKKINGG (Boy this was a hard one to fix)
 
 QuickMedia View
 - Quick Strip is now always visible even when a now playing widget is open.
