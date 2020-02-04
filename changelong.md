@@ -16,7 +16,7 @@ Weather Widget
 
 Efficiency
 - [⚠️ Not Complete - Waiting for help on BTT forums] Optimise Haptics Engine
-- **[⚠️ IN SANDBOX - Make sure it updates properly on preset load / BTT launch / wake from sleep] Optimise the Escape Key**
+- **[⚠️ NEEDS TEST - Make sure it updates properly on preset load / BTT launch / wake from sleep] Optimise the Escape Key**
 
 ----
 **Bug Fixes**
