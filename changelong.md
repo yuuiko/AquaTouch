@@ -1,29 +1,24 @@
-**Changelog b3.5.5**
+**Changelog 3.5.6**
 
 ----
 **Compatibility**
-
+[⚠️ Not Complete - Waiting for BTT feature requests] Working to kick out iCalBuddy with BTT native widgets
 
 ----
 **Improvements**
 <br>
 Music
-- Added options to hide star or/and hearts. Hold option to access app-specific AQT settings.
+- Album Art for Music is WORRKKINGG (Boy this was a hard one to fix)
+- Move sync tools to Finder
 
-QuickMedia View
-- Quick Strip is now always visible even when a now playing widget is open.
-<br>
-- (Apple Music) Stability improvements to the Apple Music now playing widget<br>
-- (Apple Music) New Red theme<br>
-- (Spotify) New Green Theme<br>
-- (Spotify) Stability improvements<br>
-- (YouTube) Stability Improvements<br>
+Weather Widget
+- Tapping a day in the weather widget opens dark sky in the web browser for further details.
 
-QuickControls View
-- Added a "Disable Sleep" (Caffinate) button
-
+Efficiency
+- [⚠️ Not Complete - Waiting for help on BTT forums] Optimise Haptics Engine
+- **[⚠️ NEEDS TEST - Make sure it updates properly on preset load / BTT launch / wake from sleep] Optimise the Escape Key**
 
 ----
 **Bug Fixes**
-- Stability Improvement to External Disks widgets (they now check and exclude boot disks, and disks named "Macintosh HD" which \*should\* remove some cases of the internal disk appearing. My case isn't resolved but it seems to be unique to me so far.
-
+- Notification Badges should now be aligned properly (again). 
+- Update notifications should now be live again.
