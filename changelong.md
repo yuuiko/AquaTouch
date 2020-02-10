@@ -21,7 +21,7 @@ AQT Settings and Preferences System
 - Optimise the Escape Key (buttons are now passive and don't check variables every 5 seconds)
 - New settings for toggling Notification Badges! (secretly compatible with GoldenChaos's Database!)
 
-This requires a more lengthy update process though, so the auto-update progress will be displayed in the AQT status display, or "welcome" display if you've been using AQT for a while.
+This requires a more lengthy update process though, so the auto-update progress will be displayed in the AQT status display, or "welcome" display if you've been using AQT for a while. **[REFINE SMOOTHNESS]**
 
 ----
 **Bug Fixes**
