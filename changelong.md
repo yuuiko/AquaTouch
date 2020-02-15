@@ -2,7 +2,7 @@
 
 ----
 **Compatibility**
-[⚠️ Not Complete - Waiting for BTT feature requests] Working to kick out iCalBuddy with BTT native widgets
+Decreasing reliance on iCalBuddy through BTT native widgets. The QuickStrip icon highlight still needs iCalBuddy to operate for now.
 
 ----
 **Improvements**
@@ -21,7 +21,7 @@ AQT Settings and Preferences System
 - Optimise the Escape Key (buttons are now passive and don't check variables every 5 seconds)
 - New settings for toggling Notification Badges! (secretly compatible with GoldenChaos's Database!)
 
-This requires a more lengthy update process though, so the auto-update progress will be displayed in the AQT status display, or "welcome" display if you've been using AQT for a while. **[REFINE SMOOTHNESS]**
+This requires a more lengthy update process though, so the auto-update progress will be displayed in the AQT status display, or "welcome" display if you've been using AQT for a while.
 
 ----
 **Bug Fixes**
