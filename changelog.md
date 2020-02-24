@@ -4,6 +4,8 @@
 **Compatibility**
 Decreasing reliance on iCalBuddy through BTT native widgets. The QuickStrip icon highlight still needs iCalBuddy to operate for now.
 
+[INCOMPLETE] Auto-Hide escape key on install for 16" macbooks.
+
 ----
 **Improvements**
 <br>
@@ -27,3 +29,4 @@ This requires a more lengthy update process though, so the auto-update progress 
 **Bug Fixes**
 - Notification Badges should now be aligned properly (again). 
 - "New Update" alerts should now be live again.
+- Fixed a bug that may cause the QuickPlay button to disappear.
