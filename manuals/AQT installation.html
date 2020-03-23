@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AQT Installation Manual</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<style>
+	body {
+		font-family: 'Raleway', sans-serif;
+		overflow-x: auto;
+		overflow-y: scroll;
+		/* height: calc(100vh - 50px); */
+		/* width:  calc(100vw - 50px); */
+		background-color: #FFFFFF
+	}
+
+	.buttonBig {
+		background-color: #4590FF;
+		border-radius: 30px;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #FFF;
+		display: inline-block;
+		position: sticky;
+		width: auto;
+		/*box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);*/
+	}
+	.buttonBig:active {
+		background-color: #3167B7;
+		/*box-shadow: 0 2.5px 5px 0 rgba(0,0,0,0.2);*/
+	}
+
+	#close {
+		background-color: #E06059;
+		border-radius: 30px;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #FFF;
+		display: inline-block;
+		position: sticky;
+		width: auto;
+		float: right;
+	}
+	#close:active {
+		background-color: #A64B45;
+	}
+
+	#destructive {
+		background-color: #E06059;
+		border-radius: 30px;
+		padding: 5px 10px;
+		text-decoration: none;
+		color: #FFF;
+		display: inline-block;
+		position: sticky;
+		width: auto;
+	}
+	#destructive:active {
+		background-color: #A64B45;
+	}
+
+	div {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+
+		background-color: rgba(255,255,255,0.95);
+		border-radius: 5px;
+		padding: 15px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		/*box-shadow: 0 15px 20px 0 rgba(0,0,0,0.2);*/
+	}
+
+	h2 {
+		display: inline;
+	}
+
+	p {
+		margin-top: 5px;
+	}
+	</style>
+</head>
+
+<body>
+	<div>
+		<!-- <a id="close" align="right" href="btt://trigger_named/?trigger_name=Action1&closeFloatingHTMLMenu=1"><strong>close</strong></a> -->
+		<h2>Let's get setup!</h2>
+
+		<!--
+		<h3> Step 1 </h3>
+		To use the Calendar and Reminders widgets, you need to install ‘iCalBuddy’, an extension which lets the system read Calendar and Reminders events. <br>
+		If you’ve already installed iCalBuddy previously, you don’t need to install it again.<br>
+		<br>
+		<a class="buttonBig" href="btt://trigger_named/?trigger_name=SETUP_showiCalBuddyDownload&closeFloatingHTMLMenu=0"><strong>Install iCalBuddy</strong></a><br>
+		<br>
+	-->
+
+	<h3> Step 1 </h3>
+	<p>To ensure you have the optimal setup, please set BTT’s [General Touch Bar Settings] as shown below. </p>
+	<br>
+	Or if you’d like, I can set them for you using the button below. <br>
+	This will change your current ‘General Touch Bar Settings’ so if you have personally set them up revise them first.<br>
+	BTT will restart if you press this button.<br><br>
+	<a id="destructive" href="btt://trigger_named/?trigger_name=SETUP_setBTTTouchbarSettings-Handler&closeFloatingHTMLMenu=1"><strong>Automatically Set BTT TouchBar Settings</strong></a><br>
+	<br>
+	<img style="width: 100%;" alt="Ensure you have an internet connection to load this image!" src="https://i.imgur.com/EFWl6hk.png" /><br>
+	<img style="width: 100%;" alt="Ensure you have an internet connection to load this image!" src="https://i.imgur.com/DcrQvwq.png" /><br>
+
+	<br>
+
+	<!--
+	<h3> Optional but Recommended</h3>
+	<p>To make the control strip of Aqua-Touch flow with the System Control Strip, It’s best to minimise your control strip to just the play button. <br>
+	<br>
+	<img style="width: 100%; margin-left: auto; margin-right: auto;" alt="Ensure you have an internet connection to load this image!" src="https://puu.sh/BrEn3/db8d46383b.png" /><br>
+	<br>
+	If you would like to have better, flowing experience with more space, Click the button below. Keep in mind that your current ‘Mini Control Strip’ setup will be replaced, though!<br>
+	<br>
+	<a id="destructive" href="btt://trigger_named/?trigger_name=SETUP_setSystemControlStrip&closeFloatingHTMLMenu=0"><strong>Minimise my Control Strip</strong></a><br>
+	<br>
+	Don’t worry, Aqua-Touch lets you control the Brightness, Volume and Keyboard Brightness using Gestures!<br>
+	Learn to control the Volume and Brightness in <a href="btt://trigger_named/?trigger_name=SETUP_showAQTHelp&closeFloatingHTMLMenu=1">Using AquaTouch</a>
+</p><br>
+<br>
+-->
+<br>
+
+<h3> Make sure your touchbar is set to "Show App Controls"</h3>
+<p>To make AquaTouch flow with the System TouchBar, It’s best to use the "Show App Controls" mode. <br>
+	Find this setting in "Keyboard" of System Preferences.<br>
+	<img style="width: 100%; margin-left: auto; margin-right: auto;" alt="Ensure you have an internet connection to load this image!" src="https://i.imgur.com/rlows3y.png" /><br>
+
+
+	<!-- <br>
+	You can also press this button to do it quickly.
+	<a id="destructive" href="btt://trigger_named/?trigger_name=SETUP_setSystemControlStrip&closeFloatingHTMLMenu=0"><strong>Minimise my Control Strip</strong></a><br> -->
+</p>
+<h3> Step 3 </h3>
+Now that you’re all set up, be sure to read the usage instructions to learn the meanings of icons in AQT, control the brightness and volume with gestures, use the control strip, and more! <br>
+<br>
+<a class="buttonBig" href="btt://trigger_named/?trigger_name=SETUP_showAQTHelp&closeFloatingHTMLMenu=1"><strong>View AquaTouch Usage Tips</strong></a><br>
+<br>
+<br>
+<br>
+
+</div>
+</body>
+</html>
