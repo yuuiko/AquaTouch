@@ -9,21 +9,21 @@
 **Improvements**
 <br>
 - Safari Add bookmark icon changed from chrome's icon to safari's native icon
+- Added "Offset Path" and "Artboard Tool" to Illustrator
+- Added "Details" and "Activity" buttons to GOogle Drive
+- New Web Widget close button design
 
 ----
 **New**
 <br>
 - Added Brackets App, including its own pastecells!
-- Working on AdobeXD
-- Added "Offset Path" and "Artboard Tool" to Illustrator
-- Added Details and Activity buttons to GOogle Drive
-- New Web Widget close button design
 - Added Twitch Web Widget
+- Added Adobe XD
 
 ----
 **Bug Fixes**
 <br>
-- Youtube and Soundcloud QuickPlay widgets hide properly. (no grey "1").
+- Youtube and Soundcloud QuickPlay widgets should now hide properly. (no grey "1").
 
 ------------------
 HOTFIX:
