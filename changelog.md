@@ -8,6 +8,7 @@
 ----
 **Improvements**
 <br>
+- Safari Add bookmark icon changed from chrome's icon to safari's native icon
 
 ----
 **New**
@@ -17,21 +18,18 @@
 - Added "Offset Path" and "Artboard Tool" to Illustrator
 - Added Details and Activity buttons to GOogle Drive
 - New Web Widget close button design
+- Added Twitch Web Widget
 
 ----
 **Bug Fixes**
 <br>
-- 
+- Youtube and Soundcloud QuickPlay widgets hide properly. (no grey "1").
 
 ------------------
 HOTFIX:
 - [ ] Check All CAG settings.  (autoclose errors) KEYNOTE
-- [x] Youtube and Soundcloud QuickPlay widgets hide properly. (no grey "1").
-- [ ] Check Notes [nothing in notes]
+- [ ] Add "Insert Date" to notes
 - [ ] Handle "NO DEFAULTS FOR USER" condition for youtube web widget tutorial.
-- [X] Safari bookmark icon from star to bookmark Plus
-
-- [ ] Add twitch. (ADD ICONS)
 
 AQT Next update:
 - [ ] Show dock in apps Setting
