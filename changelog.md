@@ -24,12 +24,12 @@
 **Bug Fixes**
 <br>
 - Youtube and Soundcloud QuickPlay widgets should now hide properly. (no grey "1").
+- Youtube Web Widget setup tutorial should now show properly for users who have never touched Safari Settings.
 
 ------------------
 HOTFIX:
 - [ ] Check All CAG settings.  (autoclose errors) KEYNOTE
 - [ ] Add "Insert Date" to notes
-- [ ] Handle "NO DEFAULTS FOR USER" condition for youtube web widget tutorial.
 
 AQT Next update:
 - [ ] Show dock in apps Setting
