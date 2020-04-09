@@ -12,11 +12,12 @@
 - Added "Offset Path" and "Artboard Tool" to Illustrator
 - Added "Details" and "Activity" buttons to GOogle Drive
 - New Web Widget close button design
+- Stability improvements to web widgets, especially in Chrome.
 
 ----
 **New**
 <br>
-- Added Brackets App, including its own pastecells!
+- Added new layout for "Brackets" code editor app, including its own pastecells!
 - Added Twitch Web Widget
 - Added Adobe XD
 
