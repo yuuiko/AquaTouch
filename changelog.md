@@ -3,7 +3,6 @@
 ----
 **Compatibility**
 
-[INCOMPLETE] Auto-Hide escape key on install for 16" macbooks.
 
 ----
 **Improvements**
@@ -28,10 +27,12 @@
 - Youtube Web Widget setup tutorial should now show properly for users who have never touched Safari Settings.
 
 ------------------
+**TODO:**
 HOTFIX:
 - [ ] Check All CAG settings.  (autoclose errors) KEYNOTE
+- [ ] Auto-Hide escape key on install for 16" macbooks.
 
-AQT Next update:
+**AQT Next update:**
 
 Bugfix
 - [ ] Fix Bluetooth Widgets
