@@ -30,15 +30,26 @@
 ------------------
 HOTFIX:
 - [ ] Check All CAG settings.  (autoclose errors) KEYNOTE
-- [ ] Add "Insert Date" to notes
 
 AQT Next update:
-- [ ] Show dock in apps Setting
-- [ ] Convert Notif Badges to Javascript
-- [ ] Calendar Highlighting to native BTT (request feature)
+
+Bugfix
 - [ ] Fix Bluetooth Widgets
 - [ ] Gamemode Temperature Widgets Fix
-- [ ] Offline Images for Manuals
-- [ ] Improved Manuals
+- [ ] Calendar Highlighting to native BTT (request feature)
+
+Settings
+- [ ] "Show dock in apps" Setting
 - [ ] Settings Tour for New Installs
+
+Optimisation
+- [ ] Convert Notif Badges to Javascript
+
+Install Experience
+- [ ] Improved Manuals and Install experience
+- [ ] Offline Images for Manuals
+
+New
+- [ ] Add "Insert Date" to notes
+
 
