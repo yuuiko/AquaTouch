@@ -11,6 +11,4 @@ No plans to support collaboration through git yet. Havne't got my head wrapped a
 
 ### React to [issues](https://github.com/yuuiko/AquaTouch/issues/) (with a thumbs up, etc.) to increase it's priority. 
 
-### View the [changelog](https://github.com/yuuiko/AquaTouch/blob/master/changelog.md) for the next version of AQT (as of now).
-
-Currently not actively working on AQT as I need to graduate soon. Sorry for delays!
+### View the [changelog](https://github.com/yuuiko/AquaTouch/blob/master/changelog.md) for completed progress on the next version of AQT.
