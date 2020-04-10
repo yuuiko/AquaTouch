@@ -12,6 +12,7 @@
 - Added "Details" and "Activity" buttons to GOogle Drive
 - New Web Widget close button design
 - Stability improvements to web widgets, especially in Chrome.
+- 16" MBP Escape Key: I went crazy on covering detection conditions, hopefully it autohides properly for new installs now.
 
 ----
 **New**
@@ -30,13 +31,11 @@
 ------------------
 **TODO:**
 HOTFIX:
-- [ ] Auto-Hide escape key on install for 16" macbooks.
+- [ ] Gamemode Temperature Widgets Fix
 
 **Later AQT update:**
-
 Bugfix
 - [ ] Fix Bluetooth Widgets
-- [ ] Gamemode Temperature Widgets Fix
 - [ ] Calendar Highlighting to native BTT (request feature)
 
 Settings
