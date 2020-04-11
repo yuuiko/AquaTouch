@@ -1,4 +1,4 @@
-**Changelog 3.5.7**
+**Changelog 3.5.8a**
 
 [details="Compatibility"]
 [quote]
@@ -7,31 +7,19 @@
 
 [details="Improvements"]
 [quote]
-<br>
-- Safari Add bookmark icon changed from chrome's icon to safari's native icon
-- Added "Offset Path" and "Artboard Tool" to Illustrator
-- Added "Details" and "Activity" buttons to GOogle Drive
-- New Web Widget close button design
-- Stability improvements to web widgets, especially in Chrome.
-- 16" MBP Escape Key: I went crazy on covering detection conditions, hopefully it autohides properly for new installs now.
+
 [/quote]
 [/details]
 
 [details="New Features"]
 [quote]
-<br>
-- Added new layout for "Brackets" code editor app, including its own pastecells!
-- Added Twitch Web Widget
-- Added Adobe XD
+
 [/quote]
 [/details]
 
 [details="Bug Fixes"]
 [quote]
-<br>
-- Youtube and Soundcloud QuickPlay widgets should now hide properly. (no grey "1").
-- Youtube Web Widget setup tutorial should now show properly for users who have never touched Safari Settings.
-- Stock touchbar and control strip uncontrolably showing up *should* now be resolved. Let me know as this one is tricky to keep tame.
+
 [/quote]
 [/details]
 
