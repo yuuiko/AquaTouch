@@ -25,10 +25,7 @@
 
 ------------------
 **TODO:**
-HOTFIX:
-- [ ] Gamemode Temperature Widgets Fix
 
-**Later AQT update:**
 Bugfix
 - [ ] Fix Bluetooth Widgets
 - [ ] Calendar Highlighting to native BTT (request feature)
@@ -47,4 +44,5 @@ Install Experience
 New
 - [ ] Add "Insert Date" to notes
 
-
+**Later Update:**
+- [ ] Visual Studio Code and other app requests
