@@ -44,6 +44,7 @@ Install Experience
 
 New
 - [ ] Add "Insert Date" to notes
+- [ ] Web Widget support for Opera, Chrome, Brave
 
 **Later Update:**
 - [ ] Visual Studio Code and other app requests
