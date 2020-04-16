@@ -30,6 +30,7 @@ Bugfix
 - [ ] Fix Bluetooth Widgets
 - [ ] Calendar Highlighting to native BTT (request feature)
 - [ ] Zoom Mic and video mute status in buttons
+- [ ] Add new btt Open touchbar with modifier CAG setting
 
 Settings
 - [ ] "Show dock in apps" Setting
