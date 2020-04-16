@@ -1,4 +1,4 @@
-**Changelog 3.5.8a**
+**Changelog 3.5.9a**
 
 [details="Compatibility"]
 [quote]
@@ -13,7 +13,7 @@
 
 [details="New Features"]
 [quote]
-
+- Added Sidecar Toggle
 [/quote]
 [/details]
 
@@ -29,6 +29,7 @@
 Bugfix
 - [ ] Fix Bluetooth Widgets
 - [ ] Calendar Highlighting to native BTT (request feature)
+- [ ] Zoom Mic and video mute status in buttons
 
 Settings
 - [ ] "Show dock in apps" Setting
