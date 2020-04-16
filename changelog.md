@@ -46,5 +46,7 @@ New
 - [ ] Add "Insert Date" to notes
 - [ ] Web Widget support for Opera, Chrome, Brave
 
+https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
+
 **Later Update:**
 - [ ] Visual Studio Code and other app requests
