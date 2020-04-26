@@ -1,27 +1,18 @@
 **Changelog 3.5.9a**
 
-[details="Compatibility"]
-[quote]
-[/quote]
-[/details]
+Compatibility
+-
 
-[details="Improvements"]
-[quote]
+Improvements
+-
 
-[/quote]
-[/details]
 
-[details="New Features"]
-[quote]
+New Features
+-
 - Added Sidecar Toggle
-[/quote]
-[/details]
 
-[details="Bug Fixes"]
-[quote]
-
-[/quote]
-[/details]
+Bug Fixes
+-
 
 ------------------
 **TODO:**
