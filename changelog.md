@@ -24,7 +24,7 @@ Bugfix
 - [ ] Add new btt Open touchbar with modifier CAG setting
 
 Settings
-- [ ] "Show dock in apps" Setting
+- [ ] "Show dock/app switcher/none in apps" Setting
 - [ ] Settings Tour for New Installs
 
 Optimisation
