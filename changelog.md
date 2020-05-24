@@ -14,6 +14,7 @@ New Features
 - Brackets (did i add this previously?)
 
 - New Back Button Design for QuickPlay widgets
+- Check post if adobe XD is listed as a supported app
 
 Bug Fixes
 -
