@@ -5,11 +5,15 @@ Compatibility
 
 Improvements
 -
-
+- Web Widget Bug Fixed: If chrome and safari were open at the same time, some web widgets would not show up.
 
 New Features
 -
 - Added Sidecar Toggle
+- Unity (WiP)
+- Brackets (did i add this previously?)
+
+- New Back Button Design for QuickPlay widgets
 
 Bug Fixes
 -
