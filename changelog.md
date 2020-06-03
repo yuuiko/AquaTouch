@@ -11,7 +11,7 @@ New Features
 -
 - Added Sidecar Toggle
 - Unity (WiP)
-- Brackets (did i add this previously?)
+- Brackets (did i note on this previously?)
 
 - New Back Button Design for QuickPlay widgets
 - Check post if adobe XD is listed as a supported app
@@ -51,12 +51,15 @@ https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
 - check QuickMusic re-opening music
 - optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
 - WiP Half-done Unity
-- WiP Half-done Ae
+- WiP Half-done Ae [add/view keyframes]
 - Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
 - ! redo ! instruction ! manuals !
 - More unified install experience?
 - Check fishtech's AQT review and do accordingly
 - Check forums for requests
+- document app-specific options (e.g. music)
+- elaborate that Brackets Needs Plugins Installed
+- Fix Music Love / Dislike buttons
 
 **Later Update:**
 - [ ] Visual Studio Code and other app requests
