@@ -26,7 +26,7 @@ Bugfix
 - [ ] Fix Bluetooth Widgets
 - [ ] Calendar Highlighting to native BTT (request feature)
 - [ ] Zoom Mic and video mute status in buttons
-- [ ] Add new btt Open touchbar with modifier CAG setting
+- [ ] Implement new btt app-specific "Open touchbar with modifier" CAG setting
 
 Settings
 - [ ] "Show dock/app switcher/none in apps" Setting
@@ -44,6 +44,19 @@ New
 - [ ] Web Widget support for Opera, Chrome, Brave
 
 https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
+
+
+** to do dump **
+- change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
+- check QuickMusic re-opening music
+- optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
+- WiP Half-done Unity
+- WiP Half-done Ae
+- Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
+- ! redo ! instruction ! manuals !
+- More unified install experience?
+- Check fishtech's AQT review and do accordingly
+- Check forums for requests
 
 **Later Update:**
 - [ ] Visual Studio Code and other app requests
