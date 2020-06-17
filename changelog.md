@@ -10,7 +10,7 @@ Improvements
 New Features
 -
 - Added Sidecar Toggle
-- Unity (WiP)
+- New Unity Layout
 - Brackets (did i note on this previously?)
 
 - New Back Button Design for QuickPlay widgets
@@ -44,8 +44,8 @@ IMPORTANT [ordered]
 - [ ] 🟣 Document app-specific options (e.g. music)
 - [ ] 🟣 Offline Images for Manuals
 
-- [ ] 🟠 WiP Half-done Unity
-- [ ] 🟠 WiP Half-done Ae [add/view keyframes]
+- [x] 🟠 WiP Half-done Unity
+- [x] 🟠 WiP Half-done Ae
 
 - [ ] 🔴 Fix Bluetooth Widgets
 - [ ] 🔴 Dead Netflix
@@ -59,7 +59,6 @@ IMPORTANT [ordered]
 - [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
 
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
-
 - [ ] 🟠 Optimise update scripts
 
 - [x] 🟠⚪️ Change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
@@ -79,6 +78,7 @@ EXTRAS [no order]
 - [ ] 🟥 Calendar Highlighting to native BTT (request feature)
 
 - [ ] 🟢 Add "Insert Date" to notes
+- [ ] 🟢 ADD / VIEW mode for Ae Keyframes
 - [ ] 🟢 Twitch and discord emote storage using pastecells
 - [ ] 🟢 Web Widget support for Opera, Chrome, Brave
 - [ ] 🟢 https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
