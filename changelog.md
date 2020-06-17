@@ -1,13 +1,14 @@
 **Changelog 3.5.9a**
 
-Compatibility
+**Compatibility**
 -
 
-Improvements
+**Improvements**
 -
-- Web Widget Bug Fixed: If chrome and safari were open at the same time, some web widgets would not show up.
+- Web Widget Bug Fixed: If chrome and safari were open at the same time, some web widgets would not show up
+- QuickStrip features that target specific apps should now be more stable and responsive (especially QuickApps)
 
-New Features
+**New Features**
 -
 - Added Sidecar Toggle
 - New Unity Layout
@@ -18,8 +19,10 @@ New Features
 
 - New pinned discord menu for muting / deafening while doing anything.
 
-Bug Fixes
+**Bug Fixes**
 -
+- Finished off the half-complete Ae UI
+- FInished off the half-complete Unity UI
 
 ------------------
 **TODO:**
@@ -42,7 +45,7 @@ Bug Fixes
 
 IMPORTANT [ordered]
 
-- [x] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting
+- [x] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting ✅Added to changelog
 - [X] 🔵 Check Touchbar Behaviour for each app. May have been reset
 
 ----
@@ -54,8 +57,8 @@ IMPORTANT [ordered]
 
 ----
 
-- [x] 🟠 WiP Half-done Unity
-- [x] 🟠 WiP Half-done Ae
+- [x] 🟠 WiP Half-done Unity ✅Added to changelog
+- [x] 🟠 WiP Half-done Ae ✅Added to changelog
 
 ----
 
