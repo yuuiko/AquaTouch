@@ -34,7 +34,7 @@ Bug Fixes
 
 IMPORTANT [ordered]
 
-- [ ] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting
+- [x] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting
 - [ ] 🔵 Check Touchbar Behaviour for each app. May have been reset
 
 
