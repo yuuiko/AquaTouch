@@ -16,6 +16,8 @@ New Features
 - New Back Button Design for QuickPlay widgets
 - Check post if adobe XD is listed as a supported app
 
+- New pinned discord menu for muting / deafening while doing anything.
+
 Bug Fixes
 -
 
@@ -28,18 +30,14 @@ Bug Fixes
 > 🟢 - Requested / Wanted Feature
 > 🔵 - COnfiguration Check
 > 🟣 - Manuals Documentation Experience
-> ⚪️ - Checking
+> ⚪️ - Check this
 > 
 > 🟥 - Needs BTT support
 
 IMPORTANT [ordered]
 
 - [x] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting
-- [ ] 🔵 Check Touchbar Behaviour for each app. May have been reset
-
-
-- [ ] 🟠 Change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
-- [ ] 🔴 Check QuickMusic re-opening music
+- [X] 🔵 Check Touchbar Behaviour for each app. May have been reset
 
 - [ ] 🟡 Convert Notif Badges to Javascript
 - [ ] 🟣 Improve Manuals and Optimise Install experience
@@ -50,18 +48,25 @@ IMPORTANT [ordered]
 - [ ] 🟠 WiP Half-done Ae [add/view keyframes]
 
 - [ ] 🔴 Fix Bluetooth Widgets
+- [ ] 🔴 Dead Netflix
 
 - [ ] ⚪️ Check forums for requests
 - [ ] ⚪️ Check fishtech's AQT review and do accordingly
 
 - [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
 - [ ] 🔴 Fix Music Love / Dislike buttons
+- [ ] 🔴 Add official messenger client notif badge to settings
 - [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
 
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
 
 - [ ] 🟠 Optimise update scripts
+
+- [x] 🟠⚪️ Change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
+- [x] 🔴⚪️ Check QuickMusic re-opening music
+
 - [ ] 🔵 Check Internal Version Variables and test update script
+- [ ] 🔵 Check Touchbar Behaviour for each app. May have been reset AGAIN
 
 
 
@@ -74,6 +79,7 @@ EXTRAS [no order]
 - [ ] 🟥 Calendar Highlighting to native BTT (request feature)
 
 - [ ] 🟢 Add "Insert Date" to notes
+- [ ] 🟢 Twitch and discord emote storage using pastecells
 - [ ] 🟢 Web Widget support for Opera, Chrome, Brave
 - [ ] 🟢 https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
 
