@@ -25,11 +25,17 @@ Bug Fixes
 **TODO:**
 
 > 🔴 - Dead Feature
+> 
 > 🟠 - Stabilisation
+> 
 > 🟡 - Optimisation
+> 
 > 🟢 - Requested / Wanted Feature
+> 
 > 🔵 - COnfiguration Check
+> 
 > 🟣 - Manuals Documentation Experience
+> 
 > ⚪️ - Check this
 > 
 > 🟥 - Needs BTT support
@@ -39,30 +45,38 @@ IMPORTANT [ordered]
 - [x] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting
 - [X] 🔵 Check Touchbar Behaviour for each app. May have been reset
 
+
 - [ ] 🟡 Convert Notif Badges to Javascript
 - [ ] 🟣 Improve Manuals and Optimise Install experience
 - [ ] 🟣 Document app-specific options (e.g. music)
 - [ ] 🟣 Offline Images for Manuals
 
+
 - [x] 🟠 WiP Half-done Unity
 - [x] 🟠 WiP Half-done Ae
+
 
 - [ ] 🔴 Fix Bluetooth Widgets
 - [ ] 🔴 Dead Netflix
 
+
 - [ ] ⚪️ Check forums for requests
 - [ ] ⚪️ Check fishtech's AQT review and do accordingly
+
 
 - [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
 - [ ] 🔴 Fix Music Love / Dislike buttons
 - [ ] 🔴 Add official messenger client notif badge to settings
 - [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
 
+
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
 - [ ] 🟠 Optimise update scripts
 
+
 - [x] 🟠⚪️ Change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
 - [x] 🔴⚪️ Check QuickMusic re-opening music
+
 
 - [ ] 🔵 Check Internal Version Variables and test update script
 - [ ] 🔵 Check Touchbar Behaviour for each app. May have been reset AGAIN
