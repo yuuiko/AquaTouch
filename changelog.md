@@ -22,44 +22,62 @@ Bug Fixes
 ------------------
 **TODO:**
 
-Bugfix
-- [ ] Fix Bluetooth Widgets
-- [ ] Calendar Highlighting to native BTT (request feature)
-- [ ] Zoom Mic and video mute status in buttons
-- [ ] Implement new btt app-specific "Open touchbar with modifier" CAG setting
+> 🔴 - Dead Feature
+> 🟠 - Stabilisation
+> 🟡 - Optimisation
+> 🟢 - Requested / Wanted Feature
+> 🔵 - COnfiguration Check
+> 🟣 - Manuals Documentation Experience
+> ⚪️ - Checking
+> 
+> 🟥 - Needs BTT support
 
-Settings
-- [ ] "Show dock/app switcher/none in apps" Setting
-- [ ] Settings Tour for New Installs
+IMPORTANT [ordered]
 
-Optimisation
-- [ ] Convert Notif Badges to Javascript
-
-Install Experience
-- [ ] Improved Manuals and Install experience
-- [ ] Offline Images for Manuals
-
-New
-- [ ] Add "Insert Date" to notes
-- [ ] Web Widget support for Opera, Chrome, Brave
-
-https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
+- [ ] 🔵 Implement new btt app-specific "Open touchbar with modifier" CAG setting
+- [ ] 🔵 Check Touchbar Behaviour for each app. May have been reset
 
 
-** to do dump **
-- change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
-- check QuickMusic re-opening music
-- optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
-- WiP Half-done Unity
-- WiP Half-done Ae [add/view keyframes]
-- Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
-- ! redo ! instruction ! manuals !
-- More unified install experience?
-- Check fishtech's AQT review and do accordingly
-- Check forums for requests
-- document app-specific options (e.g. music)
-- elaborate that Brackets Needs Plugins Installed
-- Fix Music Love / Dislike buttons
+- [ ] 🟠 Change app commands (notification badges, quickapps) to "send keyboard shortcut to app"
+- [ ] 🔴 Check QuickMusic re-opening music
 
-**Later Update:**
-- [ ] Visual Studio Code and other app requests
+- [ ] 🟡 Convert Notif Badges to Javascript
+- [ ] 🟣 Improve Manuals and Optimise Install experience
+- [ ] 🟣 Document app-specific options (e.g. music)
+- [ ] 🟣 Offline Images for Manuals
+
+- [ ] 🟠 WiP Half-done Unity
+- [ ] 🟠 WiP Half-done Ae [add/view keyframes]
+
+- [ ] 🔴 Fix Bluetooth Widgets
+
+- [ ] ⚪️ Check forums for requests
+- [ ] ⚪️ Check fishtech's AQT review and do accordingly
+
+- [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
+- [ ] 🔴 Fix Music Love / Dislike buttons
+- [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
+
+- [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
+
+- [ ] 🟠 Optimise update scripts
+- [ ] 🔵 Check Internal Version Variables and test update script
+
+
+
+EXTRAS [no order]
+
+- [ ] 🟢 Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
+- [ ] 🟢 "Show dock/app switcher/none in apps" Setting
+- [ ] 🟣 Settings Tour for New Installs
+
+- [ ] 🟥 Calendar Highlighting to native BTT (request feature)
+
+- [ ] 🟢 Add "Insert Date" to notes
+- [ ] 🟢 Web Widget support for Opera, Chrome, Brave
+- [ ] 🟢 https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
+
+- [ ] 🟢 Visual Studio Code and other app requests
+
+
+
