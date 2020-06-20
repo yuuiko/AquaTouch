@@ -81,6 +81,8 @@ IMPORTANT [ordered]
 
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
 - [ ] 🟠 Optimise update scripts
+- [ ] 🟡 Convert 1Keyboard Hide/Show rules to CAG.
+
 
 ----
 
