@@ -52,7 +52,7 @@ IMPORTANT [ordered]
 
 - [ ] 🟡 Convert Notif Badges to Javascript
       - Additionally convert simple toggle siwtches to JS?
-- [ ] 🟡 Convert App-Open Checking using BTT method instead of applescript
+- [ ] 🟡 Convert App-Open Checking using BTT method instead of applescript [Widget only]
       - Music
       - Music Widget
       - Spotify
@@ -100,7 +100,22 @@ IMPORTANT [ordered]
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
 - [ ] 🟠 Optimise update scripts
 - [ ] 🟡 Convert 1Keyboard Hide/Show rules to CAG.
-
+- [ ] 🟡 Convert App-Open Checking using BTT method [Actions]
+      - Music
+      - Music Widget
+      - Spotify
+      - Spotify Widget
+      - Youtube
+      - Youtube Widget
+      - Web widgets
+      - iTunes
+      - Stickies
+      - Script Editor
+      - Atom
+      - Brackets
+      - Photo Booth
+      - Quick Controls
+      - Quick Play
 
 ----
 
