@@ -51,7 +51,23 @@ IMPORTANT [ordered]
 ----
 
 - [ ] 🟡 Convert Notif Badges to Javascript
+      - Additionally convert simple toggle siwtches to JS?
 - [ ] 🟡 Convert App-Open Checking using BTT method instead of applescript
+      - Music
+      - Music Widget
+      - Spotify
+      - Spotify Widget
+      - Youtube
+      - Youtube Widget
+      - Web widgets
+      - iTunes
+      - Stickies
+      - Script Editor
+      - Atom
+      - Brackets
+      - Photo Booth
+      - Quick Controls
+      - Quick Play
 - [ ] 🟣 Improve Manuals and Optimise Install experience
 - [ ] 🟣 Document app-specific options (e.g. music)
 - [ ] 🟣 Offline Images for Manuals
