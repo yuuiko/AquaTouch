@@ -17,7 +17,7 @@
 - New Back Button Design for QuickPlay widgets
 - Check post if adobe XD is listed as a supported app
 
-- New pinned discord menu for muting / deafening while doing anything.
+- New pinned discord menu for muting / deafening from anywhere.
 
 **Bug Fixes**
 -
@@ -51,6 +51,23 @@ IMPORTANT [ordered]
 ----
 
 - [ ] 🟡 Convert Notif Badges to Javascript
+      - Additionally convert simple toggle siwtches to JS?
+- [ ] 🟡 Convert App-Open Checking using BTT method instead of applescript
+      - Music
+      - Music Widget
+      - Spotify
+      - Spotify Widget
+      - Youtube
+      - Youtube Widget
+      - Web widgets
+      - iTunes
+      - Stickies
+      - Script Editor
+      - Atom
+      - Brackets
+      - Photo Booth
+      - Quick Controls
+      - Quick Play
 - [ ] 🟣 Improve Manuals and Optimise Install experience
 - [ ] 🟣 Document app-specific options (e.g. music)
 - [ ] 🟣 Offline Images for Manuals
@@ -63,7 +80,7 @@ IMPORTANT [ordered]
 ----
 
 - [ ] 🔴 Fix Bluetooth Widgets
-- [ ] 🔴 Dead Netflix
+- [x] 🔴 Dead Netflix
 
 ----
 
@@ -76,6 +93,7 @@ IMPORTANT [ordered]
 - [ ] 🔴 Fix Music Love / Dislike buttons
 - [ ] 🔴 Add official messenger client notif badge to settings
 - [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
+- [ ] 🟠 Pinned discord doesn't show on gamemode I think. Seperate pinned widgets to another CAG?
 
 ----
 
@@ -100,6 +118,7 @@ IMPORTANT [ordered]
 **EXTRAS** [no order]
 
 - [ ] 🟢 Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
+- [ ] 🟢 Setting to Reqire Calendar Service to user prefferred. Could be done using Update_Widget?
 - [ ] 🟢 "Show dock/app switcher/none in apps" Setting
 - [ ] 🟣 Settings Tour for New Installs
 
