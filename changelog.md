@@ -50,8 +50,8 @@ IMPORTANT [ordered]
 
 ----
 
-- [ ] 🟡 Convert Notif Badges to Javascript
-      - Additionally convert simple toggle siwtches to JS?
+- [x] 🟡 Convert Notif Badges to Javascript
+      - [ ] Additionally convert simple toggle siwtches to JS?
 - [ ] 🟡 Convert App-Open Checking using BTT method instead of applescript [Widget only]
       - Music ✅
       - Music Widget
