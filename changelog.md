@@ -53,7 +53,7 @@ IMPORTANT [ordered]
 - [ ] 🟡 Convert Notif Badges to Javascript
       - Additionally convert simple toggle siwtches to JS?
 - [ ] 🟡 Convert App-Open Checking using BTT method instead of applescript [Widget only]
-      - Music
+      - Music ✅
       - Music Widget
       - Spotify
       - Spotify Widget
@@ -101,7 +101,7 @@ IMPORTANT [ordered]
 - [ ] 🟠 Optimise update scripts
 - [ ] 🟡 Convert 1Keyboard Hide/Show rules to CAG.
 - [ ] 🟡 Convert App-Open Checking using BTT method [Actions]
-      - Music
+      - Music 
       - Music Widget
       - Spotify
       - Spotify Widget
