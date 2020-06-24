@@ -1,0 +1,3 @@
+--DEVICE LISTuse framework "IOBluetooth"use scripting additionsset deviceList to current application's IOBluetoothDevice's pairedDevices()log deviceListset devNames to (deviceList's valueForKey:"name") as listlog devNameschoose from list devNames with title "Setup AirPods Widget" OK button name "Set" cancel button name "Cancel" with prompt "Please select your AirPods to connect.
+" default items "CiPX" without multiple selections allowed and empty selection allowedif the result is not false then	set SelectedDeviceName to item 1 of the result	return SelectedDeviceNameend if(*repeat with i from 1 to count devNames	log item i of devNamesend repeat
+*)
