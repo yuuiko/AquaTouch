@@ -81,7 +81,7 @@ on connectAirPods() --Connect AirPods Function
 				tell application "BetterTouchTool" to display dialog "AirPods Widget could not find your AirPods \"" & LclAirPodsName & "\".
 
 - Make sure they are paired, then try again
-- Make sure to enable the bluetooth menubar item
+- Enable the bluetooth menubar item
 - Reset the AirPods widget and check device name..." with title "AirPods Widget" with icon note buttons {"Reset Widget", "OK"} default button "OK"
 				
 				if the button returned of the result is "Reset Widget" then
