@@ -32,12 +32,18 @@
 - Finished off the half-complete Ae UI
 - FInished off the half-complete Unity UI
 - Netflix widget now works
+- Broken AirPods, Beats and Gamepad upgraded to new bluetooth widgets
+- Some lost back buttons inside web widgets have been found.
 
 **Changes**
 -
-- Notification badges for caprine, Goofy and [some other messenger client] has been removed in favour of the official messenger client for MacOS.
+- Notification badges for Caprine, Chatty and Goofy have been removed in favour of the official messenger client for MacOS.
 - With the introduction of the new connectivity view, QuickStrop hold actions have changed. Holding calendar now toggles Do not Disturb, while holding the switches instantly opens the bluetooth widgets. To access notification centre quickly, see trackpad system preferences and use the trackpad gesture. To access Siri quickly, see Siri in system preferences to use the "hold command-space" gesture.
-- New Settings UI with more settings
+
+**Design Changes**
+- New Settings UI design with more settings
+- QuickPlay has a right-aligned media controls for less hand shifting.
+- QUickPlay widgets have a new back button design that reduce hand shifting
 
 
 ------------------
@@ -67,7 +73,7 @@ IMPORTANT [ordered]
 ----
 
 - [x] 🟡 Convert Notif Badges to Javascript ✅Added to changelog
-      - [ ] Additionally convert simple toggle siwtches to JS?
+      - [ ] Additionally convert simple toggle switches to JS? ✅Added to changelog
 - [x] 🟡 Convert App-Open Checking using BTT method instead of applescript [Widget only] ✅Added to changelog
       - ✅Music
       - ✅Music Widget
@@ -79,9 +85,6 @@ IMPORTANT [ordered]
       - ✅Brackets
       - ✅Quick Controls
       - ✅Quick Play
-- [ ] 🟣 Improve Manuals and Optimise Install experience
-- [ ] 🟣 Document app-specific options (e.g. music)
-- [ ] 🟣 Offline Images for Manuals0
 
 ----
 
@@ -90,43 +93,22 @@ IMPORTANT [ordered]
 
 ----
 
-- [ ] [BETA TESTING] 🔴 Fix Bluetooth Widgets
-- [x] 🔴 Dead Netflix
+- [x] 🔴 Dead Netflix ✅Added to changelog
+- [ ] [BETA TESTING] 🔴 Fix Bluetooth Widgets ✅Added to changelog
 
 ----
 
-- [ ] ⚪️ Check forums for requests
-- [ ] ⚪️ Check fishtech's AQT review and do accordingly
-
-----
-
-- [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
 - [ ] 🔴 Fix Music Love / Dislike buttons
 - [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
 - [ ] 🟠 Web Widget Bubbles keep trying to show up in Safari Soundcloud if one is open in Google Chrome. Check which one is frontmost.
-- [x] 🔴 Web Widget Back buttons fixed
-- [x] 🔴 Add official messenger client notif badge to settings
+- [x] 🔴 Web Widget Back buttons fixed ✅Added to changelog
+- [x] 🔴 Add official messenger client notif badge to settings ✅Added to changelog
 - [x] 🟠 Pinned discord doesn't show on gamemode I think. Seperate pinned widgets to another CAG?
 
 ----
 
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
 - [ ] 🟠 Optimise update scripts
-- [ ] 🟡 Convert App-Open Checking using BTT method [Actions]
-      - Music 
-      - Music Widget
-      - Spotify
-      - Spotify Widget
-      - Youtube
-      - Youtube Widget
-      - Web widgets
-      - Stickies
-      - Script Editor
-      - Atom
-      - Brackets
-      - Photo Booth
-      - Quick Controls
-      - Quick Play
 - [x] 🟡 Move 1Keyboard to CAG.
 
 
@@ -136,6 +118,16 @@ IMPORTANT [ordered]
 - [x] 🔴⚪️ Check QuickMusic re-opening music
 
 ----
+
+- [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
+- [ ] 🟣 Improve Manuals and Optimise Install experience
+- [ ] 🟣 Document app-specific options (e.g. music)
+- [ ] 🟣 Offline Images for Manuals0
+
+----
+
+- [ ] ⚪️ Check forums for requests
+- [ ] ⚪️ Check fishtech's AQT review and do accordingly
 
 - [ ] 🔵 Check Internal Version Variables and test update script
 - [ ] 🔵 Check TouchBar Behaviour for each app. May have been reset AGAIN
@@ -159,6 +151,22 @@ IMPORTANT [ordered]
 - [ ] 🟢 https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
 
 - [ ] 🟢 Visual Studio Code and other app requests
+
+- [ ] 🟡 Convert App-Open Checking using BTT method [Actions]
+      - Music 
+      - Music Widget
+      - Spotify
+      - Spotify Widget
+      - Youtube
+      - Youtube Widget
+      - Web widgets
+      - Stickies
+      - Script Editor
+      - Atom
+      - Brackets
+      - Photo Booth
+      - Quick Controls
+      - Quick Play
 
 
 
