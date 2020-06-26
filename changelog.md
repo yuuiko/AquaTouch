@@ -100,7 +100,8 @@ IMPORTANT [ordered]
 
 - [ ] 🔴 Fix Music Love / Dislike buttons
 - [ ] 🟠 Instant switch between web widgets when switching to another web widget supported site.
-- [ ] 🟠 Web Widget Bubbles keep trying to show up in Safari Soundcloud if one is open in Google Chrome. Check which one is frontmost.
+- [ ] 🟠 FIX ALL WEB WIDGET AUTO-CLOSE TO NEW VERSION
+- [ ] 🟠 Pin all emoji widgets to lefts
 - [x] 🔴 Web Widget Back buttons fixed ✅Added to changelog
 - [x] 🔴 Add official messenger client notif badge to settings ✅Added to changelog
 - [x] 🟠 Pinned discord doesn't show on gamemode I think. Seperate pinned widgets to another CAG?
@@ -151,6 +152,7 @@ IMPORTANT [ordered]
 - [ ] 🟢 https://community.folivora.ai/t/a-few-issues-with-v3-5-8/15095
 
 - [ ] 🟢 Visual Studio Code and other app requests
+- [ ] 🟢 Language Switcher
 
 - [ ] 🟡 Convert App-Open Checking using BTT method [Actions]
       - Music 
