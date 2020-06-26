@@ -7,9 +7,10 @@
 -
 - Web Widget Bug Fixed: If chrome and safari were open at the same time, some web widgets would not show up
 - QuickStrip features that target specific apps should now be more stable and responsive (especially QuickApps)
+- Calendar button in QuickSchedules now shows all day events
 
-- All Notification Badges now run on javascript with much more efficiency
-- All App-Checks use the BTT method instead of AppleScript to increase efficiency
+- All Notification Badges and some simple widgets now run on javascript instead of AppleScript for much more power efficiency.
+- All App-Checks use the BTT method instead of AppleScript to increase efficiency.
 
 **New Features**
 -
@@ -24,11 +25,20 @@
 
 - New pinned discord menu for muting / deafening from anywhere.
 
+- New Bluetooth Widgets - Assign any bluetooth device to it and quickly connect. If supported (e.g. airpods, apple mice and keyboard, beats), it will show its battery status too.
+
 **Bug Fixes**
 -
 - Finished off the half-complete Ae UI
 - FInished off the half-complete Unity UI
 - Netflix widget now works
+
+**Changes**
+-
+- Notification badges for caprine, Goofy and [some other messenger client] has been removed in favour of the official messenger client for MacOS.
+- With the introduction of the new connectivity view, QuickStrop hold actions have changed. Holding calendar now toggles Do not Disturb, while holding the switches instantly opens the bluetooth widgets. To access notification centre quickly, see trackpad system preferences and use the trackpad gesture. To access Siri quickly, see Siri in system preferences to use the "hold command-space" gesture.
+- New Settings UI with more settings
+
 
 ------------------
 **TODO:**
@@ -80,7 +90,7 @@ IMPORTANT [ordered]
 
 ----
 
-- [ ] 🔴 Fix Bluetooth Widgets
+- [ ] [BETA TESTING] 🔴 Fix Bluetooth Widgets
 - [x] 🔴 Dead Netflix
 
 ----
