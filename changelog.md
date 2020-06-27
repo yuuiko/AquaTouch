@@ -2,8 +2,7 @@
 
 **Compatibility**
 -
-
-
+s
 **Stability Improvements**
 -
 - QuickStrip features that target specific apps should now target the right app more stably and responsively (especially QuickApps)
@@ -31,25 +30,24 @@
 - New Youtube Safari Volume Control
 - New discord layout with a mini pinned discord menu for muting / deafening from anywhere.
 
-
 **Bug Fixes**
 -
 - Finished off the half-complete Ae UI
-- FInished off the half-complete Unity UI
+- Finished off the half-complete Unity UI
 - Netflix widget now works
 - Broken AirPods, Beats and Gamepad upgraded to new bluetooth widgets
+- Fixed Emoji widgets getting cut off when you have multiple notification badges
+- Reset app-opening settings.
 
 **Web Widgets**
 - Some lost back buttons inside web widgets have been found.
 - Web Widget Auto-Close and back button bugs should be fixed especially on chrome
 - Web Widget Bug Fixed: If chrome and safari were open at the same time, some web widgets would not show up or be really glitchy
 
-
 **Changes**
 -
 - Notification badges for Caprine, Chatty and Goofy have been removed in favour of the official messenger client for MacOS.
 - With the introduction of the new connectivity view, QuickStrop hold actions have changed. Holding calendar now toggles Do not Disturb, while holding the switches instantly opens the bluetooth widgets. To access notification centre quickly, see trackpad system preferences and use the trackpad gesture. To access Siri quickly, see Siri in system preferences to use the "hold command-space" gesture.
-
 
 **Design Changes**
 - New Settings UI design with more settings
@@ -68,7 +66,7 @@
 > 
 > 🟢 - Requested / Wanted Feature
 > 
-> 🔵 - COnfiguration Check
+> 🔵 - Configuration Check
 > 
 > 🟣 - Manuals Documentation Experience
 > 
@@ -79,12 +77,12 @@
 IMPORTANT [ordered]
 
 - [x] 🔵✅ Implement new btt app-specific "Open touchbar with modifier" CAG setting 
-- [X] 🔵   Check Touchbar Behaviour for each app. May have been reset
+- [x] 🔵✅ Check Touchbar Behaviour for each app. May have been reset
 
 ----
 
 - [x] 🟡✅ Convert Notif Badges to Javascript
-- [ ] 🟡   Additionally convert simple toggle switches to JS? 
+- [x] 🟡   Additionally convert simple toggle switches to JS? [mostly done]
 - [x] 🟡✅ Convert App-Open Checking using BTT method instead of applescript [Widget only] 
       - ✅ Music
       - ✅ Music Widget
@@ -105,23 +103,23 @@ IMPORTANT [ordered]
 ----
 
 - [x] 🔴✅ Dead Netflix 
-- [ ] 🔴✅[BETA] Fix Bluetooth Widgets 
+- [x] 🔴✅ [BETA] Fix Bluetooth Widgets 
 
 ----
 
-- [ ] 🔴   Fix Music Love / Dislike buttons
+- [ ] 🔴   Fix Music Love / Dislike buttons??
 - [ ] 🟠   Instant switch between web widgets when switching to another web widget supported site.
 - [x] 🟠✅ FIX ALL WEB WIDGET AUTO-CLOSE TO NEW VERSION
 - [x] 🔴✅ Web Widget Back buttons fixed 
-- [ ] 🟠   Pin all emoji widgets to lefts
+- [x] 🟠✅ Pin all emoji widgets to lefts
 - [x] 🔴✅ Add official messenger client notif badge to settings 
 - [x] 🟠✅ Pinned discord doesn't show on gamemode I think. Seperate pinned widgets to another CAG?
 
 ----
 
 - [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
-- [ ] 🟠 Optimise update scripts
-- [ ] 🟡 Web Widgets feel pretty slow.
+- [ ] 🟠 optimise update scripts
+- [ ] 🟡 Web Widgets lag out safari. Check if it does to chrome too.
 - [x] 🟡 Move 1Keyboard to CAG.
 
 
@@ -133,9 +131,9 @@ IMPORTANT [ordered]
 ----
 
 - [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
-- [ ] 🟣 Improve Manuals and Optimise Install experience
-- [ ] 🟣 Document app-specific options (e.g. music)
-- [ ] 🟣 Offline Images for Manuals0
+- [-] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
+- [x] 🟣 Document app-specific options (e.g. music) [can now see in settings]
+- [x] 🟣 Offline Images for Manuals
 
 ----
 
@@ -154,6 +152,7 @@ IMPORTANT [ordered]
 - [ ] 🟢 Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
 - [ ] 🟢 Setting to change Calendar Service to user preferred service. Could be done using Update_Widget?
 - [ ] 🟢 "Show dock/app switcher/none in apps" Setting
+- [ ] 🟢 Gamemode widgets in QuickControls
 - [ ] 🟣 Settings Tour for New Installs
 
 - [ ] 🟥 Calendar Highlighting to native BTT (request feature)
