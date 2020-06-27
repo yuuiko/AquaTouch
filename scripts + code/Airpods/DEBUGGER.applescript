@@ -6,7 +6,6 @@ set mode to 2
 
 
 tell application "BetterTouchTool"
-	
 	set AirPodsName to get_string_variable "AirPodsWg_DevceName"
 	set widget2 to get_string_variable "BluetoothWg_2_Device"
 	set widget3 to get_string_variable "BluetoothWg_3_Device"
@@ -36,5 +35,4 @@ tell application "BetterTouchTool"
 		log "BT WG3: " & widget3
 		log "BT WG4: " & widget4
 	end if
-	
 end tell
