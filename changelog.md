@@ -3,19 +3,20 @@
 **Compatibility**
 -
 s
-**Stability Improvements**
+**Stability Overhaul**
 -
-- QuickStrip features that target specific apps should now target the right app more stably and responsively (especially QuickApps)
-- Calendar button in QuickSchedules now shows all day events
-
 - All Notification Badges and some simple widgets now run on javascript instead of AppleScript for much more power efficiency.
 - All App-Checks use a new BTT method instead of AppleScript to increase power efficiency.
+
+- Web widgets will now remember if you have them open, so they won't close on you if you switch tabs, or even switch to other apps and come back. They should also be more efficient and a little bit faster, as they now use Conditional Activation Groups with a much reduced number of applescript-based handlers.
 
 
 **New Features**
 -
 
 **Core AQT**
+- QuickStrip features that target specific apps should now target the right app more stably and responsively (especially QuickApps)
+- Calendar button in QuickSchedules now shows all day events
 - Added Sidecar Toggle
 - New Clipboard Widget
 - New Back Button Design for QuickPlay widgets
@@ -108,7 +109,7 @@ IMPORTANT [ordered]
 ----
 
 - [ ] 🔴   Fix Music Love / Dislike buttons??
-- [ ] 🟠   Instant switch between web widgets when switching to another web widget supported site.
+- [x] 🟠   Instant switch between web widgets when switching to another web widget supported site.
 - [x] 🟠✅ FIX ALL WEB WIDGET AUTO-CLOSE TO NEW VERSION
 - [x] 🔴✅ Web Widget Back buttons fixed 
 - [x] 🟠✅ Pin all emoji widgets to lefts
