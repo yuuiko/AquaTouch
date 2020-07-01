@@ -1,59 +1,71 @@
 **Changelog 3.5.9a**
 
-**Compatibility**
--
-s
-**Stability Overhaul**
+**Optimisation**
 -
 - All Notification Badges and some simple widgets now run on javascript instead of AppleScript for much more power efficiency.
 - All App-Checks use a new BTT method instead of AppleScript to increase power efficiency.
+- Some scripts are now nested in conditional activation groups, so they won't run unless they need to.
 
-- Web widgets will now remember if you have them open, so they won't close on you if you switch tabs, or even switch to other apps and come back. They should also be more efficient and a little bit faster, as they now use Conditional Activation Groups with a much reduced number of applescript-based handlers.
 
-
-**New Features**
+**Web Widgets**
 -
+Web Widgets have undergone a stability overhaul and have been completely rewritten. 
+
+- They now remember if you've had them open and won't reset on you, even if you switch to other tabs or apps,
+- Supports chrome more stably, and it
+- Doesn't get confused when you have both chrome and safari open at the same time.
+- In addition, various other bugs with them have been fixed, such as disappearing back buttons and some buttons getting cut off.
+
 
 **Core AQT**
 - QuickStrip features that target specific apps should now target the right app more stably and responsively (especially QuickApps)
-- Calendar button in QuickSchedules now shows all day events
-- Added Sidecar Toggle
-- New Clipboard Widget
-- New Back Button Design for QuickPlay widgets
-- New Bluetooth Widgets - Assign any bluetooth device to it and quickly connect. If supported (e.g. airpods, apple mice and keyboard, beats), it will show its battery status too.
 
-**New Apps**
+- QuickMedia - Right-Aligned media controls are more ergonomic
+- QuickMedia - New Back Button Design for QuickPlay widgets
+
+- QuickSchedules - Calendar button in QuickSchedules can now show all day events.
+
+- QuickControls - Added Sidecar Toggle
+- QuickControls - New Bluetooth Widgets - Assign any bluetooth device to it and quickly connect. If supported (e.g. airpods, apple mice and keyboard, beats), it will show its battery status too.
+
+- QuickApps - New Clipboard Widget
+- QuickApps - More scrolling space for app shortcuts
+
+- Manuals have been proofread and re-written where needed. They also use images stored within the preset instead of externally online now!
+
+
+**New App Support**
+-
 - New Unity Layout
+- New Discord design with a new pinnable mini menu for muting / deafening from anywhere, and server jump buttons
+- New Volume Control for Safari Youtube and it's web widget
+
 - Brackets (did i note on this previously?)
 - Check post if adobe XD is listed as a supported app
+- Fixed up a few things in AfterEffects
 
-**New App Features**
-- New Youtube Safari Volume Control
-- New discord layout with a mini pinned discord menu for muting / deafening from anywhere.
 
 **Bug Fixes**
 -
-- Finished off the half-complete Ae UI
-- Finished off the half-complete Unity UI
-- Netflix widget now works
-- Broken AirPods, Beats and Gamepad upgraded to new bluetooth widgets
-- Fixed Emoji widgets getting cut off when you have multiple notification badges
-- Reset app-opening settings.
+- Netflix widget now actually works (i finally have access to it).
+- Fixed Emoji widgets getting cut off on the left side when you have multiple notification badges showing.
+- Fix Touch Bar unexpectedly closing or showing control strip for certain apps.
 
-**Web Widgets**
-- Some lost back buttons inside web widgets have been found.
-- Web Widget Auto-Close and back button bugs should be fixed especially on chrome
-- Web Widget Bug Fixed: If chrome and safari were open at the same time, some web widgets would not show up or be really glitchy
-
-**Changes**
--
-- Notification badges for Caprine, Chatty and Goofy have been removed in favour of the official messenger client for MacOS.
-- With the introduction of the new connectivity view, QuickStrop hold actions have changed. Holding calendar now toggles Do not Disturb, while holding the switches instantly opens the bluetooth widgets. To access notification centre quickly, see trackpad system preferences and use the trackpad gesture. To access Siri quickly, see Siri in system preferences to use the "hold command-space" gesture.
 
 **Design Changes**
+-
 - New Settings UI design with more settings
 - QuickPlay has a right-aligned media controls for less hand shifting.
 - QUickPlay widgets have a new back button design that reduce hand shifting
+
+
+**Behaviour Changes**
+-
+- Notification badges for Caprine, Chatty and Goofy have been removed in favour of the official messenger client for MacOS.
+
+- With the introduction of the new connectivity view with bluetooth widgets, QuickStrip hold actions have changed. 
+- Holding the switches instantly opens the bluetooth widgets. 
+- Holding calendar now toggles Do not Disturb instead of opening notification centre. To access notification centre quickly, see [System Preferences → Trackpad] and use the trackpad gesture. To access Siri quickly, see [System Preferences → Siri] to use the "hold command-space" gesture.
 
 
 ------------------
@@ -73,6 +85,8 @@ s
 > 
 > ⚪️ - Check this
 > 
+> ✅ - Added to Changelog
+>
 > 🟥 - Needs BTT support
 
 IMPORTANT [ordered]
@@ -108,21 +122,13 @@ IMPORTANT [ordered]
 
 ----
 
-- [ ] 🔴   Fix Music Love / Dislike buttons??
 - [x] 🟠   Instant switch between web widgets when switching to another web widget supported site.
 - [x] 🟠✅ FIX ALL WEB WIDGET AUTO-CLOSE TO NEW VERSION
-- [x] 🔴✅ Web Widget Back buttons fixed 
 - [x] 🟠✅ Pin all emoji widgets to lefts
 - [x] 🔴✅ Add official messenger client notif badge to settings 
+- [x] 🔴✅ Web Widget Back buttons fixed 
 - [x] 🟠✅ Pinned discord doesn't show on gamemode I think. Seperate pinned widgets to another CAG?
-
-----
-
-- [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
-- [ ] 🟠 optimise update scripts
-- [ ] 🟡 Web Widgets lag out safari. Check if it does to chrome too.
 - [x] 🟡 Move 1Keyboard to CAG.
-
 
 ----
 
@@ -131,8 +137,15 @@ IMPORTANT [ordered]
 
 ----
 
+- [ ] 🔴 Check / Fix Music Love, Dislike, add to library buttons
 - [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
-- [-] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
+- [ ] 🟡 Web Widgets lag out safari. Check if it does to chrome too.
+
+----
+
+- [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
+- [ ] 🟠 optimise update scripts
+- [ ] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
 - [x] 🟣 Document app-specific options (e.g. music) [can now see in settings]
 - [x] 🟣 Offline Images for Manuals
 
