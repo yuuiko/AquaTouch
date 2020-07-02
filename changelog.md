@@ -144,14 +144,16 @@ IMPORTANT [ordered]
 ----
 
 - [x] 🟠 optimise update scripts
+- [ ] 🟠 stabilise Youtube Widget Setup Message
+- [ ] 🟠 update gamemode install instructions
 - [x] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
 - [x] 🟣 Document app-specific options (e.g. music) [can now see in settings]
 - [x] 🟣 Offline Images for Manuals
 
 ----
 
-- [ ] ⚪️ Check forums for requests
-- [ ] ⚪️ Check fishtech's AQT review and do accordingly
+- [x] ⚪️ Check forums for requests
+- [x] ⚪️ Check fishtech's AQT review and do accordingly
 
 - [ ] 🔵 Check Internal Version Variables and test update script
 - [ ] 🔵 Check TouchBar Behaviour for each app. May have been reset AGAIN
@@ -160,6 +162,10 @@ IMPORTANT [ordered]
 ------------------
 
 **EXTRAS** [no order]
+
+- Microsoft Edge
+- 1Password
+- language switch
 
 - [ ] 🟢 Setting to switch QuickApps left side "Dock", "Recent Apps", "QuickActions Only"
 - [ ] 🟢 Setting to change Calendar Service to user preferred service. Could be done using Update_Widget?
