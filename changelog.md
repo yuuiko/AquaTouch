@@ -138,14 +138,13 @@ IMPORTANT [ordered]
 ----
 
 - [ ] 🔴 Check / Fix Music Love, Dislike, add to library buttons
-- [ ] 🟣 Elaborate that Brackets Needs Plugins Installed
-- [ ] 🟡 Web Widgets lag out safari. Check if it does to chrome too.
+- [x] 🟣 Elaborate that Brackets Needs Plugins Installed (will not show if plugin not installed)
+- [x] 🟡 Web Widgets lag out safari. Check if it does to chrome too. [no reports, this was noticed in older version]
 
 ----
 
-- [ ] 🟡 optimise script timings https://github.com/yuuiko/AquaTouch/issues/63 @wonjoonSeol
-- [ ] 🟠 optimise update scripts
-- [ ] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
+- [x] 🟠 optimise update scripts
+- [x] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
 - [x] 🟣 Document app-specific options (e.g. music) [can now see in settings]
 - [x] 🟣 Offline Images for Manuals
 
@@ -153,7 +152,6 @@ IMPORTANT [ordered]
 
 - [ ] ⚪️ Check forums for requests
 - [ ] ⚪️ Check fishtech's AQT review and do accordingly
-- [ ] 🟠 [if possible] A widget that resets all CAG Behaviour if BTT messes it up
 
 - [ ] 🔵 Check Internal Version Variables and test update script
 - [ ] 🔵 Check TouchBar Behaviour for each app. May have been reset AGAIN
@@ -170,6 +168,7 @@ IMPORTANT [ordered]
 - [ ] 🟣 Settings Tour for New Installs
 
 - [ ] 🟥 Calendar Highlighting to native BTT (request feature)
+- [ ] 🟥 [if possible] A widget that resets all CAG Behaviour if BTT messes it up
 
 - [ ] 🟢 Add "Insert Date" to notes
 - [ ] 🟢 ADD / VIEW mode for Ae Keyframes
