@@ -1,4 +1,10 @@
-**Changelog 3.6.0-b1**
+**Welcome to AquaTouch 3.6 beta!**
+=
+
+To install, just download here and open it with BTT.
+https://github.com/yuuiko/AquaTouch/raw/master/Alpha%20versions/3-5-9/AquaTouch%20v3.6.0-b1.bttpresetzip
+
+With v3.6, I've re-done much of AQT's workings to get it much less buggy and much more efficient. Many old scripts have been updated to use more efficient BTT APIs, javascript and Conditional Activation Groups! And with this, comes many fixes and large improvements to the many small details of AQT.
 
 **Optimisation**
 -
