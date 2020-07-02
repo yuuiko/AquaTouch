@@ -1,7 +1,7 @@
 **Welcome to AquaTouch 3.6 beta!**
 =
 
-To install, just download [here](https://github.com/yuuiko/AquaTouch/blob/master/Alpha%20versions/3-5-9/AquaTouch%20v3.6.0-b1.bttpresetzip) and open it with BTT.
+To install, just download [here](https://rebrand.ly/yuuiko-AQTb1) and open it with BTT.
 -
 
 With v3.6, I've re-done a heap of AQT's workings to get it much less buggy and much more power efficient. Many old scripts have been updated to use newer, more efficient BTT APIs and javascript! With this also comes large improvements to the many small details of AQT.
