@@ -144,7 +144,7 @@ IMPORTANT [ordered]
 ----
 
 - [x] 🟠 optimise update scripts
-- [ ] 🟠 stabilise Youtube Widget Setup Message
+- [x] 🟠 stabilise Youtube Widget Setup Message
 - [ ] 🟠 update gamemode install instructions
 - [x] 🟣 Improve Manuals and Optimise Install experience [auto-BTT setup?]
 - [x] 🟣 Document app-specific options (e.g. music) [can now see in settings]
