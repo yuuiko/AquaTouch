@@ -30,6 +30,7 @@ Web Widgets have undergone a stability overhaul and have been completely rewritt
 
 
 **Core AQT**
+-
 - QuickStrip actions that target specific apps should now target the right app more stably and responsively (especially QuickApps)
 
 - QuickMedia - Right-Aligned media controls are more ergonomic, reducing your hand and arm movement.
