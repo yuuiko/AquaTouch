@@ -1,4 +1,4 @@
-**Changelog 3.6.1**
+**Changelog 3.6.3**
 
 **Optimisation**
 -
@@ -6,7 +6,7 @@
 
 **New App Support**
 -
-
+- Added functionality to Adobe XD (Components and Grouping)
 
 **Bug Fixes**
 -
@@ -14,7 +14,7 @@
 
 **Design Changes**
 -
-
+- Big sur icons!
 
 **Behaviour Changes**
 -
