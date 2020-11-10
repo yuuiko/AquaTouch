@@ -10,7 +10,7 @@
 
 **Bug Fixes**
 -
-
+- Fixed a bug where some pastecells acted as one
 
 **Design Changes**
 -
