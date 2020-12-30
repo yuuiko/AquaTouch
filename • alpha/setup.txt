@@ -1,0 +1,3 @@
+https://discord.gg/GjHCg9h
+
+To finish installing AquaTouch, open the BTT Configuration Window after importing.

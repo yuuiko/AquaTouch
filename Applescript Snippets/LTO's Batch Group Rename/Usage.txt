@@ -1,8 +1,0 @@
-1. 
-
-Cd to folder.
-
-
-2. 
-python3 ./AQTGroupModifier.py ./AquaTouch\ v3.6.1b0a1\ -\ before\ grouptag.bttpresetzip ./AQT-3.6.0_modified.bttpresetzip
-
