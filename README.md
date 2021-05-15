@@ -4,8 +4,10 @@ Dynamic Custom Macros for your MacBook TouchBar!
 https://community.folivora.ai/t/1704
 
 REPOSITORY NOT FOR COLLAB YET. <br>
+BTT Preset files aren't friendly to git, so if you have a contribution, Join the AQT discord and start a chat or make a new issue so I can merge it in manually!
+
 Feel free to add issues and follow progress, but this repository is not ready for collaboration yet.
-No plans to support collaboration through git yet. BTT Preset files aren't friendly to git, so If you have a contribution, Join the AQT discord and start a chat or make a new issue so I can merge it in manually!
+
 
 ### See [projects](https://github.com/yuuiko/AquaTouch/projects/1) tab for progress logs.
 
