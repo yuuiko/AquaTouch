@@ -1,0 +1,1164 @@
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	<meta charset="UTF-8">
+
+	<!--    <img src="presetfile://installimg/presetfile://installimg/-->
+	<!-- UL does a ruled table list! =D -->
+
+	<style>
+	body {
+		color: #222;
+		padding: 16px;
+		font-family: 'Nunito', Helvetica, sans-serif;
+		font-size: 16px;
+		margin: 0;
+		padding: 0 0 2px 0;
+		background: transparent;
+		background: rgba(236, 236, 236, .7);
+		-webkit-backdrop-filter: blur(48px) saturate(200%);
+		-webkit-transform: translate3d(0, 0, 0);
+		display: flex;
+		-webkit-user-select: none;
+		overflow: hidden;
+	}
+
+	.titlecontainer {
+		height: 100vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.centre {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+	}
+
+	h1 {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 700;
+		width: 100%;
+		text-align: center !important;
+		vertical-align: middle;
+		font-size: 50px;
+	}
+
+	h2 {
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		font-weight: 600;
+		margin: 12px 0;
+	}
+
+	h3:first-of-type {
+		margin-top: 0;
+	}
+
+	small {
+		font-size: 12px;
+		line-height: 16px;
+		margin: -4px 32px 4px 32px;
+		padding: 0;
+		display: block;
+		color: rgba(180, 179, 178, 1);
+	}
+
+	a {
+		color: #1485FF;
+		text-decoration: none;
+		display: inline;
+	}
+
+	a:hover {
+		color: #0d57a8;
+	}
+
+	.inlineImg {
+		width: 70%;
+
+		/*Centring*/
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		border: solid 3px #FFFFFF;
+		border-radius: 15px;
+	}
+
+	.secimage {
+		width: calc(100% - 32px);
+
+		background: rgba(245, 245, 245, 1);
+		border: 1px solid rgba(230, 230, 230, 1);
+		border-radius: 16px;
+		margin: 0 16px 16px 16px;
+		position: relative;
+	}
+
+	.null {
+		background-color: rgba(255, 0, 0, .2);
+		opacity: 0.5;
+		transition: 0.2s;
+	}
+
+	/* Content Area Styles */
+	.content {
+		background: rgba(255, 255, 255, 1);
+		border-bottom-right-radius: 6px;
+		border: 1px solid rgba(119, 118, 116, .5);
+		border-left: 1px solid rgba(200, 200, 200, 1);
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.tabcontent {
+		display: none;
+		position: relative;
+	}
+
+	.padtop {
+		padding-top: 66px;
+	}
+
+	.tabcontent .active {
+		display: block;
+	}
+
+	ul {
+		padding: 10px 0px 10px 0px;
+	}
+
+	.tabcontent ul {
+		list-style-type: none;
+		margin: -16px -16px -16px 0;
+		padding: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+
+	.tabcontent ul li {
+		padding: 8px 8px 8px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	.tabcontent ul li:last-of-type {
+		border: none;
+	}
+
+	.tabcontent ul li img,
+	.tabcontent ul li .tbicon {
+		height: 36px;
+		float: left;
+		margin-right: 12px;
+	}
+
+	.tabcontent ul li .tbicon {
+		background: #000;
+		border-radius: 6px;
+		overflow: hidden;
+		display: inline-block;
+		min-width: 36px;
+		object-position: center center;
+	}
+
+	.tabcontent ul li .tbicon img {
+		width: auto;
+		max-height: 22px;
+		padding: 7px;
+		margin-right: 0;
+		position: relative;
+		object-position: center center;
+	}
+
+	img.invert {
+		-webkit-filter: invert();
+	}
+
+	.tabcontent ul li .form-switch a {
+		line-height: 36px;
+		color: #fff;
+		text-decoration: none;
+		background: none;
+	}
+
+	/*---------------- BODY -----------------*/
+
+	/*HEADING*/
+	header {
+		/*            position: fixed;*/
+		z-index: 1;
+		top: 1px;
+		left: 1px;
+		right: 1px;
+		padding: 0px 0px 55px 0px;
+		/*            background: rgba(245, 245, 245, .8);*/
+		/*            -webkit-backdrop-filter: blur(24px) saturate(400%) contrast(150%);*/
+		/*            -webkit-transform: translate3d(0, 0, 0);*/
+		/*            border-bottom: 1px solid rgba(0, 0, 0, .1);*/
+	}
+
+	.headercontainer {
+		position: relative;
+		display: block;
+		background-color: red;
+	}
+
+	section {
+		background: rgba(245, 245, 245, 1);
+		border: 1px solid rgba(230, 230, 230, 1);
+		border-radius: 16px;
+		padding: 16px;
+		margin: 0 16px 16px 16px;
+		position: relative;
+	}
+
+	section.tokenlist {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 8px;
+	}
+
+	.button {
+		background: #1485FF;
+		display: block;
+		text-align: center;
+		border-radius: 4px;
+		margin: 32px 16px;
+		padding: 8px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.button:active,
+	.token.selected:active {
+		opacity: .8;
+	}
+
+	section p {
+		margin: 12px 0;
+	}
+
+	section p:first-of-type {
+		margin-top: 0;
+	}
+
+	section p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	/* Single Page Style Overrides */
+	#about {
+		margin-left: 15px;
+	}
+
+	#about a {
+		background: none;
+		display: inline;
+		font-size: 13px;
+		color: rgba(16, 133, 255, 1);
+	}
+
+
+	/*----------------BOTTOM NAV-----------------*/
+	.bottom-nav {
+		overflow: hidden;
+		background-color: rgba(240, 240, 240, 0.9);
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+		border-top: 1px solid lightgrey;
+		background: rgba(245, 245, 245, .8);
+		-webkit-backdrop-filter: blur(24px) saturate(400%) contrast(150%);
+	}
+
+	.centregroup {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		background-color: rebeccapurple;
+	}
+
+	.bottom-nav a {
+		display: block;
+		float: left;
+		color: black;
+		text-align: center;
+		padding: 8px 16px;
+		margin: 5px 5px 10px 5px;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+
+	.bottom-nav-back {
+		display: block;
+		float: left;
+		color: black;
+		text-align: center;
+		padding: 8px 16px;
+		margin: 5px 5px 10px 5px;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.bottom-nav-next {
+		display: block;
+		float: right;
+		color: black;
+		text-align: center;
+		padding: 8px 16px;
+		margin: 5px 5px 10px 5px;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+
+	.bottom-nav a:hover {
+		background: #FFF;
+		color: black;
+	}
+
+	.bottom-nav a.active {
+		background-color: dodgerblue;
+		color: white;
+	}
+
+	/*----------------MODAL BOX-----------------*/
+	/* The Modal (background) */
+	.modal {
+		display: block;
+		/* Hidden by default */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Sit on top */
+		padding-top: 200px;
+		/* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* Full width */
+		height: 100%;
+		/* Full height */
+		overflow: auto;
+		/* Enable scroll if needed */
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 0, 0.4);
+		/* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 8px 20px;
+		/*            border: 2px solid #888;*/
+		border-radius: 15px;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	</style>
+	<script>
+	var variables = {};
+
+	function openTab(evt, tabName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		// Get all elements with class="tablinks_last" and remove the class "active"
+		tablinks_last = document.getElementsByClassName("tablink_last");
+		for (i = 0; i < tablinks_last.length; i++) {
+			tablinks_last[i].className = tablinks_last[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+
+	//---------- AUTO-OPEN ------------//
+	// Select the General tab by default
+	//document.getElementById("First").click();
+	function loadfirst() {
+		openTab(event, 'pg1');
+		document.getElementById('default').click();
+	}
+
+	function openSubTab(evt, tabName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(tabName).style.display = "block";
+		//            evt.currentTarget.className += " active";
+	}
+
+	</script>
+</head>
+
+<body onload="loadfirst();">
+	<div class="content">
+		<div class="content-inner">
+
+			<div id="pg1" class="tabcontent">
+
+
+				<div class="bottom-nav">
+					<a style="" onclick="openSubTab(event, 'support')">Support</a>
+					<a style="float: right" onclick="openSubTab(event, 'pg2')">Start</a>
+				</div>
+
+				<div class="titlecontainer">
+					<div class="centre">
+						<h1>Welcome to AquaTouch</h1>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg2" class="tabcontent padtop">
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/appbtt.tiff" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>First Time Setup</h2>
+						</div>
+					</div>
+				</header>
+
+				<div class="bottom-nav">
+					<!--                    <div class="centregroup">-->
+					<a style="width: 30px" onclick="openSubTab(event, 'pg1')">-</a>
+					<!--                    <a style="left: auto; right: auto; width: calc(100% - 190px);" onclick="openSubTab(event, 'contents')">1 of 1</a>-->
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">2 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg3')">+</a>
+				</div>
+
+				<section>
+					<h3> Step 1 - BetterTouchTool</h3>
+					<p>To ensure you have the optimal setup, please set BTT’s [General Touch Bar Settings] as shown below. </p>
+					<br>
+					Or if you’d like, I can set them for you using the button below. <br>
+					This will change your current ‘General Touch Bar Settings’ so if you have personally set them up revise them first.<br>
+					BTT will restart if you press this button.<br><br>
+					<a id="destructive" href="btt://trigger_named/?trigger_name=SETUP_setBTTTouchbarSettings-Handler&closeFloatingHTMLMenu=1"><strong>Automatically Set BTT TouchBar Settings</strong></a><br>
+					<br>
+					<img style="width: 100%;" alt="Ensure you have an internet connection to load this image!" src="presetfile://installimg/set1.png" /><br>
+					<img style="width: 100%;" alt="Ensure you have an internet connection to load this image!" src="presetfile://installimg/set2.png" /><br>
+				</section>
+				<section>
+					<h3> Step 2 - System Preferences</h3>
+					<p>
+						You’ll need to use the "App Controls" System Touch Bar mode in order to use AquaTouch. <br>
+						Find this setting in the "Keyboard" section of System Preferences.<br>
+						<br>
+					</p>
+					<a href="btt://trigger_named/?trigger_name=SETUP_keyboardprefs&closeFloatingHTMLMenu=0"><strong>Open Keyboard Preferences</strong></a><br>
+					<br>
+					<img style="width: 100%; margin-left: auto; margin-right: auto;" alt="" src="presetfile://installimg/sysprefappcontrols.png" /><br>
+					<br>
+					<p>
+						The Fn key can be used to toggle between AquaTouch and Stock Touch Bars.<br>
+						If you would like to switch between AquaTouch and Stock Touch Bars using the Fn key, make sure it is set to "Do Nothing". <br>
+						<br>
+						On M1 Macs the Fn key is set to switch between Keyboard Languages (A new Globe icon is printed on the key). <br>
+						You can choose to leave the key as-is and use touch bar buttons to switch to AquaTouch, or, reassign the Fn key to switch Touch Bars instead of toggling the keyboard language.<br>
+						If you choose the later option, switch the key to "Do Nothing" and use the Menu Bar to switch between keyboard languages.<br><br>
+					</p>
+				</section>
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg3" class="tabcontent padtop">
+
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/reduceCS.png" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>Minimise Control Strip</h2>
+						</div>
+					</div>
+				</header>
+
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg2')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">3 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg4')">+</a>
+				</div>
+
+				<section>
+					<h3> Optional Cleanup</h3>
+					<p>To have a more consistent volume control experience, I recommend minimising your control strip to just one button, then use AquaTouch’s Gestures to control your Volume, Brightness and Keyboard Backlight.<br>
+						Gestures are easier to use, you'll get more stock touch bar space, and it looks cleaner too!<br>
+						<br>
+						<!--                        <img style="width: 500px; margin-left: auto; margin-right: auto;" alt="" src="presetfile://installimg/reduceCS.png" /><br>-->
+						<!--                        <br>-->
+						Click the button below to commit to AquaTouch’s Gesture Controls.<br>
+						Keep in mind that your current macOS stock ‘Mini Control Strip’ setup will be replaced.<br>
+						<br>
+						<a id="destructive" href="btt://trigger_named/?trigger_name=SETUP_setSystemControlStrip&closeFloatingHTMLMenu=0" style="color: red;"><strong>Minimise my Control Strip</strong></a><br>
+					</p><br>
+				</section>
+
+				<section>
+					<h3> Back to Stock Please!</h3>
+					<p>
+						If you'd like the stock controls back, head to [System Preferences] → [Keyboard] → [Customise Control Strip]<br><br>
+						<img style="width: 100%; margin-left: auto; margin-right: auto;" alt="" src="presetfile://installimg/revertQS.png" /><br>
+						<!-- <a id="destructive" href="btt://trigger_named/?trigger_name=SETUP_setSystemControlStrip&closeFloatingHTMLMenu=0"><strong>Minimise my Control Strip</strong></a><br> -->
+					</p>
+				</section>
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg4" class="tabcontent padtop">
+
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/switch.png" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>Opening and Closing AquaTouch</h2>
+						</div>
+					</div>
+				</header>
+
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg3')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">4 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg5')">+</a>
+				</div>
+
+				<section>
+					<h3> A small tip about using AquaTouch </h3>
+
+					<p>
+						Unlike other presets, AquaTouch works with the stock touchbar, allowing you to access the occasional good controls that some apps give you. <br>
+
+						Usually, AquaTouch will switch between it and the stock touchbar automatically, so you won't need to worry about hiding AquaTouch.<br>
+						<br>
+						If BTT doesn't get it right or you'd like to use the stock controls, there are ways to switch between the stock touchbar and AquaTouch.
+					</p>
+				</section>
+
+				<section>
+					<h3> Switching between Stock Touchbar and AquaTouch </h3>
+
+					<p>
+						If you need to switch between presets manually, you can do so via:<br>
+						<br>
+						<strong>Fn Key</strong> (Most Recommended)<br>
+						<strong>-</strong> Give the Fn key a quick and light tap to toggle between Stock or AquaTouch.<br>
+						Note: If you seem to also be switching keyboard languages while you do this, check out Page 2, Step 2 of this manual.<br>
+						<br>
+						<strong>TouchBar Buttons</strong><br>
+						<strong>-</strong> Switch to Stock: Hold the QuickStrip Apps icon.<br>
+						<strong>-</strong> Switch to AquaTouch: Tap the AquaTouch Icon in the stock control strip.<br>
+					</p>
+				</section>
+
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg5" class="tabcontent padtop">
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/gesture.png" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>Gesture Controls</h2>
+						</div>
+					</div>
+				</header>
+
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg4')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">5 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg6')">+</a>
+				</div>
+
+				<section>
+					<h3>Adjusting the Volume, Brightness and Keyboard Backlight with AquaTouch </h3>
+					<p>
+						Here at AquaTouch I have banished awkward sliders and touch buttons to control the volume. You simply can't feel them and they take too long to bring up, find with your eyes, and finally adjust.<br>
+						<br>
+						With AquaTouch, we use Gestures ; )
+					</p>
+				</section>
+
+				<section>
+					<h3>Gesture Controls </h3>
+
+					<p>AquaTouch uses Gestures in the TouchBar to control Volume, Brightness and Keyboard Backlight. <br>
+						<br>
+						<strong>Volume</strong><br>
+						Slide on the touchbar with <strong>two fingers</strong> to control the Volume<br>
+						<br>
+						<strong>Brightness</strong><br>
+						Slide on the touchbar with <strong>three fingers</strong> to control the Screen Brightness<br>
+						<br>
+						<strong>Keyboard Backlight</strong><br>
+						Slide on the touchbar with <strong>four fingers</strong> to control the Keyboard Backlight<br>
+						<br>
+						Note: <br>
+						<strong>Due to limitations in macOS, AquaTouch needs to be open while you slide.</strong><br>
+						Unfortunately I'm not able to make the gestures work in the stock touchbar, so you'll need to open AQT before doing a gesture. I still find this easier than the stock sliders, even though it takes a bit to get used to.
+					</p>
+					<br>
+				</section>
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg6" class="tabcontent padtop">
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/Quickstrip.png" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>QuickStrip</h2>
+						</div>
+					</div>
+				</header>
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg5')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">6 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg7')">+</a>
+				</div>
+
+				<section>
+					<h3> AquaTouch Quick Strip </h3>
+					<p>
+						The Quick Strip is the four-button pallete seen at the very right. It will always be available there for you to access from any aquatouch screen.<br>
+						<br>
+						It gives you access to helpful widgets, controls and shortcuts that are great to adjust what music you're listening to, adjust some mac settings, check your calendar and more. Here you can read a summary of its four segments.<br>
+						<br>
+					</p>
+
+				</section>
+
+				<section>
+					<h3><img src="presetfile://installimg/QS1.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Media</h3>
+
+					<strong>About</strong><br>
+					This Segment contains media controls and Now Playing widgets.<br>
+					If a supported app is playing media, they will show up within this segment.<br> Additionally for supported apps, media buttons will directly control the playbackfrom that specific app.<br>
+					e.g. You can pause iTunes, then play Spotify, all from this segment, without clicking anything.<br>
+					<br>
+					<strong>Hold Action</strong><br>
+					You can hold this segment button to Play/Pause Media.<br>
+					<br>
+					<strong>Icon Color</strong><br>
+					The icon for this segment will turn blue if media is playing.
+				</section>
+
+
+				<section>
+					<h3><img src="presetfile://installimg/QS2.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Schedules</h3>
+
+					<strong>About</strong><br>
+					Tap to check your calendar and reminders. You can also view the weather and time here.<br>
+					<br>
+					<strong>Hold Action</strong><br>
+					Hold this control strip button to toggle Do Not Disturb<br>
+					<br>
+					<strong>Icon Color</strong><br>
+					The icon for this segment will turn red if you have any upcoming Calendar or Reminders events.<br>
+					You can change its behaviour in AQT settings, e.g. set it to only turn red for Reminders.
+				</section>
+
+				<section>
+					<h3><img src="presetfile://installimg/QS3.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Controls</h3>
+					<strong>About</strong><br>
+					Set system controls such as NightShift, Dark Mode or to sleep your MacBook. There's a connectivity pallete to the right that allows you to connect to AirPods, Beats, toggle WiFi, toggle Do Not Disturb and more.<br>
+					<br>
+					<strong>Hold Action</strong><br>
+					Hold this control strip button to Open a Bluetooth Tool<br>
+					<br>
+					<strong>Icon Color</strong><br>
+					The icon for this segment will turn violet if Do Not Disturb is active.
+				</section>
+
+				<section>
+					<h3><img src="presetfile://installimg/QS4.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Apps</h3>
+					<strong>About</strong><br>
+					Tap this segment to launch a quick task with one button. You can hold command here to quit multiple apps with a touch, too.<br>
+					<br>
+					<strong>Hold Action</strong><br>
+					Hold this segment button to switch to the stock MacOS Touch Bar.
+				</section>
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg7" class="tabcontent padtop">
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/webctrl.png" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>Web Tools</h2>
+						</div>
+					</div>
+				</header>
+
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg6')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">7 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg7a')">+</a>
+				</div>
+
+				<section>
+					<h3> Web Tools </h3>
+					<p>AquaTouch supports many apps, and it even supports websites!<br>
+						<br>
+						If you visit a supported website in Safari or Google Chrome, you'll notice an additional button is added to the AquaTouch Controls.<br>
+						Simply tap this icon to bring up website-specific controls.<br>
+						<br>
+						Currently Supported Websites:<br>
+						<li> YouTube<br></li>
+						<li> Twitch<br></li>
+						<li> SoundCloud<br></li>
+						<li> Gmail<br></li>
+						<li> Google Drive<br></li>
+						<li> Google Docs<br></li>
+						<li> Google Sheets<br></li>
+						<li> Google Slides<br></li>
+						<li> Facebook<br></li>
+						<li> Kahoot.it <br></li>
+						<li> Netflix (Safari only for now)</li>
+					</p>
+				</section>
+
+				<section>
+					<h3> Setting up YouTube and Netflix </h3>
+					<p>
+						Youtube and Netflix Web Tools have deeper integration with Safari and Google Chrome.<br>
+						You'll need to allow them to access the web browser for them to work properly.<br>
+					</p>
+
+					<h3>Allowing Javascript Access</h3>
+
+					<strong>Safari</strong><br>
+					Head to Safari Preferences [ ⌘ , ]<br>
+					Hit the Advanced Tab<br>
+					Check "Show Develop Menu in Menu bar"<br>
+					<br>
+					Then, in the menu bar, hit [Develop → Allow JavaScript from Apple Events]
+					<br>
+					<br>
+					<strong>Google Chrome</strong><br>
+					In the menu bar, hit [View → Developer → Allow JavaScript from Apple Events]
+				</section>
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg7a" class="tabcontent padtop">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);">8 of 9</a>
+					<a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>
+				</div>
+
+				<header>
+					<div class="headercontainer">
+						<div class="centre">
+							<img src="presetfile://installimg/appsysprefs.png" class="">
+						</div>
+					</div>
+				</header>
+				<header>
+					<div class="headercontainer" style="position: -webkit-sticky; position: sticky;">
+						<div class="centre">
+							<h2>Permission Popups &amp; Privacy</h2>
+						</div>
+					</div>
+				</header>
+
+				<section>
+					<p style="text-align: center;">
+						<br>
+						As you use AquaTouch for the first time, these popups may frequently appear from many apps and MacOS itself.<br>
+					</p>
+					<img style="width: 100%;" src="presetfile://installimg/permission.png" /><br>
+					<p style="text-align: center;">
+						AquaTouch works by interacting with on-screen menus and system controls, The popups is MacOS detecting and making sure that you allow it.<br>
+						In order for AquaTouch to work properly, Allow BetterTouchTool to interact with these items. <br>
+						If you choose not to allow permissions, all that would happen is that some AQT buttons will not respond.<br><br><br>
+					</p>
+				</section>
+
+				<section>
+					<h3> Privacy </h3>
+					<p>
+						AquaTouch does not broadcast any data anywhere and works completley on your machiene. Simple as that.<br>
+						BetterTouchTool may send anonymous analytical or crash/debug data to the developer in order to improve it, check BetterTouchTool's privacy statement for it's stand.<br>
+						<br>
+						<strong>Microphone</strong><br>
+						You can mute your microphone or toggle Active Noise Cancellation for some earbuds with AquaTouch. You can also adjust speaker volume with AquaTouch.<br>
+						<br>
+						<strong>Contacts, Calendar</strong><br>
+						AquaTouch uses BetterTouchTool to bring your Calendar and Reminders into the touchbar. If you decide to make a new event from the touchbar, you'll have access to your contacts too.<br>
+						<br>
+						<strong>Files</strong><br>
+						AquaTouch can create new files for you (especially in finder) and show you connected external disks. It also has shortcuts to folders such as Desktop, Downloads for you to access with a tap.<br>
+						<br>
+						<strong>Screen Recording</strong><br>
+						AquaTouch finds menu items and clicks them as you use the touchbar.<br>
+						<br>
+						<strong>Location</strong><br>
+						BetterTouchTool may read your approximate location to adjust AquaTouch's Clock and Weather features to your local area.<br>
+						<br>
+						<strong>Automation and Accessibility API</strong><br>
+						AquaTouch uses the macOS Accessibility API to interact with menus (e.g. reading the menubar and clicking items in it), or directly with apps (e.g. to play/pause youtube or music)<br>
+						<br>
+						<strong>Javascript from Apple Events (web browsers)</strong><br>
+						AquaTouch uses Javascript from Apple Events to detect and control websites, such as the pause button, video name and playback position in youtube, or to detect a video and show the picture-in-picture button.<br>
+					</p>
+				</section>
+
+				<br><br>
+				<br><br>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg8" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg7a')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<div class="titlecontainer">
+					<div class="centre">
+						<h2 style="text-align: left;">
+							<strong>Setup Complete</strong>, Have Fun! <br>
+						</h2>
+						<a href="btt://trigger_named/?trigger_name=SETUP_showAQTHelp&closeFloatingHTMLMenu=0">Discover more in the AquaTouch Guide →</a><br><br>
+						<a onclick="openSubTab(event, 'pg9')">Support Yuuiko</a><br>
+						<a onclick="openSubTab(event, 'pg10')">Want a BetterTouchTool License?</a><br>
+						<br>
+						<a onclick="openSubTab(event, 'pg11')">AquaTouch Community</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg9" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'pg8')">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'pg8')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🤍 Support Yuuiko </h2>
+						<p style="text-align: left; border-bottom: 0.5px solid #d4d4d4; padding: 5px 0px 20px 0px; margin-bottom: 10px;">
+							AquaTouch takes a long time to make, but since BetterTouchTool is paid, I've decided to make it "Free to Play". <br>
+							I'd love any support! and I'll continue to improve my skills and quality of my work.
+						</p>
+						<ul style="padding: 10px 0px 10px 0px">
+
+							<li>
+								<p>Want to buy me a coffee? You can donate here: <a href="https://paypal.me/chrisyuu" target="_blank">https://paypal.me/chrisyuu</a></p>
+							</li>
+							<li>
+								<p>Join my patreon for more of my stuff! <a href="https://paypal.me/chrisyuu" target="_blank">https://www.patreon.com/yuuiko</a></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg10" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'pg8')">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'pg8')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🔖 BetterTouchTool License</h2>
+
+						<ul style="padding: 10px 0px 10px 0px">
+							<li>
+								<p>
+									Need a BetterTouchTool License? <br>
+									Get one through my link and i'll get 40%!<br><br>
+									<a href="https://a.paddle.com/v2/click/30842/37729?link=1061" target="_blank">Purchase BetterTouchTool License via yuuiko</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="pg11" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'pg8')">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'pg8')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">💬 AquaTouch Community</h2>
+
+						<p style="text-align: left; border-bottom: 0.5px solid #d4d4d4; padding: 5px 0px 20px 0px; margin-bottom: 10px;">
+							Get some help, share some excitement, get customising or just hangout.<br>
+						</p>
+
+						<ul style="padding: 10px 0px 10px 0px">
+							<li>
+								<a href="https://community.folivora.ai/t/6746/last" target="_blank"><strong>Updates and Downloads Thread</strong> (subscribe for AquaTouch update notifications!)</a>
+							</li>
+							<li>
+								<a href="https://community.folivora.ai/t/1704/last" target="_blank"><strong>Support and Feedback:</strong> folivora Forums</a>
+							</li>
+							<li>
+								<a href="https://discord.gg/GjHCg9h" target="_blank"><strong>Support, Feedback and Hangout:</strong> Discord Server</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- ████████████████████████████████████████████████████████████████-->
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="support" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'pg1')">back</a>
+					<!-- <a style="left: auto; right: auto; width: calc(100% - 190px);"></a>-->
+					<!-- <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<div class="titlecontainer">
+					<div class="centre">
+						<h2 style="text-align: left;">
+							Support, Feedback, Community<br>
+						</h2>
+						<p>
+							AquaTouch takes a long time to make, but since BetterTouchTool is paid, I've decided to make it "Free to Play". I'd love any support! and I'll continue to improve my skills and quality of my work.
+						</p>
+						<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+						<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+						<br>
+						<a onclick="openSubTab(event, 'spg11')">AquaTouch Community</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="spg9" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'spg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🤍 Support Yuuiko </h2>
+
+						<ul style="padding: 10px 0px 10px 0px">
+
+							<li>
+								<p>Want to buy me a coffee? You can donate here: <a href="https://paypal.me/chrisyuu" target="_blank">https://paypal.me/chrisyuu</a></p>
+							</li>
+							<li>
+								<p>Join my patreon for more of my stuff! <a href="https://paypal.me/chrisyuu" target="_blank">https://www.patreon.com/yuuiko</a></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="spg10" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'spg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🔖 BetterTouchTool License</h2>
+
+						<ul style="padding: 10px 0px 10px 0px">
+							<li>
+								<p>
+									Need a BetterTouchTool License? <br>
+									Get one through my link and i'll get 40%!<br><br>
+									<a href="https://a.paddle.com/v2/click/30842/37729?link=1061" target="_blank">Purchase BetterTouchTool License via yuuiko</a>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- ████████████████████████████████████████████████████████████████-->
+			<div id="spg11" class="tabcontent">
+				<div class="bottom-nav">
+					<a style="width: 30px" onclick="openSubTab(event, 'spg7')">-</a>
+					<a style="left: auto; right: auto; width: calc(100% - 190px);"></a>
+					<!--                    <a style="width: 30px; float: right" onclick="openSubTab(event, 'pg8')">+</a>-->
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">💬 AquaTouch Community</h2>
+
+						<ul style="padding: 10px 0px 10px 0px">
+							<li>
+								<a href="https://community.folivora.ai/t/6746/last" target="_blank">Updates and Downloads Thread (subscribe for AquaTouch update notifications!)</a>
+							</li>
+							<li>
+								<a href="https://community.folivora.ai/t/1704/last" target="_blank">Support and Feedback: folivora Forums</a>
+							</li>
+							<li>
+								<a href="https://discord.gg/GjHCg9h" target="_blank">Support, Feedback and Hangout: Discord Server</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
