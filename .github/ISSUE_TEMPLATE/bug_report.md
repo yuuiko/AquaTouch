@@ -15,7 +15,7 @@ Please add screenshots to help explain your problem. You can screenshot the touc
 
 **Details:**
  - MacOS Version: 
- - MacBook Version: M1? Model Name?
+ - MacBook Version: [M1? Model Name?]
  - Current App Version: [e.g. Chrome vX.X, Safari vX.X, Photoshop 2021]
  - BTT Version: [e.g. 3.180]
  - AQT Version: 
