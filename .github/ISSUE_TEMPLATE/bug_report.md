@@ -11,10 +11,11 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 **Screenshots**
-Please add screenshots to help explain your problem. You can screenshot the touchbar with ⌘⇧6.
+Screnshots of the touchbar will greatly help debugging, so I know which Touch Bar layout to look into. Screenshot the touchbar with ⌘⇧6.
 
 **Details:**
  - MacOS Version: 
- - Current App Version: [e.g. Chrome, Safari, OneNote]
+ - MacBook Version: [M1? Model Name?]
+ - Current App Version: [e.g. Chrome vX.X, Safari vX.X, Photoshop 2021]
  - BTT Version: [e.g. 3.180]
  - AQT Version: 
