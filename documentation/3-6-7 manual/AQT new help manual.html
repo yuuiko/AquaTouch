@@ -476,36 +476,51 @@
 		color: white;
 	}
 
+	.explorebtn {
+		display: inline-block;
+		border-radius: 10px;
+		width: calc(100% - 20px);
+
+		background-color: rgba(240, 240, 240, 1);
+		padding: 10px;
+		margin-top: 5px;
+
+		transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+	}
+
+	.explorebtn:hover {
+		background-color: rgba(255, 255, 255, 1);
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		z-index: 2;
+	}
+	.explorebtn:active {
+		transform: scale(0.95);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	}
+
+
 	/*----------------MODAL BOX-----------------*/
 	/* The Modal (background) */
 	.modal {
-		display: block;
-		/* Hidden by default */
-		position: fixed;
-		/* Stay in place */
-		z-index: 1;
-		/* Sit on top */
-		padding-top: 200px;
-		/* Location of the box */
+		display: block; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 20vh; /* Location of the box */
 		left: 0;
 		top: 0;
 		width: 100%;
-		/* Full width */
 		height: 100%;
-		/* Full height */
-		overflow: auto;
-		/* Enable scroll if needed */
-		background-color: rgb(0, 0, 0);
-		/* Fallback color */
-		background-color: rgba(47, 47, 47, 0.8);
-		/* Black w/ opacity */
+
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0, 0, 0); /* Fallback color */
+		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 	}
 
 	/* Modal Content */
 	.modal-content {
 		background-color: #fefefe;
 		margin: auto;
-		padding: 8px 20px;
+		padding: 8px 20px 20px 20px;
 		border-radius: 15px;
 		width: 80%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -526,6 +541,35 @@
 		cursor: pointer;
 	}
 
+	ul {
+		list-style-type: none;
+		margin: -16px -16px -16px 0;
+		padding: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+
+	.supportbtn {
+		display: inline-block;
+		border-radius: 10px;
+		width: calc(100% - 20px);
+
+		background-color: #eee;
+		padding: 10px;
+		margin-top: 5px;
+
+		transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+	}
+
+	.supportbtn:hover {
+		background-color: #fff;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		z-index: 2;
+	}
+	.supportbtn:active {
+		transform: scale(0.95);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	}
+
 	.titlecontainer {
 		height: calc(90vh - 66px);
 		position: relative;
@@ -541,6 +585,7 @@
 		transform: translate(-50%, -50%);
 		overflow: hidden;
 		width: 70%;
+		padding: 10px;
 	}
 
 	</style>
@@ -1822,10 +1867,15 @@
 										<br>
 										I'd love any support! and of course, I'll continue to improve both my skills and quality of my work!
 								</p>
-								<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a class="explorebtn" onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a class="explorebtn" onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+								<br>
+								<a class="explorebtn" onclick="openSubTab(event, 'spg11')">AquaTouch Community</a>
+
+								<!-- <a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
 								<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
 								<br>
-								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a>
+								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a> -->
 						</div>
 				</div>
 		</div>
@@ -1845,10 +1895,10 @@
 										<br>
 										I'd love any support! and of course, I'll continue to improve both my skills and quality of my work!
 								</p>
-								<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
-								<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+								<a class="explorebtn" onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a class="explorebtn" onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
 								<br>
-								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a>
+								<a class="explorebtn" onclick="openSubTab(event, 'spg11')">AquaTouch Community</a>
 						</div>
 				</div>
 
@@ -1856,19 +1906,19 @@
 				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
 
 						<!-- Modal content -->
+						<!-- Modal content -->
 						<div class="modal-content">
-								<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
-								<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🤍 Support Yuuiko </h2>
+							<span class="close" onclick="openSubTab(event, 'pg9')">&times;</span>
+							<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🤍 Support Yuuiko </h2>
+							<p style="text-align: left; padding: 5px 5px;">
+								AquaTouch takes a long time to make, but since BetterTouchTool is paid, I've decided to make it free to use! <br>
+								<br>
+								I'd love any support! and I'll continue to improve my skills and quality of my work.
+							</p>
 
-								<ul style="padding: 10px 0px 10px 0px">
+							<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_paypal" target="_blank"><span style="color: black;">Want to buy me a coffee? You can donate here: </span><br> https://paypal.me/chrisyuu</a>
+							<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_patreon" target="_blank"><span style="color: black;">Join my patreon for more of my stuff! </span><br> https://www.patreon.com/yuuiko</a>
 
-										<li>
-												<p>Want to buy me a coffee? You can donate here: <a href="https://paypal.me/chrisyuu" target="_blank">https://paypal.me/chrisyuu</a></p>
-										</li>
-										<li>
-												<p>Join my patreon for more of my stuff! <a href="https://paypal.me/chrisyuu" target="_blank">https://www.patreon.com/yuuiko</a></p>
-										</li>
-								</ul>
 						</div>
 				</div>
 		</div>
@@ -1896,21 +1946,19 @@
 				<!-- MODAL -->
 				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
 
-						<!-- Modal content -->
-						<div class="modal-content">
-								<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
-								<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🔖 BetterTouchTool License</h2>
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🔖 BetterTouchTool License</h2>
 
-								<ul style="padding: 10px 0px 10px 0px">
-										<li>
-												<p>
-														Need a BetterTouchTool License? <br>
-														Get one through my link and i'll get 40%!<br><br>
-														<a href="https://a.paddle.com/v2/click/30842/37729?link=1061" target="_blank">Purchase BetterTouchTool License via yuuiko</a>
-												</p>
-										</li>
-								</ul>
-						</div>
+						<p>
+							Need a BetterTouchTool License? <br>
+							Get one through my link and i'll get 40%!
+						</p>
+
+						<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_paddle" target="_blank">Purchase BetterTouchTool License via yuuiko</a>
+
+					</div>
 				</div>
 		</div>
 
@@ -1937,24 +1985,16 @@
 				<!-- MODAL -->
 				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
 
-						<!-- Modal content -->
-						<div class="modal-content">
-								<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
-								<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">💬 AquaTouch Community</h2>
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+						<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">💬 AquaTouch Community</h2>
 
-								<ul style="padding: 10px 0px 10px 0px">
-										<li>
-												<a href="https://community.folivora.ai/t/6746/last" target="_blank">Updates and Downloads Thread (subscribe for AquaTouch update notifications!)</a>
-										</li>
-										<li>
-												<a href="https://community.folivora.ai/t/1704/last" target="_blank">Support and Feedback: folivora Forums</a>
-										</li>
-										<li>
-												<a href="https://discord.gg/GjHCg9h" target="_blank">Support, Feedback and Hangout: Discord Server</a>
-										</li>
+						<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_BTTUpdatesDownloads" target="_blank"><strong>Updates and Downloads Thread</strong><br>Subscribe for AquaTouch update notifications!</a>
+						<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_discord" target="_blank"><strong>Discord Server</strong> Hangouts and Troubleshooting (most active)</a>
+						<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_BTTMainpage" target="_blank"><strong>Folivora Forums</strong> Comments and Troubleshooting</a>
 
-								</ul>
-						</div>
+					</div>
 				</div>
 		</div>
 

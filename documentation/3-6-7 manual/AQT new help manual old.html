@@ -1,0 +1,1987 @@
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	<meta charset="UTF-8">
+
+	<!-- UL does a ruled table list! =D -->
+
+	<style>
+	body {
+		color: #222;
+		padding: 16px;
+		/* font-family: "SF Pro Text", Helvetica, sans-serif; */
+		font-family: 'Nunito', Helvetica, sans-serif;
+		font-size: 14px;
+		margin: 0;
+		padding: 0 0 2px 0;
+		background: transparent;
+		background: rgba(236, 236, 236, .7);
+		-webkit-backdrop-filter: blur(48px) saturate(200%);
+		-webkit-transform: translate3d(0, 0, 0);
+		display: flex;
+		-webkit-user-select: none;
+		overflow: hidden;
+	}
+
+	h1 {
+		/* font-family: "SF Pro Display", Helvetica, sans-serif; */
+		font-family: 'Nunito', sans-serif;
+		font-weight: 700;
+		margin: 0;
+		padding: 44px 16px 12px 16px;
+		font-size: 24px;
+		border-bottom: 1px solid rgba(0, 0, 0, .15);
+	}
+
+	h2 {
+		/* font-family: "SF Pro Display", Helvetica, sans-serif; */
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		font-weight: 600;
+		margin: 12px 0;
+	}
+
+	/* h3 {
+	font-family: "SF Pro Display", Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .5px;
+	padding: 0 32px;
+	margin: 24px 0 12px 0;
+	color: rgba(180, 179, 178, 1);
+	} */
+
+	h3:first-of-type {
+		margin-top: 0;
+	}
+
+	small {
+		font-size: 12px;
+		line-height: 16px;
+		margin: -4px 32px 4px 32px;
+		padding: 0;
+		display: block;
+		color: rgba(180, 179, 178, 1);
+	}
+
+	a {
+		color: #1485FF;
+		text-decoration: none;
+		display: inline;
+	}
+
+	.inlineImg {
+		width: 70%;
+
+		/*Centring*/
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		/*            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+		border: solid 3px #FFFFFF;
+		border-radius: 15px;
+	}
+
+	.headerimage {
+		width: calc(100% - 32px);
+
+		background: rgba(245, 245, 245, 1);
+		border: 1px solid rgba(230, 230, 230, 1);
+		border-radius: 16px;
+		margin: 0 16px 16px 16px;
+		position: relative;
+	}
+
+	.video {
+		width: 94%;
+		height: 45%;
+		border-radius: 5px;
+		background-color: #000;
+		margin: 0 16px 16px 16px;
+		position: relative;
+		border-radius: 8px;
+		border: 1px solid rgba(230, 230, 230, 1);
+	}
+
+	.null {
+		background-color: rgba(255, 0, 0, .2);
+		opacity: 0.5;
+		transition: 0.2s;
+	}
+
+	/* Sidebar Styles */
+	.sidebar {
+		border-bottom-left-radius: 6px;
+		/* border: 1px solid rgba(150, 150, 150, .5); */
+		border-right: none;
+		-webkit-transform: translate3d(0, 0, 0);
+		position: relative;
+		height: 100vh;
+	}
+
+	.sidebar ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		height: calc(100% - 89px);
+		overflow-y: auto;
+		overflow-x: hidden;
+
+	}
+
+	.tablink {
+		/**/
+		margin: 0 0 -1px 0px;
+		padding: 8px 12px 8px 24px;
+		width: 204px;
+		position: relative;
+		line-height: 28px;
+		/**/
+		font-family: 'Nunito', sans-serif;
+		font-weight: 500;
+	}
+
+	.tablink img {
+		height: 28px;
+		margin-right: 12px;
+		margin-left: -36px;
+		float: left;
+	}
+
+	.tablink::after {
+		/* tab lines */
+		content: " ";
+		display: block;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		background: rgba(0, 0, 0, .15);
+	}
+
+	.tablink.active {
+		background: rgba(30, 30, 30, .15);
+		background-blend-mode: multiply;
+		transition: 0.5s;
+	}
+
+	.tablink .tablink.active::after {
+		display: none;
+	}
+
+	.tablink_last {
+		/**/
+		margin: 0 0 -1px 0px;
+		padding: 8px 12px 8px 48px;
+		width: 204px;
+		position: absolute;
+		line-height: 28px;
+		/**/
+		/*border-radius: 10px 0px 0px 10px;*/
+		bottom: -1px;
+		border-bottom-left-radius: 5px;
+	}
+
+	.tablink_last img {
+		height: 28px;
+		margin-right: 12px;
+		margin-left: -36px;
+		float: left;
+	}
+
+	.tablink_last::after {
+		/* tab lines */
+		content: " ";
+		display: block;
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		background: rgba(0, 0, 0, .15);
+		top: 0;
+		bottom: auto;
+	}
+
+	.tablink_last.active {
+		background: rgba(30, 30, 30, .1);
+		background-blend-mode: multiply;
+	}
+
+	.tablink_last. .tablink_last.active::after {
+		display: none;
+	}
+
+	.tablink_last {
+		position: absolute;
+		bottom: -1px;
+		border-bottom-left-radius: 5px;
+	}
+
+	.tablink_last::after {
+		top: 0;
+		bottom: auto;
+	}
+
+	/* Content Area Styles */
+	.content {
+		background: rgba(255, 255, 255, 1);
+		/* border-bottom-right-radius: 6px; */
+		/* border: 1px solid rgba(119, 118, 116, .5); */
+		border-left: 1px solid rgba(200, 200, 200, 1);
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.tabcontent {
+		padding-top: 66px;
+		display: none;
+		position: relative;
+	}
+
+	.tabcontent .active {
+		display: block;
+	}
+
+	.tabcontent ul {
+		list-style-type: none;
+		margin: -16px -16px -16px 0;
+		padding: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+
+	.tabcontent ul li {
+		padding: 8px 8px 8px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	.tabcontent ul li:last-of-type {
+		border: none;
+	}
+
+	.tabcontent ul li img,
+	.tabcontent ul li .tbicon {
+		height: 36px;
+		float: left;
+		margin-right: 12px;
+	}
+
+	.tabcontent ul li .tbicon {
+		background: #000;
+		border-radius: 6px;
+		overflow: hidden;
+		display: inline-block;
+		min-width: 36px;
+		object-position: center center;
+	}
+
+	.tabcontent ul li .tbicon img {
+		width: auto;
+		max-height: 22px;
+		padding: 7px;
+		margin-right: 0;
+		position: relative;
+		object-position: center center;
+	}
+
+	img.invert {
+		-webkit-filter: invert();
+	}
+
+	.tabcontent ul li .form-switch a {
+		line-height: 36px;
+		color: #fff;
+		text-decoration: none;
+		background: none;
+	}
+
+	/*---------------- BODY -----------------*/
+
+	/*HEADING*/
+	header {
+		position: fixed;
+		z-index: 1;
+		top: 0px;
+		left: 241px;
+		right: 0px;
+
+		background: rgba(245, 245, 245, .8);
+		-webkit-backdrop-filter: blur(24px) saturate(400%) contrast(150%);
+		-webkit-transform: translate3d(0, 0, 0);
+		border-bottom: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	section {
+		background: rgba(245, 245, 245, 1);
+		border: 1px solid rgba(230, 230, 230, 1);
+		border-radius: 16px;
+		padding: 16px;
+		margin: 0 16px 16px 16px;
+		position: relative;
+	}
+
+	section.tokenlist {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 8px;
+	}
+
+	.button {
+		background: #1485FF;
+		display: block;
+		text-align: center;
+		border-radius: 4px;
+		margin: 32px 16px;
+		padding: 8px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.button:active,
+	.token.selected:active {
+		opacity: .8;
+	}
+
+	section p {
+		margin: 12px 0;
+	}
+
+	section p:first-of-type {
+		margin-top: 0;
+	}
+
+	section p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	/* Single Page Style Overrides */
+	#about {
+		margin-left: 15px;
+	}
+
+	#about a {
+		background: none;
+		display: inline;
+		font-size: 13px;
+		color: rgba(16, 133, 255, 1);
+	}
+
+
+	/*--------------------DROPDOWN---------------------------*/
+
+	/* Style the sidenav links and the DROPDOWN BUTTON */
+	.dropdown-btn {
+		display: block;
+		border: none;
+		background: none;
+		width: 100%;
+		text-align: left;
+
+		margin: 0 10px 0px 0;
+		padding: 8px 12px 8px 36px;
+		width: 100%;
+		position: relative;
+		line-height: 28px;
+
+		font-family: 'Nunito', Helvetica, sans-serif;
+		font-size: 14px;
+	}
+
+	/* On mouse-over */
+	.dropdown-btn:hover {
+	}
+
+	.dropdown-btn:active {
+		color: #000000;
+	}
+
+	/* Add an active class to the active dropdown button */
+	.dropdownActive {
+		background-blend-mode: multiply;
+	}
+
+	/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+	.dropdown-container {
+		display: none;
+		background-color: rgba(255, 255, 255, 0.0);
+		padding-left: 30px;
+		margin-right: -30px;
+	}
+
+	/*SPECIAL STYLE FOR THE DROPDOWN BUTTONS*/
+	.dropdown-button {
+		border-radius: 30px 0px 0px 30px;
+	}
+
+	.dropdown-button.active {
+		background: rgba(30, 30, 30, .14);
+		background-blend-mode: multiply;
+	}
+
+	/* Optional: Style the caret down icon */
+	.characterGlyph {
+		float: right;
+		padding-right: 0px;
+
+		font-family: "SF Pro Text Heavy", sans-serif;
+		font-size: 14px;
+		color: #545454;
+	}
+
+
+	/*----------------BOTTOM NAV-----------------*/
+	.bottom-nav {
+		overflow: hidden;
+		background-color: rgba(240, 240, 240, 0.9);
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+		border-top: 1px solid lightgrey;
+		background: rgba(245, 245, 245, .8);
+		-webkit-backdrop-filter: blur(24px) saturate(400%) contrast(150%);
+	}
+
+	.bottom-nav a {
+		float: left;
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 8px 16px;
+		margin: 5px 5px 10px 5px;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.bottom-nav a:hover {
+		background: #FFF;
+		color: black;
+	}
+
+	.bottom-nav a.active {
+		background-color: dodgerblue;
+		color: white;
+	}
+
+	/*----------------MODAL BOX-----------------*/
+	/* The Modal (background) */
+	.modal {
+		display: block;
+		/* Hidden by default */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Sit on top */
+		padding-top: 200px;
+		/* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%;
+		/* Full width */
+		height: 100%;
+		/* Full height */
+		overflow: auto;
+		/* Enable scroll if needed */
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(47, 47, 47, 0.8);
+		/* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 8px 20px;
+		border-radius: 15px;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.titlecontainer {
+		height: calc(90vh - 66px);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.centre {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+		width: 70%;
+	}
+
+	</style>
+	<script>
+	var variables = {};
+
+	function openTab(evt, tabName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		// Get all elements with class="tablinks_last" and remove the class "active"
+		tablinks_last = document.getElementsByClassName("tablink_last");
+		for (i = 0; i < tablinks_last.length; i++) {
+			tablinks_last[i].className = tablinks_last[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+
+	//---------- AUTO-OPEN ------------//
+	// Select the General tab by default
+	function loadfirst() {
+		openTab(event, 'GettingStarted');
+		document.getElementById('default').click();
+	}
+
+
+
+	//-----------SIMPLE HIDE/SHOW-----------//
+	function hideShow(theContainer) {
+		var x = document.getElementById(theContainer);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+
+	function openSubTab(evt, tabName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(tabName).style.display = "block";
+	}
+
+	</script>
+</head>
+
+<body onload="loadfirst();">
+	<div class="sidebar">
+		<h1>AquaTouch Guide</h1>
+		<!-- style="height: 100%; overflow-y: auto; overflow-x: hidden" -->
+		<ul>
+			<li id="default" class="tablink" onClick="openTab(event, 'GettingStarted')">
+				Getting Started
+			</li>
+			<li class="tablink" onClick="openTab(event, 'AQT_strip')">
+				The Quick Strip
+			</li>
+			<li class="tablink" onClick="openTab(event, 'iconTips')">
+				Understanding Icons &amp; Symbols
+			</li>
+
+			<li class="tablink" onClick="openTab(event, 'WorkflowTools')">
+				Workflow Tools
+			</li>
+
+			<li class="tablink" onClick="openTab(event, 'Customisation-Notif')">
+				Notification Badges
+			</li>
+
+			<!-- WEB WIDGET DROPOWN -->
+			<button class="tablink dropdown-btn" onClick="openTab(event, 'Web_Widgets')">Web Controls
+				<b class="fa characterGlyph"> &#x25BC; </b>
+			</button>
+
+			<div id="dropdown-container" class="dropdown-container">
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Web_Widgets_GMail')">
+					Gmail
+				</li>
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Web_Widgets_Youtube')">
+					YouTube
+				</li>
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Web_Widgets_Netflix')">
+					Netflix
+				</li>
+			</div>
+			<!-- DROPOWN END -->
+
+
+			<!-- CUSTOMISATION DROPOWN -->
+			<button class="tablink dropdown-btn" onClick="openTab(event, 'Customisation')">Customising AquaTouch
+				<b class="fa characterGlyph"> &#x25BC;</b>
+			</button>
+
+			<div id="dropdown-container" class="dropdown-container">
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Customisation-Basic')">
+					Customisation
+				</li>
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Customisation-Advanced')">
+					Advanced Customisation
+				</li>
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Customisation-Adding')">
+					Update-persisting Customisations<br>
+				</li>
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Customisation-app')">
+					Adding an App<br>
+				</li>
+				<li class="tablink dropdown-button" onClick="openTab(event, 'Customisation-position')">
+					Positioning Items<br>
+				</li>
+			</div>
+			<!-- DROPOWN END -->
+
+
+			<li class="tablink" onClick="openTab(event, 'Updating')">
+				Updating AquaTouch
+			</li>
+
+
+			<li class="tablink" onClick="openTab(event, 'support')">
+				<strong>Help, Feedback, Community<br>Support Yuuiko</strong>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="content">
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          GETTING STARTED           -->
+		<div id="GettingStarted" class="tabcontent">
+				<header>
+						<h2>Getting Started</h2>
+				</header>
+
+				<section>
+						<h3>Welcome to AquaTouch!</h3>
+						Thank you for installing AquaTouch!<br>
+						AquaTouch is a TouchBar add-on UI that replaces or adds more functionality to the native MacOS TouchBar.<br>
+						<br>
+						Here you will find useful information about AQT, how to operate it, how to customise it, and find out about hidden features.<br>
+						<br>
+				</section>
+
+				<section>
+						<h3>Opening and Closing the AquaTouch UI</h3>
+						AquaTouch is designed to work with the macOS Stock Touch Bar, therefore it may close to reveal stock controls or open to reveal it's own controls.<br><br>
+						AquaTouch will open automatically for fully supported apps, and should close automatically for unsupported apps.<br>
+						<br>
+						It's possible to manually switch between the stock Touch Bar and AquaTouch, you can;<br>
+						<br>
+						Use Touch Bar Buttons:
+						<li> In the stock Touch Bar, tap the AQT icon in the Control Strip to open AQT.<br>
+						<li> In AquaTouch, hold the apps icon to go back to the stock Touch Bar.<br>
+								<br>
+								Or, you can use the keyboard:
+						<li> Give the [fn] key a quick tap to toggle between Stock or AquaTouch.<br>
+
+				</section>
+
+				<section>
+						<h3>The different types of AquaTouch Layouts</h3>
+						AquaTouch can open up to either of the three types of layout for different apps.<br>
+						The set that will open up can be noted by its icon on the control strip.
+						<br>
+						<br>
+						<strong> Full Support</strong><br>
+						<img src="presetfile://helpimg/mode1.png" width="160px" height="28px" style="margin-bottom: 5px; border-radius: 6px;" /><br>
+						A full set replaces an app's existing controls, it will open automatically.<br>
+						<br>
+						<strong> Extension</strong><br>
+						<img src="presetfile://helpimg/mode2.png" width="160px" height="28px" style="margin-bottom: 5px; border-radius: 6px;" /><br>
+						This layout has a focus on stock touchbar controls, and will close automatically when not in use. It's main aim is to add a little bit more to existing, great stock controls.<br>
+						<br>
+						<strong> Not Supported</strong><br>
+						<img src="presetfile://helpimg/mode3.png" width="160px" height="28px" style="margin-bottom: 5px; border-radius: 6px;" /><br>
+						Apps that AQT doesn't support look like this. You can still control the volume, screen brightness and keyboard brightness using gestures here, and access the QuickStrip.<br>
+						<br>
+				</section>
+
+				<section>
+						<h3>Volume, Brightness and Keyboard Backlight controls in AquaTouch </h3>
+
+						<p>AquaTouch uses Gestures in the TouchBar to control Volume, Brightness and Keyboard Backlight. <br>
+								<br>
+								<strong>Volume</strong><br>
+								Slide on the touchbar with <strong>two fingers</strong> to control the Volume<br>
+								<br>
+								<strong>Brightness</strong><br>
+								Slide on the touchbar with <strong>three fingers</strong> to control the Screen Brightness<br>
+								<br>
+								<strong>Keyboard Backlight</strong><br>
+								Slide on the touchbar with <strong>four fingers</strong> to control the Keyboard Backlight<br>
+								<br>
+								Note: <br>
+								<strong>Due to limitations in macOS, AquaTouch needs to be open while you slide.</strong><br>
+								Unfortunately I'm not able to make the gestures work in the stock touchbar, so you'll need to open AQT before doing a gesture. I still find this easier than the stock sliders, even though it takes a bit to get used to.
+						</p>
+						<br>
+				</section>
+
+				<section>
+						<h3>FAQ</h3>
+						<h4>How do I adjust the volume and display brightness?</h4>
+						<p>
+								With AquaTouch we use gestures! Read above to find out how ;)
+						</p>
+						<br>
+						<ul>
+								<li></li>
+								<li></li>
+						</ul>
+						<h4>Is there a mute button?</h4>
+						<p>
+								Since we use gestures, simply slide two fingers on the touchbar all the way to the left.
+						</p>
+						<br>
+						<ul>
+								<li></li>
+								<li></li>
+						</ul>
+						<h4>I see an extra digital escape key</h4>
+						<p>
+								If you have a physical escape key, head to AQT Settings to disable the digital escape key.
+						</p>
+						<br>
+						<ul>
+								<li></li>
+								<li></li>
+						</ul>
+						<h4>Why is the escape key cut off on tap?</h4>
+						<p>
+								This is by design; it brings the escape key to the very left edge of the Touchbar, emulating where it normally is.<br>
+								No longer do you need to remember to shift your finger to the right a bit, you can now tap it as you've always done it. Think of the touchbar as a now bezel-less display.<br>
+								<br>
+								Unfortunatley since there is no actual screen to the left of that area, the button will look cut off when you press it. I can't find a way to hide this, so we'll just need to deal with it for now.<br>
+								If you would like the normal Touchbar escape look back, you can select the look you prefer in the AQT settings from the BTT Window's Touchbar.
+						</p>
+						<br>
+						<ul>
+								<li></li>
+								<li></li>
+						</ul>
+						<h4>AquaTouch is very buggy for me, and a lot of things don't seem to work or respond.</h4>
+						<p>
+								Aquatouch needs to read and interact with the MacOS UI, and since it was made on an English system, it looks for english words and menus. If MacOS isn't in english, it may have trouble finding some menus to interact with, causing bugs.<br>
+								<br>
+								If you're able to, switch your macOS system language to english, otherwise AquaTouch would need to be translated to work with your language.<br>
+								<br>
+								If your system is in English, it may be a bug. Report it on my Discord server or on the AQT Forums.
+						</p>
+						<br>
+
+				</section>
+
+				<!-- <a class="button" onClick="triggerPresetAndRefreshSettingsWindow('Check All Settings');">Restore Preexisting Configuration</a> -->
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          QUICK STRIP           -->
+		<div id="AQT_strip" class="tabcontent">
+				<header>
+						<h2>AquaTouch Quick Strip</h2>
+				</header>
+
+				<img src="presetfile://helpimg/Quickstrip_H.png" class="headerimage">
+
+				<section>
+						<h3> AquaTouch Quick Strip </h3>
+						<p>
+								The Quick Strip is the four-button pallete seen at the very right. It will always be available there for you to access from any aquatouch screen.<br>
+								<br>
+								It gives you access to helpful widgets, controls and shortcuts that are great to adjust what music you're listening to, adjust some mac settings, check your calendar and more. Here you can read a summary of its four segments.<br>
+								<br>
+						</p>
+
+				</section>
+
+				<section>
+						<h3><img src="presetfile://helpimg/QS1.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Media</h3>
+
+						<strong>About</strong><br>
+						This Segment contains media controls and Now Playing widgets.<br>
+						If a supported app is playing media, they will show up within this segment.<br> Additionally for supported apps, media buttons will directly control the playbackfrom that specific app.<br>
+						e.g. You can pause iTunes, then play Spotify, all from this segment, without clicking anything.<br>
+						<br>
+						<strong>Hold Action</strong><br>
+						You can hold this segment button to Play/Pause Media.<br>
+						<br>
+						<strong>Icon Color</strong><br>
+						The icon for this segment will turn blue if media is playing.
+				</section>
+
+
+				<section>
+						<h3><img src="presetfile://helpimg/QS2.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Schedules</h3>
+
+						<strong>About</strong><br>
+						Tap to check your claendar and reminders. You can also view the weather and time here.<br>
+						<br>
+						<strong>Hold Action</strong><br>
+						Hold this control strip button to toggle Do Not Disturb<br>
+						<br>
+						<strong>Icon Color</strong><br>
+						The icon for this segment will turn red if you have any upcoming Calendar or Reminders events.<br>
+						You can change its behaviour in AQT settings, e.g. set it to only turn red for Reminders.
+				</section>
+
+				<section>
+						<h3><img src="presetfile://helpimg/QS3.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Controls</h3>
+						<strong>About</strong><br>
+						Set system controls such as NightShift, Dark Mode or to sleep your MacBook. There's a connectivity pallete to the right that allows you to connect to AirPods, Beats, toggle WiFi, toggle Do Not Disturb and more.<br>
+						<br>
+						<strong>Hold Action</strong><br>
+						Hold this control strip button to Open a Bluetooth Tool<br>
+						<br>
+						<strong>Icon Color</strong><br>
+						The icon for this segment will turn violet if Do Not Disturb is active.
+				</section>
+
+				<section>
+						<h3><img src="presetfile://helpimg/QS4.png" style="width: 150px; display: inline; vertical-align: middle; padding-right: 10px;">Quick Apps</h3>
+						<strong>About</strong><br>
+						Tap this segment to launch a quick task with one button. You can hold command here to quit multiple apps with a touch, too.<br>
+						<br>
+						<strong>Hold Action</strong><br>
+						Hold this segment button to switch to the stock MacOS Touch Bar.
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          ICON TIPS           -->
+		<div id="iconTips" class="tabcontent">
+				<header>
+						<h2>Understanding Icons and Symbols</h2>
+				</header>
+
+				<section>
+						<h3> Holdable Buttons </h3>
+						<img src="presetfile://helpimg/sym1.png" alt="" width="88px" height="39px" style="border-radius: 6px;" /> <img src="presetfile://helpimg/sym2.png" alt="" width="88px" height="39px" style="border-radius: 6px;" />
+						<br>
+						<br>
+						<p>Holdable Buttons are indicated by a folded corner.
+								Hold these buttons to see more options related to that button.<br>
+						</p><br>
+				</section>
+
+				<section>
+						<h3> Back Buttons </h3>
+						<img src="presetfile://helpimg/sym3.png" alt="" width="280px" height="39px" style="border-radius: 6px;" />
+						<br>
+						<br>
+						<p>Back buttons in AquaTouch tell you the group which you have open. Tap it to exit the group.<br>
+								<br>
+								If you open a group within a group, the back buttons will stack. Tapping a back button will close the group displayed on the button.<br>
+						</p><br>
+				</section>
+
+				<section>
+						<h3> Time Scrubbers </h3>
+						<img src="presetfile://helpimg/sym4.png" alt="" width="430px" height="40px" style="border-radius: 6px;" />
+						<br>
+						<br>
+						<p>Time scrubbers control playback of media.<br>
+								<br>
+								Drag the slider to control playback, or tap the time labels on either side of the slider to skip forward or back 15 seconds.<br>
+						</p><br>
+				</section>
+		</div>
+
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          APP CONTROLS           -->
+		<div id="AppControls" class="tabcontent">
+				<header>
+						<h2>App-Specific Guides</h2>
+				</header>
+				<section>
+						Some apps may have interesting layouts or hidden features that you might want to look into. Here you can learn about the different layouts of some apps and their functions within.<br>
+				</section>
+
+				<section>
+						<h3>Information Coming Soon</h3>
+						I wanted to get v3.4.0 out for you faster!
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          APP-SAFARI           -->
+		<div id="AppControls-Safari" class="tabcontent">
+				<header>
+						<h2>Safari</h2>
+				</header>
+
+				<section>
+						<h3>Information Coming Soon</h3>
+						I wanted to get v3.4.0 out for you faster!
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          APP-ITUNES           -->
+		<div id="AppControls-iTunes" class="tabcontent">
+				<header>
+						<h2>iTunes</h2>
+				</header>
+
+				<section>
+						<h3>Time Scrubber</h3>
+						<p>
+								You can tap the currently playing song name to access a time scrubber.<br>
+								Here you can control playback of what's playing by:<br>
+								<li> Sliding the slider to adjust the timestamp.<br>
+								<li> Tapping the two numbers on the left and right of the sliders to skip forward or back 15s.<br>
+						</p>
+				</section>
+
+				<section>
+						<h3>Tools</h3>
+
+						<h4>Sync tools</h4>
+						<br>
+						<h4>Editing and Organising</h4>
+						<br>
+						<h4>Window</h4>
+
+				</section>
+
+				<section>
+						<h3>Volume</h3>
+						Adjust the iTunes - Specific volume with this slider.
+				</section>
+		</div>
+
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████         APP-ATOM           -->
+		<div id="AppControls-Atom" class="tabcontent">
+				<header>
+						<h2>Atom and AppleScript Editor</h2>
+				</header>
+
+				<section>
+						<h3>Information Coming Soon</h3>
+						- PasteCells
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████         WEB WIDGETS           -->
+		<div id="Web_Widgets" class="tabcontent">
+				<header>
+						<h2>Web Controls</h2>
+				</header>
+
+				<section>
+						<h3> Web Controls </h3>
+						<p>AquaTouch supports many apps, and it even supports websites!<br>
+								<br>
+								If you visit a supported website in Safari or Google Chrome, you'll notice an additional button is added to the AquaTouch Controls.<br>
+								Simply tap this icon to bring up website-specific controls.<br>
+								<br>
+								Currently Supported Sites:<br>
+								<li> YouTube<br></li>
+								<li> Twitch<br></li>
+								<li> SoundCloud<br></li>
+								<li> Gmail<br></li>
+								<li> Google Drive<br></li>
+								<li> Google Docs<br></li>
+								<li> Google Sheets<br></li>
+								<li> Google Slides<br></li>
+								<li> Facebook<br></li>
+								<li> Kahoot.it <br></li>
+								<li> Netflix (Safari only for now) <br></li>
+						</p><br>
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████        WEB GMAIL           -->
+		<div id="Web_Widgets_GMail" class="tabcontent">
+				<header>
+						<h2>Gmail Web Controls</h2>
+				</header>
+
+				<section>
+						<h3> Getting it to work </h3>
+						To get this widget to work, enable Keyboard Shortcuts in Gmail's settings.<br>
+				</section>
+
+				<section>
+						<h3> Holding Shift </h3>
+						Hold the shift key to reveal 'reverse actions' such as 'Mark as Unread' and 'Mark as Not Important'
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████        WEB Youtube           -->
+		<div id="Web_Widgets_Youtube" class="tabcontent">
+				<header>
+						<h2>Youtube Web Controls</h2>
+				</header>
+
+				<section>
+						<h3> Setup </h3>
+						A few things need to be done before you can use this tool.<br>
+						<br>
+						Head to safari preferences (⌘,)<br>
+						Hit the Advanced Tab<br>
+						Enable "Devlop" menu<br>
+						Close the window<br>
+						<br>
+						In the menubar, head to Develop -> Allow Javascript from Apple Events<br>
+						This allows AquaTouch to interact with websites.
+						<br>
+				</section>
+
+				<section>
+						<h3> Bartitles </h3>
+						A little bit of fun, you can get subtitles in the TouchBar!<br>
+						<br>
+						Though its a bit picky to get working. You'll need to:<br>
+						- Turn on subtitles in youtube<br>
+						- Open the BarTitles screen (you should see the button)<br>
+						- Keep the video visible on-screen<br>
+						<br>
+						Sometimes some specially formatted subtitles can appear, which may not display properly too.<br>
+						Unfortunatley I can't hide on-screen subtitles while displaying them in the touchbar<br>
+						<br>
+						Its very experimental, this was the best I could do for the moment due to how it all works. Still fun though!
+						<br>
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████        WEB Netflix           -->
+		<div id="Web_Widgets_Netflix" class="tabcontent">
+				<header>
+						<h2>Netflix Web Controls</h2>
+				</header>
+
+				<section>
+						<h3> Setup </h3>
+						A few things need to be done before you can use this tool.<br>
+						<br>
+						Head to safari preferences (⌘,)<br>
+						Hit the Advanced Tab<br>
+						Enable "Devlop" menu<br>
+						Close the window<br>
+						<br>
+						In the menubar, head to Develop -> Allow Javascript from Apple Events<br>
+						This allows AquaTouch to interact with websites.
+						<br>
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          WORKFLOW           -->
+		<div id="WorkflowTools" class="tabcontent">
+				<header>
+						<h2>Workflow Tools</h2>
+				</header>
+
+				<section>
+						<h3> Workflow Tools </h3>
+						<p>
+								AquaTouch adds some features outside of the touchbar that may make your experience in MacOS Better. Check out some of them below!
+						</p>
+				</section>
+
+				<section>
+						<h3> Window Snapping </h3>
+						<p>Easily snap windows to left or right halves of the screen, or even any corner.<br>
+								<br>
+								Right click on the green window button or use fn-W to bring it's menu up.<br>
+								Right click the yellow window button to restore the old window size.
+								<br>
+								<br>
+								If you have multiple monitors connected, you'll see an expanded menu that allows you to snap to ajacent monitors.
+						</p>
+				</section>
+
+				<section>
+						<h3> Control Windows using Keyboard Shortcuts </h3>
+						<p>Use Keyboard Shortcuts to access the red, yellow and green buttons of windows.<br>
+								<br>
+								[ fn 0 ] (zero) - Close Window (Red button)<br>
+								[ fn - ] - Minimise (Yellow button)<br>
+								[ fn + ] - Full Screen (Green button)<br>
+								<br>
+								[ fn w ] - Activate Window Snapping Menu<br>
+						</p><br>
+				</section>
+
+				<section>
+						<h3> Modifier Action Suggestions </h3>
+						<p>In some apps, The Touchbar can suggest actions you may want to do when a modifier key is held down.<br>
+								<br>
+								Supported Apps:
+								<li>Finder</li>
+								<li>Photoshop</li>
+						</p><br>
+				</section>
+
+				<section>
+						<h3> Touchbar Widget: Click Pulse </h3>
+						<p>
+								Some apps have a 'Click Pulse' tool which allows you to click an array of buttons such as a list of checkboxes or 'show layer' toggles. <br>
+								<br>
+								You'll see a "Hold" button in the Click Pulse menu. Hold it and AquaTouch will click the mouse rhythmically for you. Then, hover over the buttons or checkboxes and let Click Pulse click them for you. <br>
+								<br>
+								This can be useful to select multiple layers in Photoshop, Illustrator and selecting media to sync in iTunes.<br>
+								<br>
+								Try it here:
+						</p>
+
+						<form action="btt://trigger_named/?trigger_name=SETUP_showClickPulse&closeFloatingHTMLMenu=0">
+								<input type="submit" value="Show Click Pulse" /><input type="checkbox" value="1" checked><input type="checkbox" value="1" checked><input type="checkbox" value="1" /><input type="checkbox" value="1" /><input type="checkbox" value="1"><input type="checkbox" value="1" /><input type="checkbox" value="1" /><input type="checkbox" value="1" />
+						</form>
+
+				</section>
+
+				<section>
+						<h3> Touchbar Widget: PasteCells </h3>
+						<p>
+								Some apps have special widgets in their Touchbar UI called "PasteCells". It's an original innovation of AquaTouch that allows you to save snippets of text into the Touchbar so you can easily insert them into your document.<br>
+								<li>Hold a PasteCell to save text into it.<br></li>
+								<li>Tap a PasteCell to paste it's contents into your document.<br></li>
+						</p>
+				</section>
+				<br><br><br>
+
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          CUSTOMISATION           -->
+		<div id="Customisation" class="tabcontent">
+				<header>
+						<h2>Customisation</h2>
+				</header>
+
+				<section>
+						<h3>Customisation </h3>
+						<p>
+								Information about AQT's settings UI.
+						</p>
+				</section>
+
+				<section>
+						<h3> AQT Advanced Customisation </h3>
+						<p>
+								Learn how to customise the behaviour of various AQT features.<br>
+								<br>
+						</p>
+				</section>
+
+				<section>
+						<h3>Update-persisting Customisations</h3>
+						<p> If you add your own gestures and triggers directly into AQT, they will be lost if AQT is updated. Learn how to add your own triggers that persist over updates. </p>
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          CUSTOM-BASIC           -->
+		<div id="Customisation-Basic" class="tabcontent">
+				<header>
+						<h2>Customisation</h2>
+				</header>
+
+				<img src="presetfile://helpimg/Settings_H.png" class="headerimage">
+
+
+				<section>
+						<h3>Customisation </h3>
+						<p>
+								Some AquaTouch features can be customised to your liking!<br>
+								<br>
+								To find AquaTouch Settings, open the BTT configuration menu, Slide the white touchbar and hit "AQT Settings".<br>
+								Here you can change how the escape key looks, QuickStrip behaviour, and much more.<br>
+								<br>
+								These settings are saved and will cross over to future AquaTouch Versions!
+						</p>
+				</section>
+
+				<!-- <video class="video" controls=""><source src="https://community.folivora.ai/uploads/default/original/2X/7/794b8df708ab5a2813cfa599965a2cedb11fd059.mov"><a href="https://community.folivora.ai/uploads/default/original/2X/7/794b8df708ab5a2813cfa599965a2cedb11fd059.mov">https://community.folivora.ai/uploads/default/original/2X/7/794b8df708ab5a2813cfa599965a2cedb11fd059.mov</a></video> -->
+
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          CUSTOM-NOTIF           -->
+		<div id="Customisation-Notif" class="tabcontent">
+				<header>
+						<h2>Notification Badge Customisation</h2>
+				</header>
+
+				<img src="presetfile://helpimg/Notifications_H.png" class="headerimage">
+
+				<section>
+						<h3> Notification Badges </h3>
+						<p>
+								If supported, you can get a notification bubble in the touchbar when you have a notification for it.<br>
+								<br>
+								Head to the AquaTouch Settings to enable these for more of your apps!<br>
+								<br>
+								The AquaTouch Settings are found in the touchbar after opening the BTT Configuration Window.
+						</p>
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          CUSTOM-ADVANCED           -->
+		<div id="Customisation-Advanced" class="tabcontent">
+				<header>
+						<h2>Advanced Customisation</h2>
+				</header>
+
+				<section>
+						<h3> AQT Advanced Customisation </h3>
+						<p>
+								In Addition to the AQT Settings accessed in the TouchBar, some additional options are available in the BTT configuration UI.<br>
+								<br>
+
+								Some things you can change at the moment: <br>
+								<li>Haptic Feedback Styles<br></li>
+								<li>Control Strip Button Hold Actions<br></li>
+						</p>
+				</section>
+
+				<section>
+						<h3> How To: AQT Advanced Customisation<br></h3>
+						<ol>
+								<li>Open the Better Touch Tool Window.</li>
+								<li>Head to the 'Named and Other Triggers' from the top left device dropdown</li>
+								<li>Select 'All Apps' in the leftmost sidebar.</li>
+								<li>You'll see a AQT USER PREFERENCES section at the top of the trigger list (second column). Select the item you wish to Customise </li>
+								<li>Change/tweak the 'Assigned Actions' to what you wish. For haptic options, simply select the action (third column) and select your preferred style in the fourth column.</li>
+						</ol>
+				</section>
+				<br>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████          CUSTOM-ADDING           -->
+		<div id="Customisation-Adding" class="tabcontent">
+				<header>
+						<h2>Update Persisting Customisations</h2>
+				</header>
+
+				<div class="bottom-nav">
+						<a onclick="openSubTab(event, 'Customisation-Adding')" class="active">Intro</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding0')">Prep</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding1')">Step 1</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding2')">Step 2</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding3')">Step 3</a>
+				</div>
+
+				<section>
+						<h3> Update-Proof Customisation </h3>
+						<p>If you're a more advanced user, you may want to add your own widgets to AquaTouch. Unfortunatley you will loose these modifications if you add them the easy way. However, there is a way to make them move across AquaTouch updates! Here's how:</p>
+				</section>
+
+				<section>
+						<h3> About this Method </h3>
+						<p>
+								BTT allows you to have more than one preset active at one time.<br>
+								<img src="presetfile://helpimg/add1.png" class="inlineImg" alt="Ensure you have an internet connection to load this image!">
+								This function can be used to seperate your modifications from AquaTouch, thus, your modifications could stay put. If modifications are added into a seperated preset, they would not be overwritten with the AquaTouch Update.<br>
+								<br>
+								It, however, is not possible to save modifications that involve deleting or editing AquaTouch's code, as this is directly editing AquaTouch itself, and will be overridden when updated.<br> If your customisation requires deleting or editing AquaTouch, you'll need to re-do or add them back when a new update is installed.
+								<br><br>
+
+								As AquaTouch contnues to change through updates, modifications that are added may get misplaced if AquaTouch undergoes a design refresh. Your additions will stay put, but they may need to be manually modified to work with the new design.<br>
+								<br>
+						</p>
+
+				</section>
+
+				<br><br>
+				<br><br>
+		</div>
+
+		<!-- ///////////////////////////////////////          PREP           -->
+		<div id="Customisation-Adding0" class="tabcontent">
+				<header>
+						<h2>Update Persisting Customisations</h2>
+				</header>
+
+				<div class="bottom-nav">
+						<a onclick="openSubTab(event, 'Customisation-Adding')">Intro</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding0')" class="active">Prep</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding1')">Step 1</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding2')">Step 2</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding3')">Step 3</a>
+				</div>
+
+				<section>
+						<h3> Preperation </h3>
+						<p>Avoid adding anything into the AQT preset. If you do, it will be overwritten when a new AQT update is installed.</p>
+				</section>
+
+				<section>
+						<h3> If you've already added your own customisations </h3>
+						<p>
+								In theory, you'd set this up before starting any edit, but if you have already made changes to AQT, you can move them out to your own preset.<br>
+								<br>
+								I recommend backing up your current customised AQT (very important since BTT likes to break up when deleting things), then delete everything that isn't yours from your current AQT, leaving your customisations behind in the right place. (pluck all the original AQT out of the preset and leave your changes behind).<br>
+								<br>
+								Then you can install a fresh copy of AQT as a seperate preset, set your personal preset as Master and set AquaTouch as an active preset.<br>
+								<br> <img src="presetfile://helpimg/add2.jpg" class="inlineImg" alt="">
+
+								<br>
+								You might find that some of your additions have misaligned, so clean up any mishaps from your personal preset. <br>
+								from here you can follow the steps and tips in the above section!
+								<br>
+						</p>
+				</section>
+
+				<br><br>
+				<br><br>
+		</div>
+
+		<!-- ///////////////////////////////////////          PREP           -->
+		<div id="Customisation-Adding1" class="tabcontent">
+				<header>
+						<h2>Update Persisting Customisations</h2>
+				</header>
+
+				<div class="bottom-nav">
+						<a onclick="openSubTab(event, 'Customisation-Adding')">Intro</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding0')">Prep</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding1')" class="active">Step 1</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding2')">Step 2</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding3')">Step 3</a>
+				</div>
+
+				<section>
+						<h3> Step 1 </h3>
+						<p>Create a new Preset, name it and add a color tag if you wish.</p>
+						<!--                    <img class="inlineImg" src="add2.jpg" alt="">-->
+				</section>
+
+				<img src="presetfile://helpimg/custom1.png" class="headerimage">
+
+				<br><br>
+				<br><br>
+		</div>
+
+		<!-- ///////////////////////////////////////          PREP           -->
+		<div id="Customisation-Adding2" class="tabcontent">
+				<header>
+						<h2>Update Persisting Customisations</h2>
+				</header>
+
+				<div class="bottom-nav">
+						<a onclick="openSubTab(event, 'Customisation-Adding')">Intro</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding0')">Prep</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding1')">Step 1</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding2')" class="active">Step 2</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding3')">Step 3</a>
+				</div>
+
+				<section>
+						<h3> Step 2 </h3>
+						<p>Set YOUR preset as Master, and AQT as an active preset. This way you'll be editing to your preset, and not AquaTouch.</p>
+				</section>
+
+				<img src="presetfile://helpimg/custom2.png" class="headerimage">
+
+				<br><br>
+				<br><br>
+		</div>
+
+		<!-- ///////////////////////////////////////          PREP           -->
+		<div id="Customisation-Adding3" class="tabcontent">
+				<header>
+						<h2>Update Persisting Customisations</h2>
+				</header>
+
+				<div class="bottom-nav">
+						<a onclick="openSubTab(event, 'Customisation-Adding')">Intro</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding0')">Prep</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding1')">Step 1</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding2')">Step 2</a>
+						<a onclick="openSubTab(event, 'Customisation-Adding3')" class="active">Step 3</a>
+				</div>
+
+				<section>
+						<h3> Step 3 </h3>
+						<p>Ensuring that your own preset is set as Master, go ahead and add your customisations!</p>
+				</section>
+
+				<img src="presetfile://helpimg/custom3.png" class="headerimage">
+
+				<section>
+						<h3> Preset Editing Tips </h3>
+
+						<strong> Preset Indicators</strong><br>
+						You might also find "View > Show preset color indicator for all triggers" helpful, which shows you what trigger belongs to which preset.
+
+				</section>
+
+				<br><br>
+				<br><br>
+
+		</div>
+
+		<!-- ///////////////////////////////////////          PREP           -->
+		<div id="Customisation-app" class="tabcontent">
+				<header>
+						<h2>Adding your own Application to AquaTouch</h2>
+				</header>
+
+				<section>
+						<h3>Not as normal.</h3>
+						<p>
+								You can add an app normally by pressing the plus button in the bottom left corner of BTT, but you might find that whatever you add will mix with the Gesture Bar screen.<br>
+								This is because your recently added app is still tagged as a "Not Supported" app by AquaTouch.
+						</p>
+				</section>
+
+				<section>
+						<h3> How to Add Applications to AquaTouch </h3>
+						<p>You can add a new app as normal (pressing the plus button in the bottom left corner of BTT, leftmost column), but make sure to exclude it from the unsupported apps list to avoid it mixing with the items from the Gesture Bar View.</p>
+
+						<br>
+						1 - Head to "Unsupported Apps" in the leftmost column<br>
+						2 - Click "Edit Conditions For Group in the rightmost column<br>
+						3 - Add a new entry to the list with "App Name is [Your App Name]"<br>
+
+						Your new app should no longer mix with the Gesture Bar<br>
+				</section>
+
+				<img src="presetfile://helpimg/customappadd.png" class="headerimage">
+				<img src="presetfile://helpimg/customappadd2.png" class="headerimage">
+
+				<section>
+						<h3>TouchBar Configuration</h3>
+						<p>
+								Every Application customised with BetterTouchTool has a setting called "TouchBar Configuration".<br>
+								This controls the behaviour of the stock Control Strip and the interaction between Stock and BTT TouchBars.
+						</p>
+				</section>
+
+				<section>
+						<h3>AquaTouch's Use of TouchBar Configuration</h3>
+						<p>
+								AquaTouch uses TouchBar Configuration to handle automatic switching between the BetterTouchTool TouchBar or the Stock TouchBar.<br>
+								<br>
+								It is set to either one of two options:
+						</p>
+						<br>
+						<br>
+						<ul>
+								<li>
+										<strong>Show App Default TouchBar •• Hide Control Strip in case BTT bar is active</strong><br>
+										This setting shows the Stock touchbar as default. (Automatically closes AquaTouch) <br>
+										Use this option if you wish to focus on the stock touchbar, but add some extra shortcuts inside AquaTouch.
+								</li>
+								<li>
+										<strong>Show BetterTouchTool Touch Bar •• HIDE macOS Control Strip</strong><br>
+										This setting prioritises the AquaTouch UI. It opens the AquaTouch touchbar automatically, hence replaces the stock touchbar.<br>
+										Use this option when your App's stock touchbar is useless =P<br>
+								</li>
+
+						</ul>
+				</section>
+				<img src="presetfile://helpimg/customappadd3.png" class="headerimage">
+
+		</div>
+
+		<!-- ///////////////////////////////////////          PREP           -->
+		<div id="Customisation-position" class="tabcontent">
+				<header>
+						<h2>Positioning Elements within AquaTouch</h2>
+				</header>
+
+				<section>
+						<strong> The "Display Order" Feature</strong><br>
+						<p>
+								For every touch bar item, BetterTouchTool allows you to include a "Display Order".<br>
+								This is a number that gives a further heirarchy to items, ('stronger' than the order that the triggers appear in BTT)<br>
+
+						</p>
+
+				</section>
+
+				<section>
+						<strong> AquaTouch's use of Display Order</strong><br>
+						<p>
+								<br>
+								AquaTouch uses Display Order to group and position right-aligned widgets. <br>
+								If you add a standard right-aligned widget in BTT, you might find that it won't go any further beyond the quickstrip or notification badges, no matter it's position in the trigger list.<br>
+								<br>
+								If you wish to add an item within the QuickStrip group, use this guide below:<br><br>
+						</p>
+						<ul>
+								<li><strong>Display order 0</strong> contains standard app controls.<br></li>
+
+								<li><strong>Display order 1</strong> only contains a blank spacer, so that notification badges are correctly spaced out. Normally you wouldn't need to add anything here.<br></li>
+
+								<li><strong>Display order 2</strong> positions buttons to the left of the quickstrip, in with notification badges<br></li>
+
+								<li><strong>Display order 3</strong> positions buttons with the quickstrip<br></li>
+
+								<li><strong>Display order 4</strong> positions buttons to the right of the quickstrip, in with Pinned App Controls.<br></li>
+						</ul>
+						<br>
+						<p>
+								The above is applied to the right-aligned "AquaTouch Main UI" only.
+						</p>
+
+				</section>
+
+				<img src="presetfile://helpimg/custom4.png" class="headerimage">
+
+		</div>
+
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████ -->
+		<div id="Updating" class="tabcontent">
+				<header>
+						<h2>Updating AQT</h2>
+				</header>
+
+				<section>
+						<h3> Check for Modifications </h3>
+						<p>
+								If you've modified AquaTouch within the BTT editor, you might loose changes on update if not implemented properly. <br>
+								Be aware that any modifications you have made may be lost on update!<br><br>
+								If you haven't edited AquaTouch in the BTT editor, you're all good to go.
+						</p>
+				</section>
+
+				<section>
+						<h3> Checking for Updates </h3>
+						<p>You can check for updates at the AquaTouch Updates Thread, or see any new versions by opening the BTT Configuration window and looking in the touchbar (updates will be displayed in the white strip).<br>
+						</p>
+				</section>
+
+				<section>
+						<h3>Recommended Updating Procedure</h3>
+						Following this reduces the chance of data loss, old version clutter and corruption on install.
+						<br>
+						<p>
+								1 - Visit the AquaTouch Updates thread.<br>
+								2 - Read the changelog for the new version.<br>
+								3 - Download the new update. (Don't open the download yet!)<br>
+								4 - Delete the current version of AQT.<br>
+								5 - Import the new version, considering any installation notes from the changelog online.<br>
+						</p>
+				</section>
+		</div>
+
+		<!-- ██████████████████████████████████████████████████████████████████████████████████ -->
+		<div id="new mac" class="tabcontent">
+				<header>
+						<h2>New Mac User!</h2>
+				</header>
+
+				<section>
+						<h3>New to macOS?</h3>
+						<p>
+								Let me guess, does macOS feel a bit dumbed down, limited and basic? Wondering how something you did on windows is done here?<br>
+						</p>
+
+						<h3>...or maybe you're a long time user?</h3>
+						<p>
+
+						</p>
+						<p>
+								Welcome to this well, section! Here you can find a few hidden features, tools and recommended apps that make macOS great.
+						</p>
+				</section>
+
+				<section>
+						<h3>Tips</h3>
+						<p>
+								In this section, I'll show you a big list of cool tips and tricks that are built right into macOS!
+						</p>
+				</section>
+
+				<section>
+						<h3>Apps</h3>
+						<p>
+							 macOS also have some very useful apps, here you can find some that I like.
+						</p>
+				</section>
+		</div>
+
+
+		<div id="mactip tips" class="tabcontent">
+				<header>
+						<h2>macOS Tips and Tricks</h2>
+				</header>
+
+				<h3 style="margin-left: 20px;"><br>I had it on Windows...</h3>
+				<section>
+						<h3>Right Click</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Show Path Bar in Finder</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<h3 style="margin-left: 20px;"><br>Standard Knowledge...</h3>
+
+				<section>
+						<h3>Trackpad Gestures</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Screenshots</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>QuickLook in Finder</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>AirDrop</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>The Help Menu</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<h3 style="margin-left: 20px;"><br>I'm an advanced user...</h3>
+
+				<section>
+						<h3>Screen Scaling</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Customise Toolbar</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Magnifying Glass Zoom</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Finder Advanced Search</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<h3 style="margin-left: 20px;"><br>Ascend to Geek Mode...</h3>
+				<section>
+						<h3>Terminal Trickery</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+		</div>
+
+		<div id="mactip apps" class="tabcontent">
+				<header>
+						<h2>Great macOS Apps</h2>
+				</header>
+
+				<h3 style="margin-left: 20px;"><br>Essential Free Apps...</h3>
+
+				<section>
+						<h3>The Unarchiver</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>IINA</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>App Cleaner</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<h3 style="margin-left: 20px;"><br>Really Nice Apps...</h3>
+
+				<section>
+						<h3>Clean My Mac X</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Daisy Disk</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Bartender</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Macs Fan Control</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Boom 3D</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+
+				<section>
+						<h3>Loopback</h3>
+						<p>
+								Laurem Ipsum, dadadadadaa
+						</p>
+				</section>
+		</div>
+
+		<!-- ████████████████████████████████████████████████████████████████-->
+		<!-- ████████████████████████████████████████████████████████████████-->
+		<!-- ████████████████████████████████████████████████████████████████-->
+
+
+		<div id="support" class="tabcontent">
+				<div class="titlecontainer">
+						<div class="centre">
+								<h2 style="text-align: left;">
+										Support, Feedback, Community<br>
+								</h2>
+								<p>
+										Since BetterTouchTool is paid, I've decided to make AquaTouch Free, so you can check it out and mess around, or even use it with no limitations. <br>
+										<br>
+										AquaTouch does take quite a lot of time to develop though... So if you don't mind...<br>
+										<br>
+										I'd love any support! and of course, I'll continue to improve both my skills and quality of my work!
+								</p>
+								<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+								<br>
+								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a>
+						</div>
+				</div>
+		</div>
+
+		<!-- ████████████████████████████████████████████████████████████████-->
+		<div id="spg9" class="tabcontent">
+
+				<div class="titlecontainer">
+						<div class="centre">
+								<h2 style="text-align: left;">
+										Support, Feedback, Community<br>
+								</h2>
+								<p>
+										Since BetterTouchTool is paid, I've decided to make AquaTouch Free, so you can check it out and mess around, or even use it with no limitations. <br>
+										<br>
+										AquaTouch does take quite a lot of time to develop though... So if you don't mind...<br>
+										<br>
+										I'd love any support! and of course, I'll continue to improve both my skills and quality of my work!
+								</p>
+								<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+								<br>
+								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a>
+						</div>
+				</div>
+
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+								<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+								<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🤍 Support Yuuiko </h2>
+
+								<ul style="padding: 10px 0px 10px 0px">
+
+										<li>
+												<p>Want to buy me a coffee? You can donate here: <a href="btt://trigger_named/?trigger_name=LINK_paypal" target="_blank">https://paypal.me/chrisyuu</a></p>
+										</li>
+										<li>
+												<p>Join my patreon for more of my stuff! <a href="btt://trigger_named/?trigger_name=LINK_patreon" target="_blank">https://www.patreon.com/yuuiko</a></p>
+										</li>
+								</ul>
+						</div>
+				</div>
+		</div>
+
+		<!-- ████████████████████████████████████████████████████████████████-->
+		<div id="spg10" class="tabcontent">
+				<div class="titlecontainer">
+						<div class="centre">
+								<h2 style="text-align: left;">
+										Support, Feedback, Community<br>
+								</h2>
+								<p>
+										Since BetterTouchTool is paid, I've decided to make AquaTouch Free, so you can check it out and mess around, or even use it with no limitations. <br>
+										<br>
+										AquaTouch does take quite a lot of time to develop though... So if you don't mind...<br>
+										<br>
+										I'd love any support! and of course, I'll continue to improve both my skills and quality of my work!
+								</p>
+								<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+								<br>
+								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a>
+						</div>
+				</div>
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+								<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+								<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🔖 BetterTouchTool License</h2>
+
+								<ul style="padding: 10px 0px 10px 0px">
+										<li>
+												<p>
+														Need a BetterTouchTool License? <br>
+														Get one through my link and i'll get 40%!<br><br>
+														<a href="btt://trigger_named/?trigger_name=LINK_paddle" target="_blank">Purchase BetterTouchTool License via yuuiko</a>
+												</p>
+										</li>
+								</ul>
+						</div>
+				</div>
+		</div>
+
+		<!-- ████████████████████████████████████████████████████████████████-->
+		<div id="spg11" class="tabcontent">
+				<div class="titlecontainer">
+						<div class="centre">
+								<h2 style="text-align: left;">
+										Support, Feedback, Community<br>
+								</h2>
+								<p>
+										Since BetterTouchTool is paid, I've decided to make AquaTouch Free, so you can check it out and mess around, or even use it with no limitations. <br>
+										<br>
+										AquaTouch does take quite a lot of time to develop though... So if you don't mind...<br>
+										<br>
+										I'd love any support! and of course, I'll continue to improve both my skills and quality of my work!
+								</p>
+								<a onclick="openSubTab(event, 'spg9')">Support Yuuiko</a><br>
+								<a onclick="openSubTab(event, 'spg10')">Want a BetterTouchTool License?</a><br>
+								<br>
+								<a onclick="openSubTab(event, 'spg11')">Need Help or want to hang out? AquaTouch Community</a>
+						</div>
+				</div><br>
+				<!-- MODAL -->
+				<div id="Support" class="modal" onclick="openSubTab(event, 'support')">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+								<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+								<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">💬 AquaTouch Community</h2>
+
+								<ul style="padding: 10px 0px 10px 0px">
+										<li>
+												<a href="btt://trigger_named/?trigger_name=LINK_BTTUpdatesDownloads" target="_blank">Updates and Downloads Thread (subscribe for AquaTouch update notifications!)</a>
+										</li>
+										<li>
+												<a href="btt://trigger_named/?trigger_name=LINK_discord" target="_blank"><strong>Discord Server</strong> Hangouts and Troubleshooting (most active)</a>
+										</li>
+										<li>
+												<a href="btt://trigger_named/?trigger_name=LINK_BTTMainpage" target="_blank"><strong>Folivora Forums</strong> Comments and Troubleshooting</a>
+										</li>
+
+								</ul>
+						</div>
+				</div>
+		</div>
+
+	</div>
+
+	<script>
+	// SCRIPT FOR DROPDOWNS
+
+	// Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict
+
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+
+	var i;
+
+	for (i = 0; i < dropdown.length; i++) {
+		dropdown[i].addEventListener("click", function() {
+			this.classList.toggle("dropdownActive");
+			var dropdownContent = this.nextElementSibling;
+			if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+			} else {
+				dropdownContent.style.display = "block";
+			}
+		});
+	}
+
+	</script>
+</body>
+
+</html>

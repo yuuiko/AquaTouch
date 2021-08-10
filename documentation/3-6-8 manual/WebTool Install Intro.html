@@ -1,0 +1,586 @@
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	<meta charset="UTF-8">
+
+	<style>
+
+	body {
+		color: #222;
+		padding: 16px;
+		font-family: 'Nunito', Helvetica, sans-serif;
+		font-size: 16px;
+		margin: 0;
+		padding: 0 0 2px 0;
+		background: #FFF;
+		/* -webkit-backdrop-filter: blur(48px) saturate(200%); */
+		/* -webkit-transform: translate3d(0, 0, 0); */
+		display: flex;
+		-webkit-user-select: none;
+		overflow: hidden;
+	}
+
+	.centre {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.headerimgcontainer{
+		/* background-color: red; */
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		width: 100%;
+		height: 40px;
+		padding: 5px;
+	}
+
+	.headerimg {
+		/* position: absolute; */
+		/* display: inline; */
+		/* display: block; */
+
+		right: 50vw;
+		/* -ms-transform: translateX(-50%); */
+		/* transform: translateX(-50%); */
+	}
+
+	h1 {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 700;
+		width: 100%;
+		text-align: center !important;
+		vertical-align: middle;
+		font-size: 50px;
+	}
+
+	/* ---------------- CONTENT CONTAINER ---------------- */
+	.page {
+		display: none;
+	}
+	.pagecontent {
+		height: 100vh;
+		width: 100vw;
+		overflow-x: scroll;
+	}
+
+	/* ---------------- CONTENT ---------------- */
+	/*HEADING*/
+	header {
+		z-index: 1;
+		top: 1px;
+		left: 1px;
+		right: 1px;
+		padding: 40px 0px 20px 0px;
+		text-align: center;
+		display: block;
+		/* background-color: red; */
+	}
+
+	section {
+		background: rgba(250, 250, 250, 1);
+		border: 1px solid rgba(220, 220, 220, 1);
+		border-radius: 16px;
+		padding: 16px;
+		margin: 0 16px 16px 16px;
+		position: relative;
+	}
+
+	h2 {
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		font-weight: 600;
+		margin: 12px 0;
+	}
+
+	h3:first-of-type {
+		margin-top: 0;
+	}
+
+	small {
+		font-size: 12px;
+		line-height: 16px;
+		margin: -4px 32px 4px 32px;
+		padding: 0;
+		display: block;
+		color: rgba(180, 179, 178, 1);
+	}
+
+	a {
+		color: #1485FF;
+		text-decoration: none;
+		display: inline;
+	}
+
+	a:hover {
+		color: #0d57a8;
+	}
+
+	/* section.tokenlist {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 8px;
+	} */
+
+	.inlineImg {
+		width: 70%;
+
+		/*Centring*/
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		border: solid 3px #FFFFFF;
+		border-radius: 15px;
+	}
+
+	.secimage {
+		width: calc(100% - 32px);
+
+		background: rgba(245, 245, 245, 1);
+		border: 1px solid rgba(230, 230, 230, 1);
+		border-radius: 16px;
+		margin: 0 16px 16px 16px;
+		position: relative;
+	}
+
+	section p {
+		margin: 12px 0px 0px 0px;
+	}
+
+	section p:first-of-type {
+		margin-top: 0;
+	}
+
+	section p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	/* Single Page Style Overrides */
+	#about {
+		margin-left: 15px;
+	}
+
+	#about a {
+		background: none;
+		display: inline;
+		font-size: 13px;
+		color: rgba(16, 133, 255, 1);
+	}
+
+	/*----------------BOTTOM NAV-----------------*/
+	.bottom-nav {
+		position: fixed;
+		overflow: hidden;
+		display: block;
+		bottom: 0;
+
+		width: 100vw;
+		z-index: 1;
+		border-top: 1px solid lightgrey;
+		background: rgba(245, 245, 245, .8);
+		-webkit-backdrop-filter: blur(24px) saturate(400%) contrast(150%);
+	}
+
+	.centregroup {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		background-color: rebeccapurple;
+	}
+
+	.bottom-nav a {
+		display: block;
+		float: left;
+		color: black;
+		text-align: center;
+		padding: 8px 16px;
+		margin: 5px 5px 10px 5px;
+		border-radius: 20px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.bottom-nav-back {
+		width: 30px;
+	}
+
+	.bottom-nav-middle {
+		left: auto; right: auto; width: calc(100% - 190px);
+	}
+
+	.bottom-nav-next {
+		width: 30px;
+		float: right;
+	}
+
+	.bottom-nav a:hover {
+		background: #FFF;
+		color: black;
+	}
+
+	.bottom-nav a.active {
+		background-color: dodgerblue;
+		color: white;
+	}
+
+	.explorebtn {
+		display: inline-block;
+		border-radius: 10px;
+		width: calc(100% - 20px);
+
+		background-color: rgba(250, 250, 250, 1);
+		padding: 10px;
+		margin-top: 5px;
+
+		transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+	}
+
+	.explorebtn:hover {
+		background-color: rgba(255, 255, 255, 1);
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		z-index: 2;
+	}
+	.explorebtn:active {
+		transform: scale(0.95);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	}
+
+
+	/*----------------MODAL BOX-----------------*/
+	/* The Modal (background) */
+	.modal {
+		display: block; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 20vh; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0, 0, 0); /* Fallback color */
+		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 8px 20px 20px 20px;
+		border-radius: 15px;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: -16px -16px -16px 0;
+		padding: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+
+	.supportbtn {
+		display: inline-block;
+		border-radius: 10px;
+		width: calc(100% - 20px);
+
+		background-color: #eee;
+		padding: 10px;
+		margin-top: 5px;
+
+		transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+	}
+
+	.supportbtn:hover {
+		background-color: #fff;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		z-index: 2;
+	}
+	.supportbtn:active {
+		transform: scale(0.95);
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	}
+
+</style>
+
+<script>
+var variables = {};
+
+function openTab(evt, tabName) {
+	// Declare all variables
+	var i, page, tablinks;
+
+	// Get all elements with class="page" and hide them
+	page = document.getElementsByClassName("page");
+	for (i = 0; i < page.length; i++) {
+		page[i].style.display = "none";
+	}
+
+	// Get all elements with class="tablinks" and remove the class "active"
+	tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+
+	// Get all elements with class="tablinks_last" and remove the class "active"
+	tablinks_last = document.getElementsByClassName("tablink_last");
+	for (i = 0; i < tablinks_last.length; i++) {
+		tablinks_last[i].className = tablinks_last[i].className.replace(" active", "");
+	}
+
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	document.getElementById(tabName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+
+//---------- AUTO-OPEN ------------//
+// Select the General tab by default
+function loadfirst() {
+	openTab(event, 'pg1');
+}
+
+function openSubTab(evt, tabName) {
+	// Declare all variables
+	var i, page, tablinks;
+
+	// Get all elements with class="page" and hide them
+	page = document.getElementsByClassName("page");
+	for (i = 0; i < page.length; i++) {
+		page[i].style.display = "none";
+	}
+
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	document.getElementById(tabName).style.display = "block";
+	//            evt.currentTarget.className += " active";
+}
+
+</script>
+</head>
+
+<body	onload="loadfirst();">
+
+	<div id="pg1" class="page">
+		<div class="bottom-nav">
+			<!-- <a onclick="openSubTab(event, 'support')">Support</a> -->
+			<a style="float: right" onclick="openSubTab(event, 'pg2')">Start</a>
+		</div>
+
+		<div class="pagecontent">
+			<div class="centre">
+				<h1>Setup <br> Web Tools</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- ███ 7 █████████████████████████████████████████████████████████████-->
+	<div id="pg2" class="page">
+
+		<div class="bottom-nav">
+			<a class="bottom-nav-back" onclick="openSubTab(event, 'pg1')">-</a>
+			<a class="bottom-nav-middle"> </a>
+			<a class="bottom-nav-next" onclick="openSubTab(event, 'pg9')">+</a>
+		</div>
+
+		<div class="pagecontent">
+
+			<header>
+				<div class="headerimgcontainer" style="background-image: url(presetfile://installimg/webctrl.png);"></div>
+				<h2>AquaTouch Web Tools</h2>
+			</header>
+
+
+			<section>
+				<h3> Web Tools </h3>
+				<p>AquaTouch supports many apps, and it even supports websites!<br>
+					<br>
+					If you visit a supported website in Safari or Google Chrome, you'll notice an additional button is added to the AquaTouch Controls.<br>
+					Simply tap this icon to bring up website-specific controls.<br>
+					<br>
+					Currently Supported Websites:<br>
+					<li> YouTube<br></li>
+					<li> Twitch<br></li>
+					<li> SoundCloud<br></li>
+					<li> Gmail<br></li>
+					<li> Google Drive<br></li>
+					<li> Google Docs<br></li>
+					<li> Google Sheets<br></li>
+					<li> Google Slides<br></li>
+					<li> Facebook<br></li>
+					<li> Kahoot.it <br></li>
+					<li> Netflix (Safari only for now)</li>
+				</p>
+			</section>
+
+			<section>
+				<h3> Setting up YouTube and Netflix </h3>
+				<p>
+					Youtube and Netflix Web Tools have deeper integration with Safari and Google Chrome.<br>
+					You'll need to allow them to access the web browser for them to work properly.<br>
+				</p>
+
+				<h3>Allowing Javascript Access</h3>
+
+				<strong>Safari</strong><br>
+				Head to Safari Preferences [ ⌘ , ]<br>
+				Hit the Advanced Tab<br>
+				Check "Show Develop Menu in Menu bar"<br>
+				<br>
+				Then, in the menu bar, hit [Develop → Allow JavaScript from Apple Events]
+				<br>
+				<br>
+				<strong>Google Chrome</strong><br>
+				In the menu bar, hit [View → Developer → Allow JavaScript from Apple Events]
+			</section>
+
+			<br><br>
+			<br><br>
+
+		</div>
+	</div>
+
+	<!-- ████ 9 ████████████████████████████████████████████████████████████-->
+	<div id="pg9" class="page">
+
+		<div class="bottom-nav">
+			<a class="bottom-nav-back" onclick="openSubTab(event, 'pg2')">-</a>
+			<a class="bottom-nav-middle"></a>
+		</div>
+
+		<div class="pagecontent">
+
+			<div style="width: 400px;" class="centre">
+				<h2 style="text-align: left;">
+					<strong>WebTool Setup Complete</strong>, Enjoy! <br>
+				</h2>
+
+				<a class="explorebtn" href="btt://trigger_named/?trigger_name=SETUP_showAQTHelp&closeFloatingHTMLMenu=0">Discover more in the AquaTouch Guide →</a><br><br>
+				<a class="explorebtn" onclick="openSubTab(event, 'spt_yuuiko')">Support Yuuiko</a><br>
+				<a class="explorebtn" onclick="openSubTab(event, 'spt_license')">Want a BetterTouchTool License?</a><br>
+				<br>
+				<strong>Problems? Need Help?</strong><br>
+				<a class="explorebtn" onclick="openSubTab(event, 'spt_community')">AquaTouch Community</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ████ Support Yuuiko ████████████████████████████████████████████████████████████-->
+	<div id="spt_yuuiko" class="page">
+
+		<div class="bottom-nav">
+			<a class="bottom-nav-back" onclick="openSubTab(event, 'pg9')">-</a>
+			<a class="bottom-nav-middle"></a>
+		</div>
+
+		<div class="pagecontent">
+			<!-- MODAL -->
+			<div id="Support" class="modal" onclick="openSubTab(event, 'pg9')">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close" onclick="openSubTab(event, 'pg9')">&times;</span>
+					<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🤍 Support Yuuiko </h2>
+					<p style="text-align: left; padding: 5px 5px;">
+						AquaTouch takes a long time to make, but since BetterTouchTool is paid, I've decided to make it free to use! <br>
+						<br>
+						I'd love any support! and I'll continue to improve my skills and quality of my work.
+					</p>
+
+					<!-- <a class="supportbtn" href="https://paypal.me/chrisyuu" target="_blank"><span style="color: black;">Want to buy me a coffee? You can donate here: </span><br> https://paypal.me/chrisyuu</a> -->
+					<!-- <a class="supportbtn" href="https://www.patreon.com/yuuiko" target="_blank"><span style="color: black;">Join my patreon for more of my stuff! </span><br> https://www.patreon.com/yuuiko</a> -->
+
+					<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_paypal" target="_blank"><span style="color: black;">Want to buy me a coffee? You can donate here: </span><br> https://paypal.me/chrisyuu</a>
+					<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_patreon" target="_blank"><span style="color: black;">Join my patreon for more of my stuff! </span><br> https://www.patreon.com/yuuiko</a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ████ License ████████████████████████████████████████████████████████████-->
+	<div id="spt_license" class="page">
+
+		<div class="bottom-nav">
+			<a class="bottom-nav-back" onclick="openSubTab(event, 'pg9')">-</a>
+			<a class="bottom-nav-middle"></a>
+		</div>
+
+		<div class="pagecontent">
+			<!-- MODAL -->
+			<div id="Support" class="modal" onclick="openSubTab(event, 'pg9')">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+					<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">🔖 BetterTouchTool License</h2>
+
+					<p>
+						Need a BetterTouchTool License? <br>
+						Get one through my link and i'll get 40%!
+					</p>
+
+					<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_paddle" target="_blank">Purchase BetterTouchTool License via yuuiko</a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ████ Community ████████████████████████████████████████████████████████████-->
+	<div id="spt_community" class="page">
+
+		<div class="bottom-nav">
+			<a class="bottom-nav-back" onclick="openSubTab(event, 'pg9')">-</a>
+			<a class="bottom-nav-middle"></a>
+		</div>
+
+		<!-- MODAL -->
+		<div id="Support" class="modal" onclick="openSubTab(event, 'pg9')">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close" onclick="openSubTab(event, 'support')">&times;</span>
+				<h2 style="text-align: left; border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;">💬 AquaTouch Community</h2>
+
+				<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_discord" target="_blank"><strong>Discord Server</strong> Hangouts and Troubleshooting (most active)</a>
+				<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_BTTMainpage" target="_blank"><strong>Folivora Forums</strong> Support and Troubleshooting</a>
+				<br>
+				<a class="supportbtn" href="btt://trigger_named/?trigger_name=LINK_BTTUpdatesDownloads" target="_blank"><strong>Updates and Downloads Thread</strong><br>Subscribe for AquaTouch update notifications!</a>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</body>
+
+</html>
