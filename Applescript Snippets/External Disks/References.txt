@@ -1,0 +1,27 @@
+
+regex
+regexr.com/6f0mp
+
+([ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890]{8}-([ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890]{4}-){3}[ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890]{12})+
+
+E6D0F693-82A6-5041-928B-04C89D2B5CCC
+F6AE7C61-BAD4-5123-A3E3-251EF23E447E
+8B4B0256-3C73-59CE-B218-03E2EBA0AD01
+
+
+sed
+https://www.grymoire.com/Unix/Sed.html#uh-62k
+
+
+
+Regex in Applescript
+https://stackoverflow.com/questions/997828/is-there-something-akin-to-regex-in-applescript-and-if-not-whats-the-alternat
+
+
+
+Remove item from a list
+https://stackoverflow.com/questions/68963070/remove-item-of-list-in-applescript
+
+
+List Operations
+https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/ManipulateListsofItems.html#//apple_ref/doc/uid/TP40016239-CH48-SW1
